@@ -1,0 +1,137 @@
+"use client";
+
+import {
+    useState,
+    useEffect,
+    Fragment
+} from "react";
+import {
+    DevicePhoneMobileIcon,
+    Bars2Icon,
+    MinusIcon
+} from "@heroicons/react/24/solid";
+import {
+    headerSet
+} from "../sets/headerSet";
+import clsx from "clsx";
+import Link from "next/link";
+
+import Wrapper from "./Wrapper";
+import Logo from "./Logo";
+import NoProofLink from "./NoProofLink";
+import setLinkWithoutHash from "../functions/setLinkWithoutHash";
+import MobileMenu from "./MobileMenu";
+
+const Header = () => {
+    const [isHeaderScrolled, setHeaderScrolled] = useState<boolean>(false);
+    const [isMobileMenuClicked, setMobileMenuClicked] = useState<boolean>(false);
+    const [isActiveLink, setActiveLink] = useState<string>("");
+
+    useEffect(() => {
+        const sections = document.querySelectorAll(".section");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                const target = entry.target;
+                const targetID = target.id;
+
+                if (entry.isIntersecting) {
+                    setActiveLink(targetID);
+                };
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
+
+        return () => {
+            sections.forEach((section) => {
+                observer.unobserve(section);
+            });
+        };
+    }, []);
+
+    useEffect(() => {
+        const setHeaderToScrolled = () => {
+            if (window.scrollY > 0) {
+                setHeaderScrolled(true);
+            } else {
+                setHeaderScrolled(false);
+            };
+        };
+
+        window.addEventListener("scroll", setHeaderToScrolled);
+
+        return () => {
+            window.removeEventListener("scroll", setHeaderToScrolled);
+        };
+    }, []);
+
+    return (
+        <Fragment>
+            <Wrapper
+            className={clsx(`p-4 md:p-5 lg:p-6 ${isHeaderScrolled && "fixed top-0 left-0"} bg-white shadow-md border-t border-gray-200 w-full z-40 transition-all duration-500 ease-in-out header`)}
+            id="header">
+                <Wrapper className="flex justify-between items-center gap-2 md:gap-4 lg:gap-6">
+                    <Logo />
+                    <ul className="hidden md:flex justify-center items-center gap-2 md:gap-3 lg:gap-4 header-list">
+                        {
+                            headerSet.map((headerItem, headerItemIndex) => (
+                                <Fragment key={headerItemIndex}>
+                                    <li className="header-item">
+                                        <NoProofLink
+                                        href={headerItem.href}
+                                        className={clsx(`${isActiveLink === headerItem.href && "text-[#a11106]"} text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}
+                                        onClick={(e) => {
+                                            setLinkWithoutHash(e, headerItem.href!);
+                                            setMobileMenuClicked(false);
+                                        }}
+                                        >
+                                            {headerItem.link}
+                                        </NoProofLink>
+                                    </li>
+                                </Fragment>
+                            ))
+                        }
+                    </ul>
+                    <Link
+                    href="tel:+420603243852"
+                    className="p-2 md:p-3 lg:p-4 hidden md:flex justify-between items-center gap-2 md:gap-3 lg:gap-4 bg-[#1e1e1e] text-white font-semibold rounded-md">
+                        <DevicePhoneMobileIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+                        +420 603 243 852
+                    </Link>
+                    {
+                        isMobileMenuClicked ? (
+                            <Fragment>
+                                <MinusIcon
+                                className="md:hidden w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer"
+                                onClick={(e) => {
+                                    setMobileMenuClicked(false);
+                                }}
+                                />
+                            </Fragment>
+                        ) : (
+                            <Fragment>
+                                <Bars2Icon
+                                className="md:hidden w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer"
+                                onClick={(e) => {
+                                    setMobileMenuClicked(true);
+                                }}
+                                />
+                            </Fragment>
+                        )
+                    }
+                </Wrapper>
+            </Wrapper>
+            <MobileMenu
+            isMobileMenuClicked={isMobileMenuClicked}
+            setMobileMenuClicked={setMobileMenuClicked}
+            />
+        </Fragment>
+    );
+};
+
+export default Header;
