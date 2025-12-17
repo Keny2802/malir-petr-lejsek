@@ -22,7 +22,7 @@ const Contact = () => {
                         Napište nám nebo zavolejte. Rádi zodpovíme vaše dotazy a domluvíme detaily zakázky.
                     </p>
                 </Wrapper>
-                <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-evenly items-center flex-col md:flex-row gap-6 md:gap-8 lg:gap-10">
+                <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-evenly md:items-center flex-col md:flex-row gap-6 md:gap-8 lg:gap-10">
                     <form className="p-4 md:p-5 lg:p-6 bg-[#1e1e1e] rounded-3xl w-full md:max-w-250">
                         <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-3 lg:gap-4 text-center">
                             <h3 className="text-xl md:text-[22px] lg:text-2xl text-white">

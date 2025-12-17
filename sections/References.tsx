@@ -24,7 +24,7 @@ const References = () => {
                         Přečtěte si, co o nás říkají naši spokojení zákazníci. Sdílejí své zkušenosti s kvalitou, precizním provedením a profesionálním přístupem, který zaručuje perfektní výsledek každého projektu.
                     </p>
                 </Wrapper>
-                <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-evenly items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8">
+                <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-evenly md:items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8">
                     <Wrapper className="flex flex-col gap-4 md:gap-6 lg:gap-6 max-w-2xl">
                         <Wrapper className="flex flex-col gap-2 md:gap-2.5 lg:gap-3">
                             <Wrapper className="flex items-center gap-2 md:gap-3 lg:gap-4">

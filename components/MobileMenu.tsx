@@ -12,6 +12,7 @@ import {
 } from "../sets/headerSet";
 import clsx from "clsx";
 import Link from "next/link";
+import Image from "next/image";
 
 import Wrapper from "./Wrapper";
 import Logo from "./Logo";
@@ -78,7 +79,24 @@ const MobileMenu = ({ ...props }: componentProps) => {
             p-4 fixed top-0 left-0 z-50 h-screen flex flex-col justify-between gap-2 md:gap-3 lg:gap-4 bg-white max-w-75 transition-transform duration-500 ease-linear
             `)}>
                 <Wrapper className="flex flex-col gap-4">
-                    <Logo className="text-white" />
+                    <Wrapper className="flex justify-between items-center gap-2">
+                        <Logo className="text-white" />
+                        <Link
+                        href="https://www.facebook.com/profimalby"
+                        rel="nofollow"
+                        target="_blank">
+                            <Image
+                            height={20}
+                            width={20}
+                            src="/Fotky/Ikonky/Facebook.svg"
+                            alt="Facebook ikonka"
+                            loading="lazy"
+                            decoding="async"
+                            draggable={false}
+                            className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6"
+                            />
+                        </Link>
+                    </Wrapper>
                     <ul className="flex flex-col gap-1 text-black mobile-header-list">
                         {
                             headerSet.map((headerItem, headerItemIndex) => (

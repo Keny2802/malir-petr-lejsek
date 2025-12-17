@@ -7,6 +7,7 @@ import {
     ClockIcon
 } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import Image from "next/image";
 
 import Wrapper from "./Wrapper";
 
@@ -34,7 +35,33 @@ const ContactHeader = () => {
                         <p className="text-sm md:text-[15px] lg:text-base">
                             Po-Pá: 07:00 - 20:00
                         </p>
+                        {/* <Link
+                        href="https://www.facebook.com/profimalby"
+                        rel="nofollow"
+                        target="_blank">
+                            <Image
+                            height={20}
+                            width={20}
+                            src="/Fotky/Ikonky/Facebook.svg"
+                            alt="Facebook ikonka"
+                            />
+                        </Link> */}
                     </Wrapper>
+                    <Link
+                    href="https://www.facebook.com/profimalby"
+                    rel="nofollow"
+                    target="_blank">
+                        <Image
+                        height={20}
+                        width={20}
+                        src="/Fotky/Ikonky/Facebook.svg"
+                        alt="Facebook ikonka"
+                        loading="lazy"
+                        decoding="async"
+                        draggable={false}
+                        className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6"
+                        />
+                    </Link>
                 </Wrapper>
             </Wrapper>
         </Fragment>
