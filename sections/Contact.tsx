@@ -6,6 +6,7 @@ import {
 } from "@heroicons/react/24/solid";
 
 import Wrapper from "../components/Wrapper";
+import PageLabel from "../components/pageLabel";
 import ContactInfo from "../components/ContactInfo";
 
 const Contact = () => {
@@ -14,6 +15,7 @@ const Contact = () => {
             <Wrapper
             className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 border-t border-gray-300 bg-[#e7e6e6] shadow-md"
             id="kontakt">
+                <PageLabel pageLabelText="Kontakt" />
                 <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-3 lg:gap-4">
                     <h2 className="text-3xl md:text-4xl lg:text-[40px] text-center font-extrabold max-w-7xl">
                         Jsme tu pro vás

@@ -28,25 +28,25 @@ const ContactInfo = () => {
                     href="mailto:info@profimalby.cz"
                     target="_blank"
                     className="flex items-center gap-2">
-                        <MapIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />
+                        <MapIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer transition-colors duration-300 ease-in-out hover:text-[#a11106]" />
                         Kroupova 180/56, Brno - Starý Lískovec, 625 00
                     </Link>
                     <Link
                     href="mailto:info@profimalby.cz"
                     className="flex items-center gap-2">
-                        <EnvelopeIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />
+                        <EnvelopeIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer transition-colors duration-300 ease-in-out hover:text-[#a11106]" />
                         info@profimalby.cz
                     </Link>
                     <Link
                     href="tel:+420603243852"
                     className="flex items-center gap-2">
-                        <DevicePhoneMobileIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />
+                        <DevicePhoneMobileIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer transition-colors duration-300 ease-in-out hover:text-[#a11106]" />
                         +420 603 243 852
                     </Link>
                     <Link
                     href="tel:+420547211709"
                     className="flex items-center gap-2">
-                        <PhoneIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />
+                        <PhoneIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer transition-colors duration-300 ease-in-out hover:text-[#a11106]" />
                         +420 547 211 709
                     </Link>
                     <Wrapper className="flex items-center gap-2 font-medium">

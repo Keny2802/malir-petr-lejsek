@@ -1,4 +1,8 @@
+"use client";
+
 import {
+    useRef,
+    useEffect,
     Fragment
 } from "react";
 import {
@@ -7,15 +11,42 @@ import {
     ChevronDoubleLeftIcon,
     ChevronDoubleRightIcon
 } from "@heroicons/react/24/solid";
+import {
+    gsap
+} from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 import Wrapper from "../components/Wrapper";
+import PageLabel from "../components/pageLabel";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const References = () => {
+    const animationRef = useRef<HTMLDivElement>(null);
+    
+    useEffect(() => {
+        if (!animationRef.current) return;
+
+        gsap.from(animationRef.current, {
+            opacity: 0,
+            y: 40,
+            ease: "power2.out",
+            duration: 0.3,
+            scrollTrigger: {
+                trigger: animationRef.current,
+                start: "top 85%",
+                toggleActions: "play none none reverse"
+            }
+        });
+    }, []);
+
     return (
         <Fragment>
             <Wrapper
             className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 border-t border-gray-300 bg-[#e7e6e6] shadow-md"
-            id="reference">
+            id="reference"
+            ref={animationRef}>
+                <PageLabel pageLabelText="Reference" />
                 <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-3 lg:gap-4 text-center">
                     <h2 className="text-3xl md:text-4xl lg:text-[40px] text-center font-extrabold max-w-7xl">
                         Reference

@@ -36,7 +36,7 @@ const Footer = () => {
                                             <li className="header-item">
                                                 <NoProofLink
                                                 href={headerItem.href}
-                                                className="text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#1e1e1e]"
+                                                className="text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]"
                                                 onClick={(e) => {
                                                     setLinkWithoutHash(e, headerItem.href!);
                                                 }}
@@ -62,12 +62,14 @@ const Footer = () => {
                         </p>
                         <Link
                         href="https://vojtaoliva.cz"
-                        target="_blank">
+                        target="_blank"
+                        className="transition-colors duration-300 ease-in-out hover:text-[#a11106]">
                             Vojta Oliva,
                         </Link>
                         <Link
                         href="mailto:info@vojtaoliva.cz"
-                        target="_blank">
+                        target="_blank"
+                        className="transition-colors duration-300 ease-in-out hover:text-[#a11106]">
                             info@vojtaoliva.cz
                         </Link>
                     </Wrapper>

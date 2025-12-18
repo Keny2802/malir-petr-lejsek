@@ -79,7 +79,7 @@ const Hero = () => {
                     </Wrapper>
                 </Wrapper>
             </Wrapper>
-            <Wrapper className="fixed right-5 bottom-6 flex items-center flex-col gap-2 md:gap-3 lg:gap-4">
+            <Wrapper className="z-100 fixed right-5 bottom-6 flex items-center flex-col gap-2 md:gap-3 lg:gap-4">
                 {
                     isWindowScrolled && (
                         <Fragment>
