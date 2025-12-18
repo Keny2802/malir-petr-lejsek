@@ -52,7 +52,7 @@ const Footer = () => {
                         <ContactInfo />
                     </Wrapper>
                 </Wrapper>
-                <Wrapper className="pb-2 md:pb-3 lg:pb-4 mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col gap-2 font-medium">
+                <Wrapper className="p-4 md:p-6 lg:p-8 mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col gap-2 text-center font-medium">
                     <p className="text-[15px] md:text-base lg:text-lg">
                         PROFI MALBY Petr Lejska, {DYNAMIC_YEAR}, Všechna Práva vyhrazena.
                     </p>
