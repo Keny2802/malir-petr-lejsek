@@ -35,7 +35,7 @@ const Logo = ({ ...props }: LogoProps) => {
                     <Image
                     height={100}
                     width={100}
-                    src="/fotky/Clean logo.png"
+                    src="/fotky/Logo.png"
                     alt="Malby Petr Lejska | Malíř Petr Lejska Logo"
                     loading="lazy"
                     decoding="async"
