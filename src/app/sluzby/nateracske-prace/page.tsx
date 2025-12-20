@@ -19,6 +19,7 @@ import Header from "../../../../components/Header";
 import PageLabel from "../../../../components/pageLabel";
 import NoProofLink from "../../../../components/NoProofLink";
 import setLinkWithoutHash from "../../../../functions/setLinkWithoutHash";
+import References from "../../../../sections/References";
 import Contact from "../../../../sections/Contact";
 import Footer from "../../../../components/Footer";
 
@@ -44,7 +45,7 @@ const App = () => {
             <Wrapper
             className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#e7e6e6] shadow-md"
             id="nateracske-prace">
-                <PageLabel pageLabelText="Natěračské práce" />
+                <PageLabel pageLabelText="Služba natěračské práce" />
                 <Wrapper className="flex justify-evenly flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
                     <Wrapper>
                         <Wrapper className="relative">
@@ -102,7 +103,7 @@ const App = () => {
                     </Wrapper>
                     <Wrapper className="w-full md:w-1/2">
                         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-                            Natěračské práce
+                            Nátěry
                         </h2>
                         <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex flex-col gap-2 md:gap-3 lg:gap-4">
                             <p className="text-[15px] md:text-base lg:text-[17px]">
@@ -125,7 +126,32 @@ const App = () => {
                         </Wrapper>
                     </Wrapper>
                 </Wrapper>
+                <Wrapper className="p-2 md:p-3 lg:p-4 mt-2 md:mt-4 lg:mt-6 flex justify-center items-center flex-col gap-2 md:gap-4 lg:gap-6 border-t border-gray-400">
+                    <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+                        Natěračské práce
+                    </h3>
+                    <Wrapper className="flex flex-col gap-2 w-full md:max-w-3xl">
+                        <p className="text-[15px] md:text-base lg:text-[17px]">
+                            Důležitou součástí našich služeb jsou profesionální natěračské práce. Náš zkušený tým natěračů je připraven provádět kvalitní nátěry i nástřiky na všechny typy povrchů. Při každé zakázce klademe maximální důraz na pečlivé dodržování technologických postupů a použití vhodných materiálů.
+                        </p>
+                        <p className="text-[15px] md:text-base lg:text-[17px]">
+                            Zajišťujeme nátěry oken, dveří, konstrukcí, dřevěných i betonových podlah, klempířských prvků, fasád i střech. Natěračské práce plní nejen estetickou funkci, ale především zajišťují dlouhodobou ochranu povrchů, zejména v exteriéru, kde jsou materiály vystaveny povětrnostním vlivům.
+                        </p>
+                        <p className="text-[15px] md:text-base lg:text-[17px]">
+                            Naši malíři a natěrači jsou pravidelně školeni v oblasti stávajících i moderních nátěrových systémů. Na Vaše přání k Vám rádi přijedeme, představíme vhodné nátěrové systémy a po odborné konzultaci navrhneme optimální řešení přesně podle Vašich představ a požadavků.
+                        </p>
+                        <NoProofLink
+                        href="kontakt"
+                        onClick={(e) => {
+                            setLinkWithoutHash(e, "kontakt");
+                        }}
+                        className="p-4 md:p-5 lg:p-6 mt-2 md:mt-4 lg:mt-6 bg-[#1e1e1e] text-white text-center w-full md:w-75 rounded-md">
+                            Kontaktujte nás
+                        </NoProofLink>
+                    </Wrapper>
+                </Wrapper>
             </Wrapper>
+            <References />
             <Contact />
             <Footer />
         </Fragment>

@@ -39,7 +39,7 @@ const Hero = () => {
     return (
         <Fragment>
             <Wrapper
-            className="relative"
+            className="relative section"
             id="domu">
                 <Image
                 width={1000}

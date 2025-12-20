@@ -46,9 +46,10 @@ const About = () => {
     return (
         <Fragment>
             <Wrapper
-            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#e7e6e6] shadow-md"
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#e7e6e6] shadow-md section"
             id="o-nas"
-            ref={animationRef}>
+            // ref={animationRef}
+            >
                 <PageLabel pageLabelText="O nás" />
                 <Wrapper className="flex justify-between items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
                     <Wrapper className="flex justify-center md:items-center flex-col gap-4 md:gap-6 lg:gap-8 w-full md:w-1/2">
@@ -62,7 +63,7 @@ const About = () => {
                         draggable={false}
                         className="rounded-md"
                         />
-                        <Wrapper className="py-4 md:py-6 lg:py-8 grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+                        <Wrapper className="py-4 md:py-6 lg:py-8 grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
                             <Wrapper className="flex items-center gap-2">
                                 <CheckCircleIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-[#4caf50]" />
                                 <p className="text-base md:text-[17px] lg:text-lg font-medium">

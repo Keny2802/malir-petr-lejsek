@@ -19,6 +19,7 @@ import Header from "../../../../components/Header";
 import PageLabel from "../../../../components/pageLabel";
 import NoProofLink from "../../../../components/NoProofLink";
 import setLinkWithoutHash from "../../../../functions/setLinkWithoutHash";
+import References from "../../../../sections/References";
 import Contact from "../../../../sections/Contact";
 import Footer from "../../../../components/Footer";
 
@@ -44,7 +45,7 @@ const App = () => {
             <Wrapper
             className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#e7e6e6] shadow-md"
             id="natery-strech">
-                <PageLabel pageLabelText="Nátěry střech" />
+                <PageLabel pageLabelText="Služba nátěry střech" />
                 <Wrapper className="flex justify-evenly flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
                     <Wrapper>
                         <Wrapper className="relative">
@@ -125,7 +126,35 @@ const App = () => {
                         </Wrapper>
                     </Wrapper>
                 </Wrapper>
+                <Wrapper className="p-2 md:p-3 lg:p-4 mt-2 md:mt-4 lg:mt-6 flex justify-center items-center flex-col gap-2 md:gap-4 lg:gap-6 border-t border-gray-400">
+                    <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+                        Nátěry střech
+                    </h3>
+                    <Wrapper className="flex flex-col gap-2 w-full md:max-w-3xl">
+                        <p className="text-[15px] md:text-base lg:text-[17px]">
+                            Provádíme odborné nátěry pozinkovaného plechu na střechách, okapech, parapetech a dalších klempířských prvcích. K obnovovacímu nátěru přistupujeme zejména v případě, kdy je původní vrstva barvy již stará, nesourodá, poškozená korozí nebo neplní svou ochrannou funkci.
+                        </p>
+                        <p className="text-[15px] md:text-base lg:text-[17px]">
+                            Při každé aplikaci nátěru klademe maximální důraz na důkladnou přípravu podkladu, která je základem kvalitního a dlouhodobě funkčního nátěru. Povrch nejprve zbavíme veškerých nečistot, které by mohly snížit přilnavost barvy - zejména mastnot, rzi a zbytků starých nátěrů.
+                        </p>
+                        <p className="text-[15px] md:text-base lg:text-[17px]">
+                            Nejprve provádíme hrubé očištění povrchu odstraněním prachu a volných částic ometením, vysátím nebo setřením. Pevně přilnuté nečistoty a poškozené vrstvy nátěru odstraňujeme mechanicky pomocí škrabek, smirkového papíru nebo ocelových kartáčů. Staré, soudržné nátěry bez známek koroze pouze přebrousíme.
+                        </p>
+                        <p className="text-[15px] md:text-base lg:text-[17px]">
+                            Následuje důkladné odmaštění povrchu, k němuž používáme vhodná technická rozpouštědla. Po přípravě podkladu aplikujeme nátěrový systém ve dvou vrstvách, který zajistí dlouhodobou ochranu plechu proti korozi i povětrnostním vlivům.
+                        </p>
+                        <NoProofLink
+                        href="kontakt"
+                        onClick={(e) => {
+                            setLinkWithoutHash(e, "kontakt");
+                        }}
+                        className="p-4 md:p-5 lg:p-6 mt-2 md:mt-4 lg:mt-6 bg-[#1e1e1e] text-white text-center w-full md:w-75 rounded-md">
+                            Kontaktujte nás
+                        </NoProofLink>
+                    </Wrapper>
+                </Wrapper>
             </Wrapper>
+            <References />
             <Contact />
             <Footer />
         </Fragment>

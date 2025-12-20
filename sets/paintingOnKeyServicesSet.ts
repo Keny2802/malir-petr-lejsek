@@ -14,10 +14,6 @@ export const paintingOnKeyServicesSet:paintingServicesProps[] = [
         imageAlt: "Fotka Malování na klíč"
     },
     {
-        imageSrc: "/Fotky/Malovani na klic (4).jpg",
-        imageAlt: "Fotka Malování na klíč"
-    },
-    {
         imageSrc: "/Fotky/Malovani na klic (5).jpg",
         imageAlt: "Fotka Malování na klíč"
     }

@@ -19,6 +19,7 @@ import Header from "../../../../components/Header";
 import PageLabel from "../../../../components/pageLabel";
 import NoProofLink from "../../../../components/NoProofLink";
 import setLinkWithoutHash from "../../../../functions/setLinkWithoutHash";
+import References from "../../../../sections/References";
 import Contact from "../../../../sections/Contact";
 import Footer from "../../../../components/Footer";
 
@@ -44,7 +45,7 @@ const App = () => {
             <Wrapper
             className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#e7e6e6] shadow-md"
             id="natery-fasad">
-                <PageLabel pageLabelText="Nátěry fasád" />
+                <PageLabel pageLabelText="Služba nátěry fasád" />
                 <Wrapper className="flex justify-evenly flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
                     <Wrapper>
                         <Wrapper className="relative">
@@ -125,7 +126,35 @@ const App = () => {
                         </Wrapper>
                     </Wrapper>
                 </Wrapper>
+                <Wrapper className="p-2 md:p-3 lg:p-4 mt-2 md:mt-4 lg:mt-6 flex justify-center items-center flex-col gap-2 md:gap-4 lg:gap-6 border-t border-gray-400">
+                    <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+                        Nátěry fasád
+                    </h3>
+                    <Wrapper className="flex flex-col gap-2 w-full md:max-w-3xl">
+                        <p className="text-[15px] md:text-base lg:text-[17px]">
+                            Provádíme nátěry fasád na všech typech budov - rodinných domů, bytových a panelových domů, komerčních objektů i historických staveb. Zajišťujeme fasádní nátěry všech rozsahů a na všechny běžné typy omítek. Pracujeme s využitím žebříků, lešení, montážních plošin i horolezecké techniky.
+                        </p>
+                        <p className="text-[15px] md:text-base lg:text-[17px]">
+                            Před zahájením prací vždy pečlivě posoudíme stav omítky. Podklad musí být soudržný, suchý, vyzrálý a zbavený mastnot, nečistot a nesoudržných částí. Zvláštní pozornost věnujeme novým nebo opravovaným vápenocementovým omítkám. U starších fasád zajistíme potřebné zednické opravy zvětralých nebo zduřelých míst. V případě potřeby fasádu umyjeme tlakovou vodou a následně zakryjeme všechny části, které nemají být natírány (okna, parapety, okapy, okolní terén apod.).
+                        </p>
+                        <p className="text-[15px] md:text-base lg:text-[17px]">
+                            Existuje několik základních typů fasádních barev s rozdílnými vlastnostmi. Při aplikaci vždy striktně dodržujeme technologické postupy a doporučení výrobce, což je základním předpokladem dlouhé životnosti celého nátěrového systému. Při výběru vhodné fasádní barvy není rozhodující pouze barevný odstín, ale především vlastnosti barvy a typ podkladu.
+                        </p>
+                        <p className="text-[15px] md:text-base lg:text-[17px]">
+                            Přesnou a konečnou cenovou nabídku obvykle obdržíte do 24 hodin - e-mailem nebo telefonicky.
+                        </p>
+                        <NoProofLink
+                        href="kontakt"
+                        onClick={(e) => {
+                            setLinkWithoutHash(e, "kontakt");
+                        }}
+                        className="p-4 md:p-5 lg:p-6 mt-2 md:mt-4 lg:mt-6 bg-[#1e1e1e] text-white text-center w-full md:w-75 rounded-md">
+                            Kontaktujte nás
+                        </NoProofLink>
+                    </Wrapper>
+                </Wrapper>
             </Wrapper>
+            <References />
             <Contact />
             <Footer />
         </Fragment>
