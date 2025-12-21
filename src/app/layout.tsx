@@ -3,6 +3,8 @@ import type {
 } from "next";
 import "./globals.css";
 
+import LoadingScreen from "../../components/LoadingScreen";
+
 export const metadata: Metadata = {
   title: "Profi Malby Petr Lejska | Malíř a natěrač",
   description: "Profi Malby Petr Lejska nabízí profesionální malířské a natěračské práce. Precizní provedení, cistá práce a férové ceny.",
@@ -53,6 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <LoadingScreen />
         {children}
       </body>
     </html>

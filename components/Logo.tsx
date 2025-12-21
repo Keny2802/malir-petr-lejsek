@@ -15,6 +15,7 @@ import Wrapper from "./Wrapper";
 interface LogoProps {
     className?: string;
     linkClassName?: string;
+    imageClassName?: string;
 };
 
 const Logo = ({ ...props }: LogoProps) => {
@@ -23,7 +24,8 @@ const Logo = ({ ...props }: LogoProps) => {
 
     const {
         className,
-        linkClassName
+        linkClassName,
+        imageClassName
     } = props;
 
     return (
@@ -40,6 +42,7 @@ const Logo = ({ ...props }: LogoProps) => {
                     loading="lazy"
                     decoding="async"
                     draggable={false}
+                    className={clsx(`${imageClassName}`)}
                     />
                 </Link>
             </Wrapper>
