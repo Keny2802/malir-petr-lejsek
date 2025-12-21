@@ -7,6 +7,7 @@ import Header from "../../components/Header";
 import Hero from "../../sections/Hero";
 import About from "../../sections/About";
 import Services from "../../sections/Services";
+import Calculator from "../../sections/Calculator";
 import References from "../../sections/References";
 import Contact from "../../sections/Contact";
 import Footer from "../../components/Footer";
@@ -19,6 +20,7 @@ const Home = () => {
       <Hero />
       <About />
       <Services />
+      <Calculator />
       <References />
       <Contact />
       <Footer />

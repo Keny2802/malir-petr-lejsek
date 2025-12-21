@@ -86,7 +86,8 @@ const Contact = () => {
                                     required
                                     type="tel"
                                     name="tel"
-                                    placeholder="+420 XXX XXX XXX"
+                                    // XXX XXX XXX
+                                    placeholder="+420 601 123 456"
                                     spellCheck={false}
                                     autoComplete="tel"
                                     aria-label="Telefonní číslo"

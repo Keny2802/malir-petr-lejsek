@@ -1,6 +1,7 @@
 "use client";
 
 import {
+    useState,
     useRef,
     useEffect,
     Fragment
@@ -12,6 +13,9 @@ import {
     ChevronDoubleRightIcon
 } from "@heroicons/react/24/solid";
 import {
+    referencesCarouselSet
+} from "../sets/referencesCarouselSet";
+import {
     gsap
 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -22,6 +26,19 @@ import PageLabel from "../components/pageLabel";
 gsap.registerPlugin(ScrollTrigger);
 
 const References = () => {
+    const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+    const previousCarouselItem = () => {
+        setCurrentIndex((prev) => (
+            prev === 0 ? referencesCarouselSet.length - 1 : prev - 1
+        ));
+    };
+
+    const nextCarouselItem = () => {
+        setCurrentIndex((prev) => (
+            prev === referencesCarouselSet.length - 1 ? 0 : prev + 1
+        ));
+    };
     const animationRef = useRef<HTMLDivElement>(null);
     
     useEffect(() => {
@@ -82,17 +99,27 @@ const References = () => {
                         </Wrapper>
                     </Wrapper>
                     <Wrapper className="flex flex-col gap-4 md:gap-6 lg:gap-6 max-w-2xl">
-                        <p className="text-[15px] md:text-base lg:text-lg">
-                            „S Profi Malbami jsme naprosto spokojeni. Celý byt nám vymalovali rychle, precizně a bez jakýchkoli starostí. Oceňujeme hlavně jejich profesionální přístup, čistotu během práce a ochotu poradit s výběrem barev. Výsledek předčil naše očekávání a určitě je doporučíme všem, kdo chtějí kvalitní malířské služby.“
-                        </p>
-                        <h3 className="text-xl md:text-2xl lg:text-[28px] font-semibold">
-                            Jan Novák
-                        </h3>
+                        <Wrapper className="min-h-30 max-h-130 md:min-h-40 md:max-h-140 lg:min-h-50 lg:max-h-150">
+                            <p className="text-[15px] md:text-base lg:text-lg">
+                                „{referencesCarouselSet[currentIndex].reference}“
+                            </p>
+                            <h3 className="text-xl md:text-2xl lg:text-[28px] font-semibold">
+                                {referencesCarouselSet[currentIndex].referenceName}
+                            </h3>
+                        </Wrapper>
                         <Wrapper className="flex justify-between items-center gap-4 md:gap-6 lg:gap-8">
-                            <button className="p-2 md:p-3 lg:p-4 bg-[#1e1e1e] text-white rounded-full cursor-pointer">
+                            <button
+                            className="p-2 md:p-3 lg:p-4 bg-[#1e1e1e] text-white rounded-full cursor-pointer"
+                            onClick={(e) => {
+                                previousCarouselItem();
+                            }}>
                                 <ChevronDoubleLeftIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />           
                             </button>
-                            <button className="p-2 md:p-3 lg:p-4 bg-[#1e1e1e] text-white rounded-full">
+                            <button
+                            className="p-2 md:p-3 lg:p-4 bg-[#1e1e1e] text-white rounded-full"
+                            onClick={(e) => {
+                                nextCarouselItem();
+                            }}>
                                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />           
                             </button>
                         </Wrapper>

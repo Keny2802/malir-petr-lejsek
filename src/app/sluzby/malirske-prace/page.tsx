@@ -62,6 +62,20 @@ const App = () => {
                             <p className="absolute top-3 right-5 text-xl md:text-2l lg:text-3xl text-white font-black">
                                 {currentIndex + 1}
                             </p>
+                            <button
+                            className="p-2 md:p-3 lg:p-4 absolute top-1/2 left-3 -translate-y-1/2 bg-[#1e1e1e] text-white rounded-full cursor-pointer"
+                            onClick={(e) => {
+                            previousCarouselImage();
+                            }}>
+                                <ChevronDoubleLeftIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />           
+                            </button>
+                            <button
+                            className="p-2 md:p-3 lg:p-4 absolute top-1/2 right-3 -translate-y-1/2 bg-[#1e1e1e] text-white rounded-full"
+                            onClick={(e) => {
+                                nextCarouselImage();
+                            }}>
+                                <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />           
+                            </button>
                         </Wrapper>
                         <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex items-center gap-2 md:gap-4 lg:gap-6 w-full md:w-1/2">
                             {
@@ -84,7 +98,7 @@ const App = () => {
                                 ))
                             }
                         </Wrapper>
-                        <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-between items-center gap-4 md:gap-6 lg:gap-8">
+                        {/* <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-between items-center gap-4 md:gap-6 lg:gap-8">
                             <button
                             className="p-2 md:p-3 lg:p-4 bg-[#1e1e1e] text-white rounded-full cursor-pointer"
                             onClick={(e) => {
@@ -99,7 +113,7 @@ const App = () => {
                             }}>
                                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />           
                             </button>
-                        </Wrapper>
+                        </Wrapper> */}
                     </Wrapper>
                     <Wrapper className="w-full md:w-1/2">
                         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
