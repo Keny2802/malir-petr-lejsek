@@ -8,16 +8,18 @@ import {
 } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import Image from "next/image";
+import clsx from "clsx";
 
 import Wrapper from "./Wrapper";
 
 const ContactHeader = () => {
+
     return (
         <Fragment>
             <Wrapper
-            className="p-2 md:p-3 lg:p-4 bg-white shadow-md contact-header"
+            className={clsx(`p-4 md:p-5 lg:p-6 bg-white shadow-md w-full z-40 contact-header`)}
             id="contact-header">
-                <Wrapper className="flex justify-between items-center gap-2 md:gap-4 lg:gap-6">
+                <Wrapper className="flex justify-between items-center flex-wrap gap-2 md:gap-4 lg:gap-6">
                     <Link
                     href="tel:+420603243852"
                     className="flex items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">

@@ -49,7 +49,7 @@ const Hero = () => {
                 loading="lazy"
                 decoding="async"
                 draggable={false}
-                className="w-full object-cover"
+                className="w-full min-h-screen object-cover"
                 />
                 <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-4 md:gap-6 lg:gap-8 text-white text-center">
                     <h1 className="text-3xl md:text-[60px] lg:text-7xl font-extrabold md:max-w-7xl">
@@ -58,7 +58,7 @@ const Hero = () => {
                     <p className="text-xl md:text-[22px] lg:text-[26px] font-medium md:max-w-3xl">
                         Precizní práce, kvalitní materiály a čistý výsledek bez starostí. Postaráme se o vše - od přípravy až po finální úklid.
                     </p>
-                    <Wrapper className="flex justify-center items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
+                    <Wrapper className="p-4 md:p-5 lg:p-6 flex justify-center items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
                         <NoProofLink
                         href="kalkulace"
                         className="p-4 md:p-5 lg:p-6 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full md:w-75 rounded-md"
