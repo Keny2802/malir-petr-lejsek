@@ -15,7 +15,7 @@ const ContactHeader = () => {
     return (
         <Fragment>
             <Wrapper
-            className="p-2 md:p-3 lg:p-4 hidden md:block bg-white shadow-md contact-header"
+            className="p-2 md:p-3 lg:p-4 bg-white shadow-md contact-header"
             id="contact-header">
                 <Wrapper className="flex justify-between items-center gap-2 md:gap-4 lg:gap-6">
                     <Link

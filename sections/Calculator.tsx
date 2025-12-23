@@ -164,7 +164,7 @@ const Calculator = () => {
                                     Typ omyvatelnosti
                                 </h3>
                                 <Tabs
-                                tabs={["Otěruvzdorná", "Za mokra otěruvzdorná", "Omyvatellná"]}
+                                tabs={["Otěruvzdorná", "Za mokra otěruvzdorná", "Omyvatelná"]}
                                 activeIndex={washAbility}
                                 setActiveIndex={setWashAbility}
                                 setActiveTabString={setWashAbilityString}

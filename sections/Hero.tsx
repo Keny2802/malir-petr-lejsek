@@ -22,7 +22,7 @@ const Hero = () => {
 
     useEffect(() => {
         const setWindowToScrolled = () => {
-            if (window.scrollY > 0) {
+            if (window.scrollY > 10) {
                 setWindowScrolled(true);
             } else {
                 setWindowScrolled(false);
@@ -49,7 +49,7 @@ const Hero = () => {
                 loading="lazy"
                 decoding="async"
                 draggable={false}
-                className="w-full h-screen object-cover"
+                className="w-full object-cover"
                 />
                 <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-4 md:gap-6 lg:gap-8 text-white text-center">
                     <h1 className="text-3xl md:text-[60px] lg:text-7xl font-extrabold md:max-w-7xl">
