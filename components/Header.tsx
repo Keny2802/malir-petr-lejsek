@@ -93,6 +93,21 @@ const Header = () => {
                                             {headerItem.link}
                                         </NoProofLink>
                                     </li>
+                                    {
+                                        headerItem.pageLink && (
+                                            <li className="header-item">
+                                        <Link
+                                            href={headerItem.pageHref!}
+                                            className="text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]"
+                                            onClick={(e) => {
+                                                setMobileMenuClicked(false);
+                                            }}
+                                            >
+                                                {headerItem.pageLink}
+                                            </Link>
+                                        </li>
+                                        )
+                                    }
                                 </Fragment>
                             ))
                         }

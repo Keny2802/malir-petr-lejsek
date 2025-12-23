@@ -20,13 +20,13 @@ const ContactHeader = () => {
                 <Wrapper className="flex justify-between items-center gap-2 md:gap-4 lg:gap-6">
                     <Link
                     href="tel:+420603243852"
-                    className="flex items-center gap-2 md:gap-2.5 lg:gap-3">
+                    className="flex items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
                         <DevicePhoneMobileIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
                         +420 603 243 852
                     </Link>
                     <Link
                     href="mailto:info@profimalby.cz"
-                    className="flex items-center gap-2 md:gap-2.5 lg:gap-3">
+                    className="flex items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
                         <EnvelopeIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
                         info@profimalby.cz
                     </Link>
@@ -35,17 +35,6 @@ const ContactHeader = () => {
                         <p className="text-sm md:text-[15px] lg:text-base">
                             Po-Pá: 07:00 - 20:00
                         </p>
-                        {/* <Link
-                        href="https://www.facebook.com/profimalby"
-                        rel="nofollow"
-                        target="_blank">
-                            <Image
-                            height={20}
-                            width={20}
-                            src="/Fotky/Ikonky/Facebook.svg"
-                            alt="Facebook ikonka"
-                            />
-                        </Link> */}
                     </Wrapper>
                     <Link
                     href="https://www.facebook.com/profimalby"

@@ -101,10 +101,10 @@ const MobileMenu = ({ ...props }: componentProps) => {
                         {
                             headerSet.map((headerItem, headerItemIndex) => (
                                 <Fragment key={headerItemIndex}>
-                                    <li className="mobile-header-item">
+                                    <li className="header-item">
                                         <NoProofLink
                                         href={headerItem.href}
-                                        className={clsx(`${isActiveLink === headerItem.href && "text-[#a11106]"} text-[15px] md:text-base lg:text-lg transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}
+                                        className={clsx(`${isActiveLink === headerItem.href && "text-[#a11106]"} text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}
                                         onClick={(e) => {
                                             setLinkWithoutHash(e, headerItem.href!);
                                             setMobileMenuClicked(false);
@@ -113,6 +113,21 @@ const MobileMenu = ({ ...props }: componentProps) => {
                                             {headerItem.link}
                                         </NoProofLink>
                                     </li>
+                                    {
+                                        headerItem.pageLink && (
+                                            <li className="header-item">
+                                        <Link
+                                            href={headerItem.pageHref!}
+                                            className="text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]"
+                                            onClick={(e) => {
+                                                setMobileMenuClicked(false);
+                                            }}
+                                            >
+                                                {headerItem.pageLink}
+                                            </Link>
+                                        </li>
+                                        )
+                                    }
                                 </Fragment>
                             ))
                         }
