@@ -136,17 +136,22 @@ const Calculator = () => {
                                 <h3 className="text-2xl md:text-3xl font-bold">
                                     Podlahová plocha (m²)
                                 </h3>
-                                <input
-                                type="number"
-                                value={areaValue}
-                                step={1}
-                                aria-invalid={false}
-                                aria-required={false}
-                                className="p-2 md:p-3 lg:p-4 bg-[#e7e6e6] rounded-md focus:outline-none"
-                                onChange={(e) => {
-                                    setAreaValue(e.target.value);
-                                }}
-                                />
+                                <Wrapper className="relative">
+                                    <input
+                                    type="number"
+                                    value={areaValue}
+                                    step={1}
+                                    aria-invalid={false}
+                                    aria-required={false}
+                                    className="p-2 md:p-3 lg:p-4 bg-[#e7e6e6] rounded-md w-full focus:outline-none"
+                                    onChange={(e) => {
+                                        setAreaValue(e.target.value);
+                                    }}
+                                    />
+                                    <span className="border-l border-gray-300 pl-2 absolute top-1/4 right-5 text-base md:text-text-lg lg:text-xl text-gray-600">
+                                        m²
+                                    </span>
+                                </Wrapper>
                             </Wrapper>
                             <Wrapper className="flex gap-2 md:gap-2.5 lg:gap-3 flex-col">
                                 <h3 className="text-2xl md:text-3xl font-bold">
@@ -181,10 +186,17 @@ const Calculator = () => {
                                 setActiveTabString={setrealEstateStatusString}
                                 />
                             </Wrapper>
-                            <button
-                            disabled={isDisabled}
+                            <NoProofLink
+                            // disabled={isDisabled}
+                            href="vysledek-kalkulace"
                             onClick={(e) => {
+                                e.preventDefault();
+
                                 handleCalculate();
+                                
+                                const resultTimeout = setTimeout(() => {
+                                    setLinkWithoutHash(e, "vysledek-kalkulace");
+                                }, 1500);
                             }}
                             className={clsx(
                             "mt-4 md:mt-6 lg:mt-8 p-4 md:p-5 lg:p-6 flex justify-center items-center gap-4 md:gap-6 lg:gap-8 rounded-md text-white font-bold transition-opacity duration-300 ease-in-out",
@@ -208,11 +220,13 @@ const Calculator = () => {
                                     )
                                 }
                                 Spočítat
-                            </button>
+                            </NoProofLink>
                         </Wrapper>
                         {
                         showResult && result && (
-                            <Wrapper className="mt-4 md:mt-6 lg:mt-8 p-4 md:p-6 lg:p-8 border-t border-gray-300 rounded-md">
+                            <Wrapper
+                            className="mt-4 md:mt-6 lg:mt-8 p-4 md:p-6 lg:p-8 border-t border-gray-300 rounded-md"
+                            id="vysledek-kalkulace">
                                 <h3 className="mb-2 md:mb-4 lg:mb-6 text-xl md:text-[22px] lg:text-2xl font-bold">
                                 Orientační cena
                                 </h3>

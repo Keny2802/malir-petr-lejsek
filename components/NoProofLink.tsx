@@ -10,7 +10,7 @@ import Link from "next/link";
 interface NoProofLinkProps {
     attributes?: React.HTMLAttributes<HTMLAnchorElement>;
     className?: string;
-    href?: string;
+    href?: string | boolean;
     onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
     children?: ReactNode;
 };

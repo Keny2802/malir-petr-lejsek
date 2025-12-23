@@ -26,7 +26,7 @@ const Tabs = ({ ...props }: tabsType) => {
     
     return (
         <Fragment>
-            <Wrapper className={clsx(`${className} flex items-center gap-2 md:gap-3 lg:gap-4`)}>
+            <Wrapper className={clsx(`${className} flex items-center flex-wrap gap-2 md:gap-3 lg:gap-4`)}>
                 {
                     tabs.map((tab, tabIndex) => (
                         <Wrapper

@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+input::-webkit-inner-spin-button {
+    appearance: none;
+}
