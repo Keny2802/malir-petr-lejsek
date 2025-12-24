@@ -111,11 +111,11 @@ const Contact = () => {
                                 aria-label="Zpráva"
                                 aria-required={true}
                                 aria-invalid={true}
-                                className="p-4 md:p-5 lg:p-6 bg-white text-black rounded-md focus:outline-none resize-none w-full max-w-120 min-h-75"
+                                className="p-4 md:p-5 lg:p-6 bg-white text-black rounded-md focus:outline-none resize-none w-full max-w-120 min-h-50 h-full"
                                 id="message"></textarea>
                             </Wrapper>
                         </Wrapper>
-                        <button className="mt-4 md:mt-6 lg:mt-8 p-4 md:p-5 lg:p-6 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full md:w-max rounded-2xl cursor-pointer">
+                        <button className="mt-4 md:mt-6 lg:mt-8 p-4 md:p-5 lg:p-6 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full rounded-2xl cursor-pointer">
                             Zaslat zprávu
                             <PaperAirplaneIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />
                         </button>

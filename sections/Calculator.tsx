@@ -148,7 +148,7 @@ const Calculator = () => {
                                         setAreaValue(e.target.value);
                                     }}
                                     />
-                                    <span className="border-l border-gray-300 pl-2 absolute top-1/4 right-5 text-base md:text-text-lg lg:text-xl text-gray-600">
+                                    <span className="border-l border-gray-300 pl-2 absolute top-1/4 right-5 text-base md:text-text-lg lg:text-xl text-gray-600 cursor-none">
                                         m²
                                     </span>
                                 </Wrapper>
@@ -194,7 +194,7 @@ const Calculator = () => {
 
                                 handleCalculate();
                                 
-                                const resultTimeout = setTimeout(() => {
+                                setTimeout(() => {
                                     setLinkWithoutHash(e, "vysledek-kalkulace");
                                 }, 1500);
                             }}
