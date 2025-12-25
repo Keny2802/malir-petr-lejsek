@@ -6,8 +6,8 @@ import "./globals.css";
 import LoadingScreen from "../../components/LoadingScreen";
 
 export const metadata: Metadata = {
-  title: "Profi Malby Petr Lejska | Malíř a natěrač",
-  description: "Profi Malby Petr Lejska nabízí profesionální malířské a natěračské práce. Precizní provedení, cistá práce a férové ceny.",
+  title: "Malování bytů Brno | Profi Malby Petr Lejska",
+  description: "Profesionální malování bytů v Brně a okolí. Precizní práce, čisté provedení, kvalitní barvy a férové ceny. Nezávazná kalkulace zdarma.",
   icons: {
     icon: [
       {
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     "profesionální malíř Brno"
   ],
   openGraph: {
-    title: "Profi Malby Petr Lejska | Malíř Brno",
-    description: "Profesionální malířské a natěračské práce v Brně. Kvalita, čistota a spolehlivost.",
+    title: "Malování bytů Brno | Profi Malby Petr Lejska",
+    description: "Hledáte spolehlivého malíře bytů v Brně? Zajistíme profesionální výmalbu bez starostí.",
     url: "https://www.profimaby.cz",
     siteName: "Profi Malby Petr Lejska",
     locale: "cs_CZ",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/Fotky/Clean Logo.png",
-        alt: "Profi Malby Petr Lejska - malířské práce",
+        alt: "Malování bytů Brno - Profi Malby Petr Lejska",
         type: "image/png",
         width: 1200,
         height: 630,
