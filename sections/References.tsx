@@ -77,7 +77,7 @@ const References = () => {
                     <Wrapper className="flex flex-col gap-4 md:gap-6 lg:gap-6 max-w-2xl">
                         <Wrapper className="flex flex-col gap-2 md:gap-2.5 lg:gap-3">
                             <Wrapper className="flex items-center gap-2 md:gap-3 lg:gap-4">
-                                <UserGroupIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+                                <UserGroupIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                                 <p className="text-xl md:text-2xl lg:text-3xl font-black">
                                     1000+
                                 </p>
@@ -88,7 +88,7 @@ const References = () => {
                         </Wrapper>
                         <Wrapper className="flex flex-col gap-2 md:gap-2.5 lg:gap-3">
                             <Wrapper className="flex items-center gap-2 md:gap-3 lg:gap-4">
-                                <CheckCircleIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-[#4caf50]" />
+                                <CheckCircleIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-[#4caf50]" />
                                 <p className="text-xl md:text-2xl lg:text-3xl font-black">
                                     1000+
                                 </p>
@@ -113,14 +113,14 @@ const References = () => {
                             onClick={(e) => {
                                 previousCarouselItem();
                             }}>
-                                <ChevronDoubleLeftIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />           
+                                <ChevronDoubleLeftIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer" />           
                             </button>
                             <button
                             className="p-2 md:p-3 lg:p-4 bg-[#1e1e1e] text-white rounded-full"
                             onClick={(e) => {
                                 nextCarouselItem();
                             }}>
-                                <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />           
+                                <ChevronDoubleRightIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer" />           
                             </button>
                         </Wrapper>
                     </Wrapper>

@@ -71,7 +71,7 @@ const MobileMenu = ({ ...props }: componentProps) => {
             <Activity mode={isMobileMenuClicked ? "visible" : "hidden"}>
                 <Fragment>
                     <Wrapper
-                    className="fixed md:hidden inset-0 z-50 bg-black/40"
+                    className="fixed lg:hidden inset-0 z-50 bg-black/40"
                     onClick={(e) => {
                         setMobileMenuClicked(false);
                     }}></Wrapper>
@@ -79,7 +79,7 @@ const MobileMenu = ({ ...props }: componentProps) => {
             </Activity>
             <Wrapper className={clsx(`
             ${className || ""}
-            ${isMobileMenuClicked ? "translate-x-0 md:-translate-x-full" : "-translate-x-full"}
+            ${isMobileMenuClicked ? "translate-x-0 lg:-translate-x-full" : "-translate-x-full"}
             p-4 fixed top-0 left-0 z-50 h-screen flex flex-col justify-between gap-2 md:gap-3 lg:gap-4 bg-white max-w-75 transition-transform duration-500 ease-linear
             `)}>
                 <Wrapper className="flex flex-col gap-4">
@@ -101,11 +101,11 @@ const MobileMenu = ({ ...props }: componentProps) => {
                             />
                         </Link>
                     </Wrapper>
-                    <ul className="flex flex-col gap-1 text-black mobile-header-list">
+                    <ul className="flex flex-col gap-3 text-black mobile-header-list">
                         {
                             headerSet.map((headerItem, headerItemIndex) => (
                                 <Fragment key={headerItemIndex}>
-                                    <li className="header-item">
+                                    <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
                                         <NoProofLink
                                         href={headerItem.href}
                                         className={clsx(`${isActiveLink === headerItem.href && "text-[#a11106]"} text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}
@@ -125,7 +125,7 @@ const MobileMenu = ({ ...props }: componentProps) => {
                                     </li>
                                     {
                                         headerItem.pageLink && (
-                                            <li className="header-item">
+                                            <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
                                         <Link
                                             href={headerItem.pageHref!}
                                             className="text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]"

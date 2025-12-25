@@ -117,7 +117,7 @@ const Contact = () => {
                         </Wrapper>
                         <button className="mt-4 md:mt-6 lg:mt-8 p-4 md:p-5 lg:p-6 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full rounded-2xl cursor-pointer">
                             Zaslat zprávu
-                            <PaperAirplaneIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />
+                            <PaperAirplaneIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer" />
                         </button>
                     </form>
                     <ContactInfo />

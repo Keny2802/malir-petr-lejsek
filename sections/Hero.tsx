@@ -65,7 +65,7 @@ const Hero = () => {
                         onClick={(e) => {
                             setLinkWithoutHash(e, "kalkulace");
                         }}>
-                            <CalculatorIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />
+                            <CalculatorIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer" />
                             Nezávazná kalkulace
                         </NoProofLink>
                         <NoProofLink
@@ -89,7 +89,7 @@ const Hero = () => {
                             onClick={(e) => {
                                 setLinkWithoutHash(e, "contact-header");
                             }}>
-                                <ChevronDoubleUpIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+                                <ChevronDoubleUpIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                             </NoProofLink>
                         </Fragment>
                     )
@@ -97,7 +97,7 @@ const Hero = () => {
                 <Link
                 href="tel:+420603243852"
                 className="p-2 md:p-3 lg:p-4 bg-white text-black rounded-full">
-                    <DevicePhoneMobileIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+                    <DevicePhoneMobileIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                 </Link>
             </Wrapper>
         </Fragment>

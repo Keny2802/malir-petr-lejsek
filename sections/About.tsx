@@ -51,8 +51,8 @@ const About = () => {
             // ref={animationRef}
             >
                 <PageLabel pageLabelText="O nás" />
-                <Wrapper className="flex justify-between items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
-                    <Wrapper className="flex justify-center md:items-center flex-col gap-4 md:gap-6 lg:gap-8 w-full md:w-1/2">
+                <Wrapper className="flex justify-between items-center flex-col md:flex-col lg:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
+                    <Wrapper className="flex justify-center md:items-center flex-col gap-4 md:gap-6 lg:gap-8 w-full">
                         <Image
                         width={700}
                         height={700}
@@ -63,46 +63,46 @@ const About = () => {
                         draggable={false}
                         className="rounded-md"
                         />
-                        <Wrapper className="py-4 md:py-6 lg:py-8 grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+                        <Wrapper className="py-4 md:py-6 lg:py-8 grid md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
                             <Wrapper className="flex items-center gap-2">
-                                <CheckCircleIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-[#4caf50]" />
+                                <CheckCircleIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-[#4caf50]" />
                                 <p className="text-base md:text-[17px] lg:text-lg font-medium">
                                     Zadáte poptávku
                                 </p>
                             </Wrapper>
                             <Wrapper className="flex items-center gap-2">
-                                <CheckCircleIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-[#4caf50]" />
+                                <CheckCircleIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-[#4caf50]" />
                                 <p className="text-base md:text-[17px] lg:text-lg font-medium">
                                     Přijedeme včas
                                 </p>
                             </Wrapper>
                             <Wrapper className="flex items-center gap-2">
-                                <CheckCircleIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-[#4caf50]" />
+                                <CheckCircleIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-[#4caf50]" />
                                 <p className="text-base md:text-[17px] lg:text-lg font-medium">
                                     Precizní provedení
                                 </p>
                             </Wrapper>
                             <Wrapper className="flex items-center gap-2">
-                                <CheckCircleIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-[#4caf50]" />
+                                <CheckCircleIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-[#4caf50]" />
                                 <p className="text-base md:text-[17px] lg:text-lg font-medium">
                                     Čistota po práci
                                 </p>
                             </Wrapper>
                             <Wrapper className="flex items-center gap-2">
-                                <CheckCircleIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-[#4caf50]" />
+                                <CheckCircleIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-[#4caf50]" />
                                 <p className="text-base md:text-[17px] lg:text-lg font-medium">
                                     Dodržujeme termíny
                                 </p>
                             </Wrapper>
                             <Wrapper className="flex items-center gap-2">
-                                <CheckCircleIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-[#4caf50]" />
+                                <CheckCircleIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-[#4caf50]" />
                                 <p className="text-base md:text-[17px] lg:text-lg font-medium">
                                     Kvalitní termíny
                                 </p>
                             </Wrapper>
                         </Wrapper>
                     </Wrapper>
-                    <Wrapper className="flex justify-center items-center flex-col gap-4 md:gap-6 lg:gap-8 w-full md:w-1/2">
+                    <Wrapper className="flex justify-center items-center flex-col gap-4 md:gap-6 lg:gap-8 w-full">
                         <h2 className="text-3xl md:text-4xl lg:text-[40px] text-center font-extrabold max-w-7xl">
                             Jsme profesionální malíři a natěrači s více než 25letou zkušeností.
                         </h2>
