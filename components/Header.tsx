@@ -3,8 +3,12 @@
 import {
     useState,
     useEffect,
+    useLayoutEffect,
     Fragment
 } from "react";
+import {
+    usePathname
+} from "next/navigation";
 import {
     DevicePhoneMobileIcon,
     Bars2Icon,
@@ -26,6 +30,9 @@ const Header = () => {
     const [isHeaderScrolled, setHeaderScrolled] = useState<boolean>(false);
     const [isMobileMenuClicked, setMobileMenuClicked] = useState<boolean>(false);
     const [isActiveLink, setActiveLink] = useState<string>("");
+    const pathName = usePathname();
+
+    const isHome = pathName === "/" ? "" : "/";
 
     useEffect(() => {
         const sections = document.querySelectorAll(".section");
@@ -54,7 +61,7 @@ const Header = () => {
         };
     }, []);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const setHeaderToScrolled = () => {
             if (window.scrollY > 0) {
                 setHeaderScrolled(true);
@@ -90,7 +97,13 @@ const Header = () => {
                                             setMobileMenuClicked(false);
                                         }}
                                         >
-                                            {headerItem.link}
+                                            {
+                                            pathName === "/" ? headerItem.link : 
+                                            headerItem.link !== "Domů" &&
+                                            headerItem.link !== "O nás" &&
+                                            headerItem.link !== "Realizace" &&
+                                            headerItem.link !== "Ceník" && headerItem.link
+                                            }
                                         </NoProofLink>
                                     </li>
                                     {

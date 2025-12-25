@@ -21,10 +21,10 @@ export const headerSet:headerSetProps[] = [
         link: "Reference",
         href: "reference"
     },
-    {
-        link: "Ceník",
-        href: "cenik"
-    },
+    // {
+    //     link: "Ceník",
+    //     href: "cenik"
+    // },
     {
         link: "Kontakt",
         href: "kontakt"

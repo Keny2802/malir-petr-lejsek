@@ -8,6 +8,7 @@ import Hero from "../../sections/Hero";
 import About from "../../sections/About";
 import Services from "../../sections/Services";
 import Calculator from "../../sections/Calculator";
+import Work from "../../sections/Work";
 import References from "../../sections/References";
 import Contact from "../../sections/Contact";
 import Footer from "../../components/Footer";
@@ -21,6 +22,7 @@ const Home = () => {
       <About />
       <Services />
       <Calculator />
+      <Work />
       <References />
       <Contact />
       <Footer />
