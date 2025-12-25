@@ -32,8 +32,6 @@ const Header = () => {
     const [isActiveLink, setActiveLink] = useState<string>("");
     const pathName = usePathname();
 
-    const isHome = pathName === "/" ? "" : "/";
-
     useEffect(() => {
         const sections = document.querySelectorAll(".section");
 

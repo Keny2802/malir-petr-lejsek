@@ -1,10 +1,12 @@
 import {
     useState,
     useEffect,
-    useLayoutEffect,
     Fragment,
     Activity
 } from "react";
+import {
+    usePathname
+} from "next/navigation";
 import {
     DevicePhoneMobileIcon
 } from "@heroicons/react/24/solid";
@@ -29,6 +31,7 @@ interface componentProps {
 const MobileMenu = ({ ...props }: componentProps) => {
     const [isActiveLink, setActiveLink] = useState<string>("");
     const dynamicYear = new Date().getFullYear();
+    const pathName = usePathname();
 
     useEffect(() => {
         const sections = document.querySelectorAll(".section");
@@ -111,7 +114,13 @@ const MobileMenu = ({ ...props }: componentProps) => {
                                             setMobileMenuClicked(false);
                                         }}
                                         >
-                                            {headerItem.link}
+                                            {
+                                            pathName === "/" ? headerItem.link : 
+                                            headerItem.link !== "Domů" &&
+                                            headerItem.link !== "O nás" &&
+                                            headerItem.link !== "Realizace" &&
+                                            headerItem.link !== "Ceník" && headerItem.link
+                                            }
                                         </NoProofLink>
                                     </li>
                                     {
