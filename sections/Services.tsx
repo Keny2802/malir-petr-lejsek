@@ -11,17 +11,22 @@ import {
 import {
     gsap
 } from "gsap";
+import {
+    usePathname
+} from "next/navigation";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
 
 import Wrapper from "../components/Wrapper";
+import PathLink from "../components/PathLink";
 import PageLabel from "../components/pageLabel";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
     const animationRef = useRef<HTMLDivElement>(null);
+    const pathName = usePathname();
 
     useEffect(() => {
         if (!animationRef.current) return;
@@ -46,6 +51,17 @@ const Services = () => {
             id="sluzby"
             // ref={animationRef}
             >
+                {
+                    pathName === "/sluzby" && (
+                        <PathLink
+                        rootHref="/"
+                        rootLink="Domov"
+                        folderHref={pathName}
+                        folderLink="Služby"
+                        className="mb-2 md:mb-4 lg:mb-6"
+                        />
+                    )
+                }
                 <PageLabel pageLabelText="Služby" />
                 <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-3 lg:gap-4">
                     <h2 className="text-3xl md:text-4xl lg:text-[40px] text-center font-extrabold max-w-7xl">

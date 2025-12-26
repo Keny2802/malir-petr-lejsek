@@ -31,7 +31,7 @@ const Work = () => {
                         workSet.map((workItem, workItemIndex) => {
                             return (
                                 <Fragment key={workItemIndex}>
-                                    <Wrapper className="p-4 md:p-5 lg:p-6 bg-white shadow-lg rounded-2xl flex flex-col gap-4 md:gap-6 lg:gap-8 w-full md:w-max">
+                                    <Wrapper className="p-4 md:p-5 lg:p-6 bg-white shadow-lg rounded-2xl flex flex-col gap-4 md:gap-6 lg:gap-8 w-full md:max-w-150">
                                         <Wrapper className="flex justify-between items-center gap-4 md:gap-5 lg:gap-6">
                                             <h3 className="text-xl md:text-[22px] lg:text-2xl font-bold">
                                                 {workItem.workHeading}
@@ -41,16 +41,16 @@ const Work = () => {
                                             </span>
                                         </Wrapper>
                                         <Image
-                                        height={500}
-                                        width={500}
+                                        height={600}
+                                        width={600}
                                         src={workItem.workImage}
                                         alt={`Fotka realizace - ${workItem.workHeading}`}
                                         loading="lazy"
                                         decoding="async"
                                         draggable={false}
-                                        className="mt-4 md:mt-6 lg:mt-8 rounded-2xl"
+                                        className="mt-4 md:mt-6 lg:mt-8 w-full md:max-w-150 rounded-2xl"
                                         />
-                                        <p className="text-[15px] md:text-base lg:text-lg md:max-w-125">
+                                        <p className="text-[15px] md:text-base lg:text-lg md:max-w-150">
                                             {workItem.workDescription}
                                         </p>
                                     </Wrapper>

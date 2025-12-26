@@ -11,11 +11,15 @@ import {
 import {
     paintingOnKeyServicesSet
 } from "../../../../sets/paintingOnKeyServicesSet";
+import {
+    usePathname
+} from "next/navigation";
 import Image from "next/image";
 
 import Wrapper from "../../../../components/Wrapper";
 import ContactHeader from "../../../../components/ContactHeader";
 import Header from "../../../../components/Header";
+import PathLink from "../../../../components/PathLink";
 import PageLabel from "../../../../components/pageLabel";
 import NoProofLink from "../../../../components/NoProofLink";
 import setLinkWithoutHash from "../../../../functions/setLinkWithoutHash";
@@ -25,6 +29,7 @@ import Footer from "../../../../components/Footer";
 
 const Content = () => {
     const [currentIndex, setCurrentIndex] = useState<number>(0);
+    const pathName = usePathname();
 
     const previousCarouselImage = () => {
         setCurrentIndex((prev) => (
@@ -45,6 +50,15 @@ const Content = () => {
             <Wrapper
             className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#e7e6e6] shadow-md"
             id="malovani-na-klic">
+                <PathLink
+                rootHref="/"
+                rootLink="Domov"
+                folderHref="/sluzby"
+                folderLink="Služby"
+                siteHref={pathName}
+                siteLink="Malování na klíč"
+                className="mb-2 md:mb-4 lg:mb-6"
+                />
                 <PageLabel pageLabelText="Služba malování na klíč" />
                 <Wrapper className="flex justify-evenly flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
                     <Wrapper>
@@ -77,7 +91,7 @@ const Content = () => {
                                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />           
                             </button>
                         </Wrapper>
-                        <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex items-center gap-2 md:gap-4 lg:gap-6 w-full md:w-1/2">
+                        <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex items-center gap-2 md:gap-4 lg:gap-6 flex-wrap w-full md:max-w-125">
                             {
                                 paintingOnKeyServicesSet.map((service, serviceIndex) => (
                                     <Fragment key={serviceIndex}>

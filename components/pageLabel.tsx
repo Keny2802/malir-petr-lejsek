@@ -28,7 +28,7 @@ const PageLabel = ({ ...props }: pageLabelProps) => {
             <Wrapper className={clsx(`
             ${className || ""}
             ${String(className).includes("text-") || String(className).includes("text-[") ? className : "text-[#a11106]"}
-            ${String(className).includes("text-") || String(className).includes("text-[") ? className : "text-lg md:text-xl lg:text-2xl"}
+            ${String(className).includes("text-") || String(className).includes("text-[") ? className : "text-xl md:text-[22px] lg:text-[25px]"}
             ${String(className).includes("font-") ? className : "font-bold"}
             ${String(className).includes("mb-") ? className : "mb-6"}
             ${String(className).includes("p-") || String(className).includes("px-") || String(className).includes("py-") ? className : "px-4 py-3"}

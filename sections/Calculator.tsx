@@ -119,7 +119,7 @@ const Calculator = () => {
                     </p>
                 </Wrapper>
                 <Wrapper className="flex justify-center items-center flex-col">
-                    <Wrapper className="mt-4 md:mt-6 lg:mt-8 p-4 md:p-6 lg:p-8 bg-white shadow-md rounded-md w-full md:w-1/2">
+                    <Wrapper className="mt-4 md:mt-6 lg:mt-8 p-4 md:p-6 lg:p-8 bg-white shadow-md rounded-md w-full lg:w-3/4">
                         <Wrapper className="flex gap-4 md:gap-6 lg:gap-8 flex-col">
                             <Wrapper className="flex gap-2 md:gap-2.5 lg:gap-3 flex-col">
                                 <h3 className="text-2xl md:text-3xl font-bold">

@@ -20,5 +20,17 @@ export const serviceSet5:paintingServicesProps[] = [
     {
         imageSrc: "/Fotky/Natery fasad (5).jpg",
         imageAlt: "Ukázka nátěru fasády Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
-    }
+    },
+    {
+        imageSrc: "/Fotky/Natery fasad (6).jpg",
+        imageAlt: "Ukázka nátěru fasády Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/Natery fasad (7).jpg",
+        imageAlt: "Ukázka nátěru fasády Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/Natery fasad (8).jpg",
+        imageAlt: "Ukázka nátěru fasády Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
 ];

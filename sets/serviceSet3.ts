@@ -20,5 +20,13 @@ export const serviceSet3:paintingServicesProps[] = [
     {
         imageSrc: "/Fotky/Nastrik radiatoru (5).jpg",
         imageAlt: "Ukázka nástřiku radiátoru Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
-    }
+    },
+    {
+        imageSrc: "/Fotky/Nastrik radiatoru (6).jpg",
+        imageAlt: "Ukázka nástřiku radiátoru Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/Nastrik radiatoru (7).jpg",
+        imageAlt: "Ukázka nástřiku radiátoru Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
 ];

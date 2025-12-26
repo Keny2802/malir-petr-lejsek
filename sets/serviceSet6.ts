@@ -20,5 +20,9 @@ export const serviceSet6:paintingServicesProps[] = [
     {
         imageSrc: "/Fotky/Natery strech (5).jpg",
         imageAlt: "Ukázka nátěru střechy Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/Natery strech (6).jpg",
+        imageAlt: "Ukázka nátěru střechy Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     }
 ];
