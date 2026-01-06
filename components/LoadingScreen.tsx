@@ -43,7 +43,7 @@ const LoadingScreen = () => {
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="text-3xl md:text-4xl lg:text-6xl text-center text-black font-black drop-shadow-xl">
-                                    Vítejte v Profi Malby Petra Lejska
+                                    Vítejte v Profi Malby Petra Lejsky
                                 </motion.h1>
                                 <Logo />
                                 <Wrapper className="w-10 h-10 md:w-12 md:h-12 lg:w-15 lg:h-15 border-4 border-[#a11106] border-t-transparent rounded-full animate-spin"></Wrapper>

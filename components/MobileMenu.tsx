@@ -80,7 +80,7 @@ const MobileMenu = ({ ...props }: componentProps) => {
             <Wrapper className={clsx(`
             ${className || ""}
             ${isMobileMenuClicked ? "translate-x-0 lg:-translate-x-full" : "-translate-x-full"}
-            p-4 fixed top-0 left-0 z-50 h-screen flex flex-col justify-between gap-2 md:gap-3 lg:gap-4 bg-white max-w-75 transition-transform duration-500 ease-linear
+            p-4 fixed top-0 left-0 z-50 h-screen flex flex-col justify-between gap-2 md:gap-3 lg:gap-4 bg-[#f8c73c] max-w-75 transition-transform duration-500 ease-linear
             `)}>
                 <Wrapper className="flex flex-col gap-4">
                     <Wrapper className="flex justify-between items-center gap-2">
@@ -118,7 +118,8 @@ const MobileMenu = ({ ...props }: componentProps) => {
                                             pathName === "/" ? headerItem.link : 
                                             headerItem.link !== "Domů" &&
                                             headerItem.link !== "O nás" &&
-                                            headerItem.link !== "Realizace" &&
+                                            headerItem.link !== "Galerie" &&
+                                            headerItem.link !== "Zakázky" &&
                                             headerItem.link !== "Ceník" && headerItem.link
                                             }
                                         </NoProofLink>

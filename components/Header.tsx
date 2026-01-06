@@ -78,7 +78,7 @@ const Header = () => {
     return (
         <Fragment>
             <Wrapper
-            className={clsx(`p-4 md:p-5 lg:p-6 ${isHeaderScrolled && "fixed top-0 left-0"} bg-white shadow-md border-t border-gray-200 w-full z-40 transition-all duration-500 ease-in-out header`)}
+            className={clsx(`p-4 md:p-5 lg:p-6 ${isHeaderScrolled ? "fixed top-0 left-0" : "border-t border-gray-200"} bg-[#f8c73c] shadow-md w-full z-40 transition-all duration-500 ease-in-out header`)}
             id="header">
                 <Wrapper className="flex justify-between items-center gap-2 md:gap-4 lg:gap-6">
                     <Logo />
@@ -99,7 +99,8 @@ const Header = () => {
                                             pathName === "/" ? headerItem.link : 
                                             headerItem.link !== "Domů" &&
                                             headerItem.link !== "O nás" &&
-                                            headerItem.link !== "Realizace" &&
+                                            headerItem.link !== "Galerie" &&
+                                            headerItem.link !== "Zakázky" &&
                                             headerItem.link !== "Ceník" && headerItem.link
                                             }
                                         </NoProofLink>
@@ -107,16 +108,16 @@ const Header = () => {
                                     {
                                         headerItem.pageLink && (
                                             <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
-                                        <Link
-                                            href={headerItem.pageHref!}
-                                            className="text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]"
-                                            onClick={(e) => {
-                                                setMobileMenuClicked(false);
-                                            }}
-                                            >
-                                                {headerItem.pageLink}
-                                            </Link>
-                                        </li>
+                                                <Link
+                                                href={headerItem.pageHref!}
+                                                className="text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]"
+                                                onClick={(e) => {
+                                                    setMobileMenuClicked(false);
+                                                }}
+                                                >
+                                                    {headerItem.pageLink}
+                                                </Link>
+                                            </li>
                                         )
                                     }
                                 </Fragment>

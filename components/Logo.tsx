@@ -35,8 +35,8 @@ const Logo = ({ ...props }: LogoProps) => {
                 href={isHome ? "" : "/"}
                 className={clsx(`text-lg md:text-xl lg:text-2xl font-medium ${linkClassName}`)}>
                     <Image
-                    height={100}
-                    width={100}
+                    height={180}
+                    width={180}
                     src="/Fotky/Clean Logo.png"
                     alt="Malby Petr Lejska | Malíř Petr Lejska Logo"
                     loading="lazy"

@@ -27,6 +27,7 @@ const ContactInfo = () => {
                     <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
                         <Link
                         href="https://mapy.com/cs/zakladni?source=firm&id=594523&x=16.5614992&y=49.1658025&z=17"
+                        rel="noopener noreffer"
                         target="_blank"
                         className="flex items-center gap-2 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
                             <MapIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer transition-colors duration-300 ease-in-out hover:text-[#a11106]" />

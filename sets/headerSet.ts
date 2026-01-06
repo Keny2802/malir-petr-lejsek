@@ -10,12 +10,16 @@ export const headerSet:headerSetProps[] = [
         href: "o-nas"
     },
     {
+        link: "Galerie",
+        href: "galerie"
+    },
+    {
         pageLink: "Služby",
         pageHref: "/sluzby"
     },
     {
-        link: "Realizace",
-        href: "realizace"
+        link: "Zakázky",
+        href: "zakazky"
     },
     {
         link: "Reference",

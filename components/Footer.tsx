@@ -20,7 +20,7 @@ const Footer = () => {
     return (
         <Fragment>
             <Wrapper
-            className="border-t border-gray-300 bg-[#e7e6e6] shadow-m"
+            className="border-t border-gray-300 bg-[#f8c73c]/92 shadow-m"
             id="footer">
                 <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14">
                     <Logo />

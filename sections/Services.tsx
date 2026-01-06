@@ -46,8 +46,9 @@ const Services = () => {
 
     return (
         <Fragment>
+            {/* bg-[#e7e6e6] */}
             <Wrapper
-            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 border-t border-gray-300 bg-[#e7e6e6] shadow-md section"
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 border-t border-gray-300 bg-[#f8c73c]/92 shadow-md section"
             id="sluzby"
             // ref={animationRef}
             >
@@ -71,7 +72,7 @@ const Services = () => {
                         Moderní malování s precizním přístupem a dlouhou životností.
                     </p>
                 </Wrapper>
-                <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-evenly items-center flex-col md:flex-row flex-wrap gap-4 md:gap-5 lg:gap-6">
+                <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col md:flex-row flex-wrap gap-4 md:gap-8 lg:gap-16">
                     {
                         servicesSet.map((service, serviceIndex) => (
                             <Fragment key={serviceIndex}>
