@@ -6,6 +6,7 @@ import ContactHeader from "../../components/ContactHeader";
 import Header from "../../components/Header";
 import Hero from "../../sections/Hero";
 import About from "../../sections/About";
+import Gallery from "../../sections/Gallery";
 import Services from "../../sections/Services";
 import Calculator from "../../sections/Calculator";
 import Work from "../../sections/Work";
@@ -20,6 +21,7 @@ const Home = () => {
       <Header />
       <Hero />
       <About />
+      <Gallery />
       <Services />
       <Calculator />
       <Work />

@@ -33,7 +33,7 @@ const PageLabel = ({ ...props }: pageLabelProps) => {
             ${String(className).includes("mb-") ? className : "mb-6"}
             ${String(className).includes("p-") || String(className).includes("px-") || String(className).includes("py-") ? className : "px-4 py-3"}
                 rounded-full`)}>
-                <p className={clsx(`${pageLabelTextClassName || ""} ${pageLabelAdditContent ? "flex items-center gap-2" : null} page-label-text`)}>
+                <p className={clsx(`${pageLabelTextClassName || ""} ${pageLabelAdditContent ? "flex items-center gap-2" : null} uppercase page-label-text`)}>
                     {pageLabelAdditContent}
                     {pageLabelText}
                 </p>
