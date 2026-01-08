@@ -95,14 +95,15 @@ const Header = () => {
                                             setMobileMenuClicked(false);
                                         }}
                                         >
-                                            {
+                                            {/* {
                                             pathName === "/" ? headerItem.link : 
                                             headerItem.link !== "Domů" &&
                                             headerItem.link !== "O nás" &&
                                             headerItem.link !== "Galerie" &&
                                             headerItem.link !== "Zakázky" &&
                                             headerItem.link !== "Ceník" && headerItem.link
-                                            }
+                                            } */}
+                                            {headerItem.link}
                                         </NoProofLink>
                                     </li>
                                     {
@@ -123,6 +124,59 @@ const Header = () => {
                                 </Fragment>
                             ))
                         }
+                        <Wrapper className="group relative text-base md:text-[17px] lg:text-lg font-semibold cursor-pointer">
+                            Více
+                            <ul className="z-100 w-60 max-w-100 absolute top-full right-0 p-2 md:p-2.5 lg:p-3 mt-1 md:mt-1.5 lg:mt-2 bg-white shadow-md rounded-md scale-y-0 group-hover:scale-y-100 origin-top duration-200">
+                                {
+                                    [
+                                        {
+                                            href: "/vice/proc-si-vybrat-nas",
+                                            link: "Proč si vybrat nás"
+                                        },
+                                        {
+                                            href: "/vice/malovani-obyvaciho-pokoje",
+                                            link: "Malování obývacího pokoje"
+                                        },
+                                        {
+                                            href: "/vice/malovani-detskeho-pokoje",
+                                            link: "Malování dětského pokoje"
+                                        },
+                                        {
+                                            href: "/vice/malovani-kuchyne",
+                                            link: "Malování kuchyně"
+                                        },
+                                        {
+                                            href: "/vice/malovani-loznice",
+                                            link: "Malování ložnice"
+                                        },
+                                        {
+                                            href: "/vice/nater-oken",
+                                            link: "Nátěr oken"
+                                        },
+                                        {
+                                            href: "/vice/nater-dveri",
+                                            link: "Nátěr dveří"
+                                        },
+                                        {
+                                            href: "/vice/uklid-po-malovani",
+                                            link: "Úklid po malování"
+                                        }
+                                    ].map((link, linkIndex) => {
+                                        return (
+                                            <Fragment key={linkIndex}>
+                                                <li className="mt-1 md:mt-1.5 lg:mt-2 border-b border-gray-200 last:border-none drop-down-menu-item">
+                                                    <Link
+                                                    href={link.href}
+                                                    className="transition-colors duration-300 ease-in-out hover:text-[#a11106] drop-down-menu-link">
+                                                        {link.link}
+                                                    </Link>
+                                                </li>
+                                            </Fragment>
+                                        );
+                                    })
+                                }
+                            </ul>
+                        </Wrapper>
                     </ul>
                     <Link
                     href="tel:+420603243852"

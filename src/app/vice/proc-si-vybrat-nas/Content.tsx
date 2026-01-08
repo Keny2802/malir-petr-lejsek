@@ -36,14 +36,12 @@ const Content = () => {
                 <PathLink
                 rootHref="/"
                 rootLink="Domov"
-                folderHref="/vice"
-                folderLink="Více"
                 siteHref={pathName}
                 siteLink="Proč si vybrat nás"
                 className="mb-2 md:mb-4 lg:mb-6"
                 />
                 <PageLabel pageLabelText="Proč si vybrat nás" />
-                <FlexRow className="justify-start flex-wrap">
+                <FlexRow className="justify-start">
                     <FlexCol>
                         <h2 className="text-3xl md:text-4xl lg:text-[40px] text-center font-extrabold max-w-3xl">
                             Profesionální služby, Konzultace, zaměření a rozpočty zdarma

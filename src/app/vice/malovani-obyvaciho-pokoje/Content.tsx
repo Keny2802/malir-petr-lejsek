@@ -20,7 +20,6 @@ import PathLink from "../../../../components/PathLink";
 import PageLabel from "../../../../components/pageLabel";
 import FlexRow from "../../../../components/FlexRow";
 import FlexCol from "../../../../components/FlexCol";
-import Flex from "../../../../components/Flex";
 import References from "../../../../sections/References";
 import Contact from "../../../../sections/Contact";
 import Footer from "../../../../components/Footer";
@@ -74,8 +73,6 @@ const Content = () => {
                 <PathLink
                 rootHref="/"
                 rootLink="Domov"
-                folderHref="/vice"
-                folderLink="Více"
                 siteHref={pathName}
                 siteLink="Malování obývacího pokoje"
                 className="mb-2 md:mb-4 lg:mb-6"

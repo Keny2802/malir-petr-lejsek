@@ -2,8 +2,10 @@ import headerSetProps from "../types/headerSetProps";
 
 export const headerSet:headerSetProps[] = [
     {
-        link: "Domů",
-        href: "domu"
+        pageLink: "Domů",
+        // link: "Domů",
+        // href: "domu"
+        pageHref: "/"
     },
     {
         link: "O nás",
