@@ -9,9 +9,6 @@ import {
     CheckCircleIcon
 } from "@heroicons/react/24/solid";
 import {
-    motion
-} from "motion/react";
-import {
     gsap
 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";

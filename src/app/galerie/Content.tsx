@@ -76,8 +76,8 @@ const Content = () => {
                             return (
                                 <Fragment key={imageIndex}>
                                     <Image
-                                    width={500}
-                                    height={500}
+                                    width={800}
+                                    height={800}
                                     src={image}
                                     alt={`${imageIndex}. Ukázka práce v sekci galerii Malířství Profi Malby Brno | Petr Lejska`}
                                     loading="lazy"
