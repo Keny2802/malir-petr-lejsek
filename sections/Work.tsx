@@ -7,6 +7,7 @@ import {
     workSet
 } from "../sets/workSet";
 import Image from "next/image";
+import Link from "next/link";
 
 import Wrapper from "../components/Wrapper";
 import PageLabel from "../components/pageLabel";
@@ -26,31 +27,31 @@ const Work = () => {
                         Podívejte se na zakázky prací, které máme již za sebou.
                     </p>
                 </Wrapper>
-                <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col md:flex-row flex-wrap gap-4 md:gap-6 lg:gap-8">
+                <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col md:flex-row flex-wrap gap-2.5 md:gap-4 lg:gap-6">
                     {
                         workSet.map((workItem, workItemIndex) => {
                             return (
                                 <Fragment key={workItemIndex}>
-                                    <Wrapper className="p-4 md:p-5 lg:p-6 bg-white shadow-lg rounded-2xl flex flex-col gap-4 md:gap-6 lg:gap-8 w-full md:max-w-150">
+                                    <Wrapper className="p-4 md:p-5 lg:p-6 bg-white shadow-lg rounded-2xl flex flex-col gap-2.5 md:gap-3 lg:gap-4 w-full md:max-w-112.5">
                                         <Wrapper className="flex justify-between items-center gap-4 md:gap-5 lg:gap-6">
-                                            <h3 className="text-xl md:text-[22px] lg:text-2xl font-bold">
+                                            <h3 className="text-2xl md:text-[25px] lg:text-[28px] font-bold uppercase">
                                                 {workItem.workHeading}
                                             </h3>
-                                            <span className="text-3xl md:text-4xl lg:text-5xl font-black">
+                                            {/* <span className="text-3xl md:text-4xl lg:text-5xl font-black">
                                                 0{workItemIndex + 1}
-                                            </span>
+                                            </span> */}
                                         </Wrapper>
                                         <Image
-                                        height={600}
-                                        width={600}
+                                        height={450}
+                                        width={450}
                                         src={workItem.workImage}
                                         alt={`Fotka realizace - ${workItem.workHeading}`}
                                         loading="lazy"
                                         decoding="async"
                                         draggable={false}
-                                        className="mt-4 md:mt-6 lg:mt-8 w-full md:max-w-150 rounded-2xl"
+                                        className="mt-4 md:mt-6 lg:mt-8 w-full md:max-w-112.5 rounded-2xl"
                                         />
-                                        <p className="text-[15px] md:text-base lg:text-lg md:max-w-150">
+                                        <p className="text-[15px] md:text-base lg:text-lg md:max-w-112.5">
                                             {workItem.workDescription}
                                         </p>
                                     </Wrapper>
@@ -58,6 +59,11 @@ const Work = () => {
                             );
                         })
                     }
+                    <Link
+                    href="/zakazky"
+                    className="p-4 md:p-5 lg:p-6 mt-4 md:mt-5 lg:mt-6 bg-white text-black text-center w-full md:w-75 rounded-md">
+                        Prohlédnout všechny zakázky
+                    </Link>
                 </Wrapper>
             </Wrapper>
         </Fragment>

@@ -13,6 +13,7 @@ import Logo from "./Logo";
 import NoProofLink from "./NoProofLink";
 import setLinkWithoutHash from "../functions/setLinkWithoutHash";
 import ContactInfo from "./ContactInfo";
+import Facebook from "./Facebook";
 
 const DYNAMIC_YEAR = new Date().getFullYear();
 
@@ -50,6 +51,7 @@ const Footer = () => {
                             </ul>
                         </Wrapper>
                         <ContactInfo />
+                        <Facebook />
                     </Wrapper>
                 </Wrapper>
                 <Wrapper className="p-4 md:p-6 lg:p-8 mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col gap-2 text-center font-medium">

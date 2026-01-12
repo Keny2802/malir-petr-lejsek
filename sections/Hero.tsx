@@ -71,12 +71,12 @@ const Hero = () => {
                             Nezávazná kalkulace
                         </NoProofLink>
                         <NoProofLink
-                        href="realizace"
+                        href="zakazky"
                         className="p-4 md:p-5 lg:p-6 bg-[#1e1e1e] text-white text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
-                            setLinkWithoutHash(e, "realizace");
+                            setLinkWithoutHash(e, "zakazky");
                         }}>
-                            Prohlédnout realizace
+                            Prohlédnout zakázky
                         </NoProofLink>
                     </Wrapper>
                 </Wrapper>

@@ -12,6 +12,7 @@ import {
     usePathname
 } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 import Wrapper from "../../../../components/Wrapper";
 import ContactHeader from "../../../../components/ContactHeader";
@@ -20,6 +21,7 @@ import PathLink from "../../../../components/PathLink";
 import PageLabel from "../../../../components/pageLabel";
 import FlexRow from "../../../../components/FlexRow";
 import FlexCol from "../../../../components/FlexCol";
+import Flex from "../../../../components/Flex";
 import References from "../../../../sections/References";
 import Contact from "../../../../sections/Contact";
 import Footer from "../../../../components/Footer";

@@ -15,6 +15,7 @@ import {
     usePathname
 } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 import Wrapper from "../../../../components/Wrapper";
 import ContactHeader from "../../../../components/ContactHeader";
@@ -22,6 +23,7 @@ import Header from "../../../../components/Header";
 import PathLink from "../../../../components/PathLink";
 import PageLabel from "../../../../components/pageLabel";
 import NoProofLink from "../../../../components/NoProofLink";
+import Flex from "../../../../components/Flex";
 import setLinkWithoutHash from "../../../../functions/setLinkWithoutHash";
 import References from "../../../../sections/References";
 import Contact from "../../../../sections/Contact";
@@ -135,6 +137,41 @@ const Content = () => {
                             className="p-4 md:p-5 lg:p-6 bg-[#1e1e1e] text-white text-center w-full md:w-75 rounded-md">
                                 Nezávazně poptat
                             </NoProofLink>
+                            <Flex className="mt-4 md:mt-5 lg:mt-6 flex-wrap">
+                                {
+                                    [
+                                        {
+                                            href: "/sluzby/natery-fasady",
+                                            link: "Nátěry fasád"
+                                        },
+                                        {
+                                            href: "/sluzby/natery-strech",
+                                            link: "Nátěr střech"
+                                        },
+                                        {
+                                            href: "/sluzby/nastrik-radiatoru",
+                                            link: "Nástřik radiátorů"
+                                        },
+                                        {
+                                            href: "/vice/nater-oken",
+                                            link: "Nátěr oken"
+                                        },
+                                        {
+                                            href: "/vice/nater-dveri",
+                                            link: "Nátěr dveří"
+                                        }
+                                    ].map((link, linkIndex) => {
+                                        return (
+                                            <Link
+                                            key={linkIndex}
+                                            href={link.href}
+                                            className="p-8 bg-[#a11106] text-white flex justify-center items-center rounded-2xl">
+                                                {link.link}
+                                            </Link>
+                                        );
+                                    })
+                                }
+                            </Flex>
                         </Wrapper>
                     </Wrapper>
                 </Wrapper>
