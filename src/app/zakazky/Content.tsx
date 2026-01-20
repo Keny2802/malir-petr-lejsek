@@ -55,7 +55,7 @@ const Content = () => {
             <ContactHeader />
             <Header />
             <Wrapper
-            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#f8c73c]/92 shadow-md"
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#ffc117]/92 shadow-md"
             id="zakazky">
                 <PathLink
                 rootHref="/"
@@ -67,17 +67,14 @@ const Content = () => {
                 <PageLabel pageLabelText="Zakázky" />
                 <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col md:flex-row flex-wrap gap-2.5 md:gap-4 lg:gap-6">
                     {
-                        wholeWorkSet.map((cardItem, cardItemIndex) => {
+                        wholeWorkSet.map((cardItem, index) => {
                             return (
-                                <Fragment key={cardItemIndex}>
+                                <Fragment key={index}>
                                     <Wrapper className="p-4 md:p-5 lg:p-6 bg-white shadow-lg rounded-2xl flex flex-col gap-2.5 md:gap-3 lg:gap-4 w-full md:max-w-112.5">
                                         <Wrapper className="flex justify-between items-center gap-4 md:gap-5 lg:gap-6">
                                             <h3 className="text-2xl md:text-[25px] lg:text-[28px] font-bold uppercase">
                                                 {cardItem.heading}
                                             </h3>
-                                            {/* <span className="text-3xl md:text-4xl lg:text-5xl font-black">
-                                                0{cardItemIndex + 1}
-                                            </span> */}
                                         </Wrapper>
                                         <Image
                                         height={450}
@@ -145,10 +142,10 @@ const Content = () => {
                                     </FlexCol>
                                     <Flex className="mt-2 md:mt-3 lg:mt-4 justify-evenly flex-wrap">
                                         {
-                                            activeCard.imageSrc.map((imageSrc, imageSrcIndex) => {
+                                            activeCard.imageSrc.map((imageSrc, index) => {
                                                 return (
                                                     <Image
-                                                    key={imageSrcIndex}
+                                                    key={index}
                                                     height={180}
                                                     width={180}
                                                     src={imageSrc}

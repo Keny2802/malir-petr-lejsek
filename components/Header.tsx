@@ -95,14 +95,6 @@ const Header = () => {
                                             setMobileMenuClicked(false);
                                         }}
                                         >
-                                            {/* {
-                                            pathName === "/" ? headerItem.link : 
-                                            headerItem.link !== "Domů" &&
-                                            headerItem.link !== "O nás" &&
-                                            headerItem.link !== "Galerie" &&
-                                            headerItem.link !== "Zakázky" &&
-                                            headerItem.link !== "Ceník" && headerItem.link
-                                            } */}
                                             {headerItem.link}
                                         </NoProofLink>
                                     </li>

@@ -21,7 +21,6 @@ import PathLink from "../../../../components/PathLink";
 import PageLabel from "../../../../components/pageLabel";
 import FlexRow from "../../../../components/FlexRow";
 import FlexCol from "../../../../components/FlexCol";
-import Flex from "../../../../components/Flex";
 import References from "../../../../sections/References";
 import Contact from "../../../../sections/Contact";
 import Footer from "../../../../components/Footer";
@@ -70,7 +69,7 @@ const Content = () => {
             <ContactHeader />
             <Header />
             <Wrapper
-            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#f8c73c]/92 shadow-md"
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#ffc117]/92 shadow-md"
             id="malovani-obyvaciho-pokoje">
                 <PathLink
                 rootHref="/"

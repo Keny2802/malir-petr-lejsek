@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/Fotky/Clean Logo.png",
-        type: "image/png"
+        url: "/Fotky/Ikonky/favicon.ico",
+        type: "image/vnd.microsoft.icon"
       }
     ]
   },
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/Fotky/Clean Logo.png",
+        url: "/Fotky/Hero (1).jpg",
         alt: "Malování bytů Brno - Profi Malby Petr Lejska",
-        type: "image/png",
+        type: "image/jpg",
         width: 1200,
         height: 630,
       }

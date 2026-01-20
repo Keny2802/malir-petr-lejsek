@@ -16,7 +16,7 @@ const Work = () => {
     return (
         <Fragment>
             <Wrapper
-            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 border-t border-gray-300 bg-[#f8c73c]/92 shadow-md section"
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 border-t border-gray-300 bg-[#ffc117]/92 shadow-md section"
             id="zakazky">
                 <PageLabel pageLabelText="Zakázky" />
                 <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-3 lg:gap-4">
@@ -37,9 +37,6 @@ const Work = () => {
                                             <h3 className="text-2xl md:text-[25px] lg:text-[28px] font-bold uppercase">
                                                 {workItem.workHeading}
                                             </h3>
-                                            {/* <span className="text-3xl md:text-4xl lg:text-5xl font-black">
-                                                0{workItemIndex + 1}
-                                            </span> */}
                                         </Wrapper>
                                         <Image
                                         height={450}

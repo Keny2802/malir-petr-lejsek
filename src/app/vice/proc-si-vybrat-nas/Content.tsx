@@ -31,7 +31,7 @@ const Content = () => {
             <ContactHeader />
             <Header />
             <Wrapper
-            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#f8c73c]/92 shadow-md"
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#ffc117]/92 shadow-md"
             id="proc-si-vybrat-nas">
                 <PathLink
                 rootHref="/"
@@ -94,7 +94,7 @@ const Content = () => {
                         <Image
                         width={800}
                         height={800}
-                        src="/Fotky/proc-si-vybrat-nas-auto.jpg"
+                        src="/Fotky/proc-si-vybrat-nas.jpg"
                         alt="Profi Malby Petr Lejska - Proč si vybrat nás fotka auta"
                         loading="lazy"
                         decoding="async"

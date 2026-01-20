@@ -12,10 +12,6 @@ export const headerSet:headerSetProps[] = [
         href: "o-nas"
     },
     {
-        link: "Galerie",
-        href: "galerie"
-    },
-    {
         pageLink: "Služby",
         pageHref: "/sluzby"
     },
@@ -27,10 +23,10 @@ export const headerSet:headerSetProps[] = [
         link: "Reference",
         href: "reference"
     },
-    // {
-    //     link: "Ceník",
-    //     href: "cenik"
-    // },
+    {
+        link: "Galerie",
+        href: "galerie"
+    },
     {
         link: "Kontakt",
         href: "kontakt"
