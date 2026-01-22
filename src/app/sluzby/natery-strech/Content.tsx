@@ -50,7 +50,7 @@ const Content = () => {
             <ContactHeader />
             <Header />
             <Wrapper
-            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#ffc117]/92 shadow-md"
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#ffd24d]/92 shadow-md"
             id="natery-strech">
                 <PathLink
                 rootHref="/"
@@ -61,7 +61,7 @@ const Content = () => {
                 siteLink="Nátěry střech"
                 className="mb-2 md:mb-4 lg:mb-6"
                 />
-                <PageLabel pageLabelText="Služba nátěry střech" />
+                <PageLabel pageLabelText="Nátěry střech" />
                 <Wrapper className="flex justify-evenly flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
                     <Wrapper>
                         <Wrapper className="relative">

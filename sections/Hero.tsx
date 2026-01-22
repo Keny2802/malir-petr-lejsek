@@ -61,7 +61,7 @@ const Hero = () => {
                         </p>
                     </Wrapper>
                     <Wrapper className="p-4 md:p-5 lg:p-6 flex justify-center items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
-                        <NoProofLink
+                        {/* <NoProofLink
                         href="kalkulace"
                         className="p-4 md:p-5 lg:p-6 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
@@ -69,7 +69,7 @@ const Hero = () => {
                         }}>
                             <CalculatorIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer" />
                             Nezávazná kalkulace
-                        </NoProofLink>
+                        </NoProofLink> */}
                         <NoProofLink
                         href="zakazky"
                         className="p-4 md:p-5 lg:p-6 bg-[#1e1e1e] text-white text-center w-full md:w-75 rounded-md"

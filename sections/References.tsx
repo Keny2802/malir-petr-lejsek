@@ -60,7 +60,7 @@ const References = () => {
     return (
         <Fragment>
             <Wrapper
-            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 border-t border-gray-300 bg-[#ffc117]/92 shadow-md section"
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 border-t border-gray-300 bg-[#ffd24d]/92 shadow-md section"
             id="reference"
             // ref={animationRef}
             >
@@ -70,7 +70,7 @@ const References = () => {
                         Reference
                     </h2>
                     <p className="text-[15px] md:text-base lg:text-lg font-medium md:max-w-3xl">
-                        Přečtěte si, co o nás říkají naši spokojení zákazníci. Sdílejí své zkušenosti s kvalitou, precizním provedením a profesionálním přístupem, který zaručuje perfektní výsledek každého projektu.
+                        Přečtěte si, co o nás říkají naši spokojení zákazníci.
                     </p>
                 </Wrapper>
                 <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-evenly md:items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8">

@@ -12,7 +12,6 @@ import {
 import Image from "next/image";
 
 import Wrapper from "./Wrapper";
-import FlexCol from "./FlexCol";
 import Subheading from "./Subheading";
 import Icon from "./Icon";
 
@@ -88,7 +87,7 @@ const Carousel = ({ ...props }: CarouselType) => {
                 <Subheading className="absolute top-4 md:top-6 left-4 md:left-6 text-white">
                     {currentPhoto + 1} / {carouselSet.length}
                 </Subheading>
-                <Wrapper className="relative overflow-hidden w-full md:w-150 h-100 mx-auto">
+                <Wrapper className="relative overflow-hidden w-full max-w-5xl mx-auto">
                     <button
                     onClick={prevSlide}
                     className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 md:p-3 lg:p-4 bg-black/50 text-white rounded-full">
@@ -106,28 +105,41 @@ const Carousel = ({ ...props }: CarouselType) => {
                     <Wrapper
                     className="flex transition-transform duration ease-in-out"
                     style={{
-                        transform: isMobile ?
-                        `translateX(-${currentPhoto * 100}%)`
-                        :
-                        `translateX(-${currentPhoto * 600}px)`
+                        transform: `translateX(-${currentPhoto * 100}%)`
                     }}>
                         {
                             carouselSet.map((cardItem, index) => {
                                 return (
                                     <Fragment
                                     key={index}>
-                                        <Wrapper className="w-full md:w-150 shrink-0 p-2 md:p-3 lg:p-4">
-                                            <Wrapper className="overflow-hidden rounded-2xl w-full cursor-pointer">
+                                        <Wrapper className="w-full shrink-0 p-2 md:p-3 lg:p-4">
+                                            <Wrapper className="relative top-1/2 -translate-y-1/2 group overflow-hidden cursor-pointer">
                                                 <Image
-                                                width={800}
-                                                height={800}
+                                                width={950}
+                                                height={950}
                                                 src={cardItem.image}
-                                                alt={`Ukázka malířské a natěračské práce bytů, domů a komerčních prostor ${index + 1}. fotka ukázky | Malířství Brno Petr Lejska`}
+                                                alt={cardItem.heading || `Ukázka malířské a natěračské práce ${index + 1}. fotka ukázky | Profi Malby Brno Petr Lejska`}
                                                 loading="lazy"
+                                                decoding="async"
                                                 draggable={false}
                                                 quality={90}
-                                                className="w-full h-100 object-cover"
+                                                className="object-contain"
                                                 />
+                                                {/* {(cardItem.heading || cardItem.desc) && (
+                                                    <FlexCol
+                                                    className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
+                                                    {cardItem.heading && (
+                                                        <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">
+                                                            {cardItem.heading}
+                                                        </h3>
+                                                    )}
+                                                    {cardItem.desc && (
+                                                        <p className="text-sm md:text-[15px] lg:text-base text-center max-w-3xl">
+                                                            {cardItem.desc}
+                                                        </p>
+                                                    )}
+                                                </FlexCol>
+                                                )} */}
                                             </Wrapper>
                                         </Wrapper>
                                     </Fragment>

@@ -3,7 +3,6 @@
 import {
     useState,
     useEffect,
-    useLayoutEffect,
     Fragment
 } from "react";
 import {
@@ -22,7 +21,6 @@ import Link from "next/link";
 
 import Wrapper from "./Wrapper";
 import Logo from "./Logo";
-import NoProofLink from "./NoProofLink";
 import setLinkWithoutHash from "../functions/setLinkWithoutHash";
 import MobileMenu from "./MobileMenu";
 
@@ -41,7 +39,7 @@ const Header = () => {
                 const targetID = target.id;
 
                 if (entry.isIntersecting) {
-                    setActiveLink(targetID);
+                    setActiveLink(`#${targetID}`);
                 };
             });
         }, {
@@ -59,7 +57,7 @@ const Header = () => {
         };
     }, []);
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         const setHeaderToScrolled = () => {
             if (window.scrollY > 0) {
                 setHeaderScrolled(true);
@@ -87,16 +85,27 @@ const Header = () => {
                             headerSet.map((headerItem, headerItemIndex) => (
                                 <Fragment key={headerItemIndex}>
                                     <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
-                                        <NoProofLink
-                                        href={headerItem.href}
-                                        className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}
-                                        onClick={(e) => {
-                                            setLinkWithoutHash(e, headerItem.href!);
-                                            setMobileMenuClicked(false);
-                                        }}
-                                        >
-                                            {headerItem.link}
-                                        </NoProofLink>
+                                        {
+                                            headerItem.href && (
+                                                pathName === "/" ? (
+                                                    <Link
+                                                    href={headerItem.href!}
+                                                    className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}
+                                                    onClick={(e) => {
+                                                        setLinkWithoutHash(e, headerItem.href!);
+                                                        setMobileMenuClicked(false);
+                                                    }}>
+                                                        {headerItem.link}
+                                                    </Link>
+                                                ) : (
+                                                    <Link
+                                                    href={`/#${headerItem.href}`}
+                                                    className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}>
+                                                        {headerItem.link}
+                                                    </Link>
+                                                )
+                                            )
+                                        }
                                     </li>
                                     {
                                         headerItem.pageLink && (
@@ -121,10 +130,10 @@ const Header = () => {
                             <ul className="z-100 w-60 max-w-100 absolute top-full right-0 p-2 md:p-2.5 lg:p-3 mt-1 md:mt-1.5 lg:mt-2 bg-white shadow-md rounded-md scale-y-0 group-hover:scale-y-100 origin-top duration-200">
                                 {
                                     [
-                                        {
-                                            href: "/vice/proc-si-vybrat-nas",
-                                            link: "Proč si vybrat nás"
-                                        },
+                                        // {
+                                        //     href: "/vice/proc-si-vybrat-nas",
+                                        //     link: "Proč si vybrat nás"
+                                        // },
                                         {
                                             href: "/vice/malovani-obyvaciho-pokoje",
                                             link: "Malování obývacího pokoje"

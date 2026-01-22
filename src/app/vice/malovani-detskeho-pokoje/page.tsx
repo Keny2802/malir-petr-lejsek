@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/Fotky/Clean Logo.png",
-        type: "image/png"
+        url: "/Fotky/Ikonky/favicon.ico",
+        type: "image/vnd.microsoft.icon"
       }
     ]
   },

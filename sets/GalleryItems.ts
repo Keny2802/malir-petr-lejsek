@@ -11,7 +11,6 @@ export const GalleryItems = [
     { image: "/Fotky/Malovani na klic (5).jpg" },
     { image: "/Fotky/Nater dveri (1).jpg" },
     { image: "/Fotky/Nater oken (1).jpg" },
-    { image: "/Fotky/Nater oken (1).jpg" },
     { image: "/Fotky/Natery fasad (5).jpg" },
     { image: "/Fotky/Natery fasad (7).jpg" },
     { image: "/Fotky/Natery fasad (6).jpg" },
