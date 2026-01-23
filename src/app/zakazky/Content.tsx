@@ -27,7 +27,7 @@ import Icon from "../../../components/Icon";
 import FlexCol from "../../../components/FlexCol";
 import Flex from "../../../components/Flex";
 
-type cardItem = {
+type CardItem = {
     imageSrc: string[];
     imageAlt: string;
     heading: string;
@@ -38,9 +38,9 @@ const Content = () => {
     const pathName = usePathname();
 
     const [isModalOpen, setModalOpen] = useState<boolean>(false);
-    const [activeCard, setActiveCard] = useState<cardItem | null>(null);
+    const [activeCard, setActiveCard] = useState<CardItem | null>(null);
 
-    const openModal = (card: cardItem) => {
+    const openModal = (card: CardItem) => {
         setActiveCard(card);
         setModalOpen(true);
     };
@@ -70,17 +70,17 @@ const Content = () => {
                         wholeWorkSet.map((cardItem, index) => {
                             return (
                                 <Fragment key={index}>
-                                    <Wrapper className="p-4 md:p-5 lg:p-6 bg-white shadow-lg rounded-2xl flex flex-col gap-2.5 md:gap-3 lg:gap-4 w-full md:max-w-112.5">
+                                    <Wrapper className="h-[700px] max-h-[1200px] p-4 md:p-5 lg:p-6 bg-white shadow-lg rounded-2xl flex flex-col gap-2.5 md:gap-3 lg:gap-4 w-full md:max-w-112.5">
                                         <Wrapper className="flex justify-between items-center gap-4 md:gap-5 lg:gap-6">
-                                            <h3 className="text-2xl md:text-[25px] lg:text-[28px] font-bold uppercase">
+                                            <h3 className="text-2xl md:text-[25px] lg:text-[28px] text-center font-bold uppercase">
                                                 {cardItem.heading}
                                             </h3>
                                         </Wrapper>
                                         <Image
-                                        height={450}
-                                        width={450}
+                                        height={500}
+                                        width={500}
                                         src={cardItem.imageSrc[0] ?? ""}
-                                        alt={cardItem.imageAlt || "Fotka Realizace"}
+                                        alt={`${index + 1}. Ukázka zakázky malířské a natěračské práce | Profi Malby Brno a okolí Petr Lejska`}
                                         loading="lazy"
                                         decoding="async"
                                         draggable={false}
@@ -146,8 +146,8 @@ const Content = () => {
                                                 return (
                                                     <Image
                                                     key={index}
-                                                    height={180}
-                                                    width={180}
+                                                    height={300}
+                                                    width={300}
                                                     src={imageSrc}
                                                     alt={activeCard.imageAlt || "Fotka Realizace"}
                                                     loading="lazy"

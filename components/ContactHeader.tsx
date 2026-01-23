@@ -33,7 +33,7 @@ const ContactHeader = () => {
                     <Wrapper className="flex items-center gap-2 md:gap-2.5 lg:gap-3">
                         <ClockIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                         <p className="text-sm md:text-[15px] lg:text-base">
-                            Po-Pá: 07:00 - 20:00
+                            Po-Pá: 07:00 - 20:00, So-Ne: 09:00 - 16:00
                         </p>
                     </Wrapper>
                     <Link

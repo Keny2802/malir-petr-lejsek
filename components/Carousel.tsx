@@ -6,6 +6,7 @@ import {
     Fragment
 } from "react";
 import {
+    XMarkIcon,
     ChevronLeftIcon,
     ChevronRightIcon
 } from "@heroicons/react/24/solid";
@@ -83,10 +84,11 @@ const Carousel = ({ ...props }: CarouselType) => {
 
     return (
         <Fragment>
-            <Wrapper>
+            <Wrapper className="fixed inset-0 z-[9000]">
                 <Subheading className="absolute top-4 md:top-6 left-4 md:left-6 text-white">
                     {currentPhoto + 1} / {carouselSet.length}
                 </Subheading>
+
                 <Wrapper className="relative overflow-hidden w-full max-w-5xl mx-auto">
                     <button
                     onClick={prevSlide}
@@ -113,33 +115,18 @@ const Carousel = ({ ...props }: CarouselType) => {
                                     <Fragment
                                     key={index}>
                                         <Wrapper className="w-full shrink-0 p-2 md:p-3 lg:p-4">
-                                            <Wrapper className="relative top-1/2 -translate-y-1/2 group overflow-hidden cursor-pointer">
+                                            <Wrapper className="flex justify-center items-center group overflow-hidden cursor-pointer">
                                                 <Image
-                                                width={950}
-                                                height={950}
+                                                width={1000}
+                                                height={1000}
                                                 src={cardItem.image}
-                                                alt={cardItem.heading || `Ukázka malířské a natěračské práce ${index + 1}. fotka ukázky | Profi Malby Brno Petr Lejska`}
+                                                alt={cardItem.heading || `Ukázka malířské a natěračské práce ${index + 1}. fotka ukázky zakázky | Profi Malby Brno Petr Lejska`}
                                                 loading="lazy"
                                                 decoding="async"
                                                 draggable={false}
                                                 quality={90}
                                                 className="object-contain"
                                                 />
-                                                {/* {(cardItem.heading || cardItem.desc) && (
-                                                    <FlexCol
-                                                    className="justify-center items-center opacity-100 md:opacity-0 p-2 md:p-3 lg:p-4 absolute inset-0 bg-black/50 text-white md:transition-opacity md:duration-300 md:ease-in-out md:group-hover:opacity-100">
-                                                    {cardItem.heading && (
-                                                        <h3 className="text-lg md:text-xl lg:text-[22px] text-center font-bold">
-                                                            {cardItem.heading}
-                                                        </h3>
-                                                    )}
-                                                    {cardItem.desc && (
-                                                        <p className="text-sm md:text-[15px] lg:text-base text-center max-w-3xl">
-                                                            {cardItem.desc}
-                                                        </p>
-                                                    )}
-                                                </FlexCol>
-                                                )} */}
                                             </Wrapper>
                                         </Wrapper>
                                     </Fragment>

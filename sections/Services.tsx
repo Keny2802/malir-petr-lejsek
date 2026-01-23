@@ -72,16 +72,16 @@ const Services = () => {
                         Moderní malování s precizním přístupem a dlouhou životností.
                     </p>
                 </Wrapper>
-                <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col md:flex-row flex-wrap gap-4 md:gap-8 lg:gap-16">
+                <Wrapper className="mt-4 md:mt-6 lg:mt-12 flex justify-center items-center flex-col md:flex-row flex-wrap gap-4 md:gap-8 lg:gap-16">
                     {
                         servicesSet.map((service, serviceIndex) => (
                             <Fragment key={serviceIndex}>
-                                <Wrapper className="rounded-md">
+                                <Wrapper className="md:h-[700px] md:max-h-[1200px] rounded-md">
                                     <Image
                                     width={500}
                                     height={500}
                                     src={service.serviceImage}
-                                    alt={`Fotka služby ${service.serviceHeading.toLocaleLowerCase()}`}
+                                    alt={`${serviceIndex + 1}. Ukázka služby malířské a natěračské práce | Profi Malby Brno a okolí Petr Lejska`}
                                     loading="lazy"
                                     decoding="async"
                                     draggable={false}

@@ -51,25 +51,25 @@ const Hero = () => {
                 draggable={false}
                 className="w-full h-screen object-cover"
                 />
-                <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-4 md:gap-6 lg:gap-8 text-white text-center">
-                    <h1 className="text-3xl md:text-[60px] lg:text-7xl font-extrabold md:max-w-7xl">
-                        Profesionální malování interiérů, které změní váš domov k nepoznání
-                    </h1>
-                    <Wrapper className="p-2 md:p-3 lg:p-4 bg-black/50 rounded-md">
+                <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-4 md:gap-6 lg:gap-8 text-white text-center rounded-md">
+                    <Wrapper className="p-2 md:p-3 lg:p-4 bg-black/50 flex justify-center items-center flex-col gap-4 md:gap-6 lg:gap-8 rounded-md">
+                        <h1 className="text-3xl md:text-[60px] lg:text-7xl font-extrabold md:max-w-7xl">
+                            Profesionální malování interiérů, které změní váš domov k nepoznání
+                        </h1>
                         <p className="text-xl md:text-[22px] lg:text-[26px] font-medium md:max-w-3xl">
                             Precizní práce, kvalitní materiály a čistý výsledek bez starostí. Postaráme se o vše - od přípravy až po finální úklid.
                         </p>
                     </Wrapper>
                     <Wrapper className="p-4 md:p-5 lg:p-6 flex justify-center items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
-                        {/* <NoProofLink
-                        href="kalkulace"
+                        <NoProofLink
+                        href="proc-si-vybrat-nas"
                         className="p-4 md:p-5 lg:p-6 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
-                            setLinkWithoutHash(e, "kalkulace");
+                            setLinkWithoutHash(e, "proc-si-vybrat-nas");
                         }}>
                             <CalculatorIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer" />
-                            Nezávazná kalkulace
-                        </NoProofLink> */}
+                            Proč si vybrat nás
+                        </NoProofLink>
                         <NoProofLink
                         href="zakazky"
                         className="p-4 md:p-5 lg:p-6 bg-[#1e1e1e] text-white text-center w-full md:w-75 rounded-md"

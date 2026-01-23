@@ -27,9 +27,9 @@ const CarouselOverlayWrapper = ({ ...props }: Props) => {
     return (
         <Fragment>
             <Wrapper
-            className="fixed inset-0 z-9999 bg-black/60 flex justify-center items-center"
+            className="fixed inset-0 z-[9000] bg-black/60 flex justify-center items-center"
             onClick={onClose}>
-                <button className="p-2 md:p-2.5 lg:p-3 absolute top-4 md:top-6 right-4 md:right-6 bg-black/50 text-white rounded-full cursor-pointer transition-colors duration-300 ease-in-out hover:text-gray-300">
+                <button className="p-2 md:p-2.5 lg:p-3 absolute top-4 md:top-6 right-4 md:right-6 z-[10000] bg-black/50 text-white rounded-full cursor-pointer transition-colors duration-300 ease-in-out hover:text-gray-300">
                     <Icon>
                         <XMarkIcon onClick={onClose} />
                     </Icon>
