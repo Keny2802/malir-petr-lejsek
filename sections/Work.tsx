@@ -83,7 +83,11 @@ const Work = () => {
                                         fetchPriority="low"
                                         decoding="async"
                                         draggable={false}
-                                        className="mt-4 md:mt-6 lg:mt-8 w-full md:max-w-125 rounded-2xl"
+                                        onClick={() => {
+                                            openModal(workItem);
+                                            
+                                        }}
+                                        className="mt-4 md:mt-6 lg:mt-8 w-full md:max-w-125 rounded-2xl cursor-pointer"
                                         />
                                         <p className="text-[15px] md:text-base lg:text-lg md:max-w-125">
                                             {workItem.desc[0]}
@@ -109,7 +113,7 @@ const Work = () => {
                 </Wrapper>
             </Wrapper>
             {
-                isModalOpen && activeCard && (
+                isModalOpen && activeCard && activeIndex === null && (
                     <Fragment>
                         <Wrapper
                         className="p-4 md:p-5 lg:p-6 fixed inset-0 z-[8000] bg-black/50 flex justify-center items-center"

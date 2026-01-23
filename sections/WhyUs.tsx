@@ -11,6 +11,7 @@ import PageLabel from "../components/pageLabel";
 import FlexRow from "../components/FlexRow";
 import FlexCol from "../components/FlexCol";
 import Flex from "../components/Flex";
+import Icon from "../components/Icon";
 
 const WhyUs = () => {
     return (
@@ -21,7 +22,7 @@ const WhyUs = () => {
                 <PageLabel pageLabelText="Proč si vybrat nás" />
                 <FlexRow className="justify-start">
                     <FlexCol>
-                        <h2 className="text-3xl md:text-4xl lg:text-[40px] text-center font-extrabold max-w-3xl">
+                        <h2 className="text-3xl md:text-4xl lg:text-[40px] font-extrabold max-w-3xl">
                             Profesionální služby, Konzultace, zaměření a rozpočty zdarma
                         </h2>
                         <Wrapper className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
@@ -48,12 +49,16 @@ const WhyUs = () => {
                                     <Fragment key={cardItemIndex}>
                                         <FlexCol>
                                             <Flex className="mt-4 md:mt-6 lg:mt-8">
-                                                <CheckCircleIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-[#a11106]" />
-                                                <h3 className="text-xl md:text-2xl lg:text-[26px] font-bold">
+                                                <Wrapper>
+                                                    <Icon>
+                                                        <CheckCircleIcon className="text-[#a11106]" />
+                                                    </Icon>
+                                                </Wrapper>
+                                                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-center">
                                                     {cardItem.heading}
                                                 </h3>
                                             </Flex>
-                                            <p className="text-[15px] md:text-base lg:text-[17px] text-center">
+                                            <p className="text-[15px] md:text-base lg:text-[17px]">
                                                 {cardItem.desc}
                                             </p>
                                         </FlexCol>
@@ -64,7 +69,7 @@ const WhyUs = () => {
                     </Wrapper>
                     </FlexCol>
                     <Wrapper className="relative w-full md:max-w-200">
-                        <Wrapper className="w-40 max-w-50 h-40 max-h-50 absolute top-0 left-0 bg-[#a11106]">
+                        <Wrapper className="min-h-20 p-2.5 md:p-3 lg:p-4 absolute top-0 left-0 bg-[#a11106] flex justify-center items-center">
                             <p className="mt-4 text-center text-xl md:text-xl lg:text-[28px] text-white font-extrabold">
                                 28 let zkušeností
                             </p>

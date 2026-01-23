@@ -84,10 +84,15 @@ const Carousel = ({ ...props }: CarouselType) => {
 
     return (
         <Fragment>
-            <Wrapper className="fixed inset-0 z-[9000]">
-                <Subheading className="absolute top-4 md:top-6 left-4 md:left-6 text-white">
+            <Wrapper className="fixed inset-0 z-[9000] bg-black/50">
+                <Subheading className="absolute top-4 md:top-6 left-4 md:left-6 z-[9001] text-white">
                     {currentPhoto + 1} / {carouselSet.length}
                 </Subheading>
+                <button className="p-2 md:p-2.5 lg:p-3 absolute top-4 md:top-6 right-4 md:right-6 bg-black/50 text-white z-[9001] rounded-full cursor-pointer transition-colors duration-300 ease-in-out hover:text-gray-300">
+                    <Icon>
+                        <XMarkIcon onClick={onClose} />
+                    </Icon>
+                </button>
 
                 <Wrapper className="relative overflow-hidden w-full max-w-5xl mx-auto">
                     <button
@@ -114,20 +119,18 @@ const Carousel = ({ ...props }: CarouselType) => {
                                 return (
                                     <Fragment
                                     key={index}>
-                                        <Wrapper className="w-full shrink-0 p-2 md:p-3 lg:p-4">
-                                            <Wrapper className="flex justify-center items-center group overflow-hidden cursor-pointer">
-                                                <Image
-                                                width={1000}
-                                                height={1000}
-                                                src={cardItem.image}
-                                                alt={cardItem.heading || `Ukázka malířské a natěračské práce ${index + 1}. fotka ukázky zakázky | Profi Malby Brno Petr Lejska`}
-                                                loading="lazy"
-                                                decoding="async"
-                                                draggable={false}
-                                                quality={90}
-                                                className="object-contain"
-                                                />
-                                            </Wrapper>
+                                        <Wrapper className="w-full flex justify-center items-center shrink-0 p-2 md:p-3 lg:p-4">
+                                            <Image
+                                            width={1000}
+                                            height={1000}
+                                            src={cardItem.image}
+                                            alt={cardItem.heading || `Ukázka malířské a natěračské práce ${index + 1}. fotka ukázky zakázky | Profi Malby Brno Petr Lejska`}
+                                            loading="lazy"
+                                            decoding="async"
+                                            draggable={false}
+                                            quality={90}
+                                            className="w-auto object-contain cursor-pointer"
+                                            />
                                         </Wrapper>
                                     </Fragment>
                                 );
