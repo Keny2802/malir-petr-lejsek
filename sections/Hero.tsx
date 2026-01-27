@@ -93,12 +93,12 @@ const Hero = () => {
                                     desc: "Nezávazná konzultace."
                                 },
                                 {
-                                    heading: "Vypracování cenové nabídky",
-                                    desc: "Nezávazná cenová nabídka."
+                                    heading: "Nezávazná cenová nabídka",
+                                    desc: "Pevná cena, čistá práce."
                                 },
                                 {
                                     heading: "Domluvíme termín realizace",
-                                    desc: "Přijedeme v domluvený termín."
+                                    desc: "Profesionální přístup, dodržíme termíny."
                                 }
                             ].map((cardItem, index) => {
                                     return (

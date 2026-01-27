@@ -30,7 +30,7 @@ const WhyUs = () => {
                             [
                                 {
                                     heading: "Velký počet poskytovaných služeb",
-                                    desc: "provádíme veškeré malířské a natěračské práce."
+                                    desc: "Provádíme veškeré malířské a natěračské práce."
                                 },
                                 {
                                     heading: "28 let odborné praxe",
