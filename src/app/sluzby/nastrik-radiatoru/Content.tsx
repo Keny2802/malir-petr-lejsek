@@ -58,10 +58,10 @@ const Content = () => {
                 folderHref="/sluzby"
                 folderLink="Služby"
                 siteHref={pathName}
-                siteLink="Nástřik radiátorů Brno"
+                siteLink="Nastřik radiátorů Brno"
                 className="mb-2 md:mb-4 lg:mb-6"
                 />
-                <PageLabel pageLabelText="Nástřik rádiátorů Brno" />
+                <PageLabel pageLabelText="Nástřik radiátorů Brno" />
                 <Wrapper className="flex justify-evenly flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
                     <Wrapper>
                         <Wrapper className="relative">
@@ -175,7 +175,7 @@ const Content = () => {
                         </Wrapper>
                     </Wrapper>
                 </Wrapper>
-                <Wrapper className="p-2 md:p-3 lg:p-4 mt-2 md:mt-4 lg:mt-6 flex justify-center items-center flex-col gap-2 md:gap-4 lg:gap-6">
+                {/* <Wrapper className="p-2 md:p-3 lg:p-4 mt-2 md:mt-4 lg:mt-6 flex justify-center items-center flex-col gap-2 md:gap-4 lg:gap-6">
                     <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold">
                         Nátěry střech
                     </h3>
@@ -201,7 +201,7 @@ const Content = () => {
                             Kontaktujte nás
                         </NoProofLink>
                     </Wrapper>
-                </Wrapper>
+                </Wrapper> */}
             </Wrapper>
             <References />
             <Contact />
