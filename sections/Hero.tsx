@@ -76,7 +76,7 @@ const Hero = () => {
                             },
                             {
                                 heading: "Nezávazná cenová nabídka",
-                                desc: "Pevná cena, čistá práce."
+                                desc: "Pevná cena, bez navýšení."
                             },
                             {
                                 heading: "Domluvíme termín realizace",
