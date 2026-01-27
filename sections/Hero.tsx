@@ -90,11 +90,11 @@ const Hero = () => {
                                 },
                                 {
                                     heading: "Schůzka na místě prací",
-                                    desc: "Nezávazná konzultace."
+                                    desc: "Nezávazná cenová nabídka."
                                 },
                                 {
                                     heading: "Vypracování cenové nabídky",
-                                    desc: "Pevná cena."
+                                    desc: "Pevná cena, čistá práce."
                                 },
                                 {
                                     heading: "Domluvíme termín realizace",
@@ -103,21 +103,21 @@ const Hero = () => {
                             ].map((cardItem, index) => {
                                     return (
                                         <Fragment key={index}>
-                                            <FlexCol>
+                                            <Wrapper className="p-2 md:p-3 lg:p-4 bg-black/50 flex flex-col gap-2 md:gap-2.5 rounded-md">
                                                 <Flex>
                                                     <Wrapper>
                                                         <Icon>
                                                             <CheckCircleIcon className="text-[#a11106]" />
                                                         </Icon>
                                                     </Wrapper>
-                                                    <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-center">
+                                                    <h3 className="text-lg md:text-xl font-bold text-center">
                                                         {cardItem.heading}
                                                     </h3>
                                                 </Flex>
                                                 <p className="text-[15px] md:text-base lg:text-[17px]">
                                                     {cardItem.desc}
                                                 </p>
-                                            </FlexCol>
+                                            </Wrapper>
                                         </Fragment>
                                     );
                                 })
