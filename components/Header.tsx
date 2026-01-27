@@ -125,7 +125,7 @@ const Header = () => {
                                 </Fragment>
                             ))
                         }
-                        <Wrapper className="group relative text-base md:text-[17px] lg:text-lg font-semibold cursor-pointer">
+                        {/* <Wrapper className="group relative text-base md:text-[17px] lg:text-lg font-semibold cursor-pointer">
                             Více
                             <ul className="z-100 w-60 max-w-100 absolute top-full right-0 p-2 md:p-2.5 lg:p-3 mt-1 md:mt-1.5 lg:mt-2 bg-white shadow-md rounded-md scale-y-0 group-hover:scale-y-100 origin-top duration-200">
                                 {
@@ -177,7 +177,7 @@ const Header = () => {
                                     })
                                 }
                             </ul>
-                        </Wrapper>
+                        </Wrapper> */}
                     </ul>
                     <Link
                     href="tel:+420603243852"
