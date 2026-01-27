@@ -116,7 +116,7 @@ const Content = () => {
                         </Wrapper>
                     </Wrapper>
                     <Wrapper className="w-full md:w-1/2">
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold border-b-5 border-black w-max">
                             Malířské práce
                         </h2>
                         <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex flex-col gap-2 md:gap-3 lg:gap-4">
