@@ -67,16 +67,15 @@ const Hero = () => {
                         onClick={(e) => {
                             setLinkWithoutHash(e, "proc-si-vybrat-nas");
                         }}>
-                            <CalculatorIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer" />
                             Proč si vybrat nás
                         </NoProofLink>
                         <NoProofLink
-                        href="zakazky"
+                        href="kontakt"
                         className="p-4 md:p-5 lg:p-6 bg-[#1e1e1e] text-white text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
-                            setLinkWithoutHash(e, "zakazky");
+                            setLinkWithoutHash(e, "kontakt");
                         }}>
-                            Prohlédnout zakázky
+                            Nezávazná poptávka
                         </NoProofLink>
                     </Wrapper>
                 </Wrapper>

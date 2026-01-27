@@ -85,7 +85,6 @@ const Work = () => {
                                         draggable={false}
                                         onClick={() => {
                                             openModal(workItem);
-                                            
                                         }}
                                         className="mt-4 md:mt-6 lg:mt-8 w-full md:max-w-125 rounded-2xl cursor-pointer"
                                         />

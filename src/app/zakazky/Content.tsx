@@ -26,6 +26,7 @@ import Footer from "../../../components/Footer";
 import Icon from "../../../components/Icon";
 import FlexCol from "../../../components/FlexCol";
 import Flex from "../../../components/Flex";
+import Carousel from "../../../components/Carousel";
 
 type CardItem = {
     imageSrc: string[];
@@ -39,6 +40,7 @@ const Content = () => {
 
     const [isModalOpen, setModalOpen] = useState<boolean>(false);
     const [activeCard, setActiveCard] = useState<CardItem | null>(null);
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     const openModal = (card: CardItem) => {
         setActiveCard(card);
@@ -84,7 +86,10 @@ const Content = () => {
                                         loading="lazy"
                                         decoding="async"
                                         draggable={false}
-                                        className="mt-4 md:mt-6 lg:mt-8 w-full md:max-w-112.5 rounded-2xl"
+                                        onClick={() => {
+                                            openModal(cardItem);
+                                        }}
+                                        className="mt-4 md:mt-6 lg:mt-8 w-full md:max-w-112.5 rounded-2xl cursor-pointer"
                                         />
                                         <p
                                         className="text-[15px] md:text-base lg:text-lg md:max-w-112.5 line-clamp-6">
@@ -108,10 +113,10 @@ const Content = () => {
             <Contact />
             <Footer />
             {
-                isModalOpen && activeCard && (
+                isModalOpen && activeCard && activeIndex === null && (
                     <Fragment>
                         <Wrapper
-                        className="p-4 md:p-5 lg:p-6 fixed inset-0 z-9999 bg-black/50 flex justify-center items-center"
+                        className="p-4 md:p-5 lg:p-6 fixed inset-0 z-[8000] bg-black/50 flex justify-center items-center"
                         onClick={closeModal}>
                             <Wrapper
                             className="relative p-4 md:p-6 lg:p-8 bg-white text-black w-full max-w-3xl h-200 max-h-10/12 overflow-y-auto rounded-2xl"
@@ -124,7 +129,7 @@ const Content = () => {
                                     <XMarkIcon/>
                                 </Icon>
                                 <FlexCol>
-                                    <h3 className="text-2xl md:text-[25px] lg:text-[28px] font-bold uppercase">
+                                    <h3 className="text-2xl md:text-[25px] lg:text-[28px] text-center font-bold uppercase">
                                         {activeCard.heading}
                                     </h3>
                                     <FlexCol className="flex flex-col gap-2">
@@ -145,15 +150,18 @@ const Content = () => {
                                             activeCard.imageSrc.map((imageSrc, index) => {
                                                 return (
                                                     <Image
-                                                    key={index}
-                                                    height={300}
                                                     width={300}
+                                                    height={300}
+                                                    key={index}
                                                     src={imageSrc}
-                                                    alt={activeCard.imageAlt || "Fotka Realizace"}
+                                                    alt={`${index + 1}. Ukázka zakázky malířské a natěračské práce | Profi Malby Brno a okolí Petr Lejska`}
                                                     loading="lazy"
                                                     decoding="async"
                                                     draggable={false}
-                                                    className="rounded-2xl"
+                                                    onClick={() => {
+                                                        setActiveIndex(index);
+                                                    }}
+                                                    className="rounded-2xl cursor-pointer"
                                                     />
                                                 );
                                             })
@@ -162,6 +170,22 @@ const Content = () => {
                                 </FlexCol>
                             </Wrapper>
                         </Wrapper>
+                    </Fragment>
+                )
+            }
+            {
+                activeIndex !== null && activeCard && (
+                    <Fragment>
+                        <Carousel
+                        startIndex={activeIndex}
+                        carouselSet={activeCard.imageSrc.map((img) => ({
+                            image: img,
+                            heading: activeCard.heading
+                        }))}
+                        onClose={() => {
+                            setActiveIndex(null);
+                        }}
+                        />
                     </Fragment>
                 )
             }
