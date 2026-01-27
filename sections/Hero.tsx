@@ -52,7 +52,7 @@ const Hero = () => {
                 loading="lazy"
                 decoding="async"
                 draggable={false}
-                className="w-full h-screen object-cover"
+                className="w-full min-h-[800px] object-cover"
                 />
                 <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-4 md:gap-6 lg:gap-8 text-white text-center rounded-md">
                     <Wrapper className="p-2 md:p-3 lg:p-4 bg-black/50 flex justify-center items-center flex-col gap-4 md:gap-6 lg:gap-8 rounded-md">
@@ -63,7 +63,7 @@ const Hero = () => {
                             Precizní práce, kvalitní materiály a čistý výsledek bez starostí. Postaráme se o vše - od přípravy až po finální úklid.
                         </p>
                     </Wrapper>
-                    <Wrapper className="p-2.5 md:p-3 lg:p-4 flex justify items-center gap-2 md:gap-4 lg:gap-5 md:flex-row flex-col">
+                    <Wrapper className="p-1 md:p-3 lg:p-4 flex justify-center items-center gap-2 md:gap-2.5 md:flex-row flex-col w-full md:w-max">
                         {
                             [
                             {
@@ -85,13 +85,13 @@ const Hero = () => {
                         ].map((cardItem, index) => {
                                 return (
                                     <Fragment key={index}>
-                                        <Flex className="p-2 md:p-3 lg:p-4 bg-black/50 rounded-md">
+                                        <Flex className="p-1 md:p-3 lg:p-4 bg-black/50 w-full md:w-max rounded-md">
                                             <Wrapper>
                                                 <Icon>
                                                     <CheckCircleIcon className="text-[#a11106]" />
                                                 </Icon>
                                             </Wrapper>
-                                            <Wrapper className="flex flex-col gap-2 md:gap-2.5 text-start">
+                                            <Wrapper className="flex flex-col gap-2 text-center md:text-start">
                                                 <h3 className="text-lg md:text-xl font-bold">
                                                     {cardItem.heading}
                                                 </h3>

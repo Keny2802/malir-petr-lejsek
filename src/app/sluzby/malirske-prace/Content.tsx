@@ -61,7 +61,7 @@ const Content = () => {
                 siteLink="Malířské práce"
                 className="mb-2 md:mb-4 lg:mb-6"
                 />
-                <PageLabel pageLabelText="Malířské práce" />
+                <PageLabel pageLabelText="Malířské práce Brno" />
                 <Wrapper className="flex justify-evenly flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
                     <Wrapper>
                         <Wrapper className="relative">
@@ -117,7 +117,7 @@ const Content = () => {
                     </Wrapper>
                     <Wrapper className="w-full md:w-1/2">
                         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-                            Malby
+                            Malířské práce
                         </h2>
                         <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex flex-col gap-2 md:gap-3 lg:gap-4">
                             <p className="text-[15px] md:text-base lg:text-[17px]">
@@ -176,9 +176,9 @@ const Content = () => {
                         </Wrapper>
                     </Wrapper>
                 </Wrapper>
-                <Wrapper className="p-2 md:p-3 lg:p-4 mt-2 md:mt-4 lg:mt-6 flex justify-center items-center flex-col gap-2 md:gap-4 lg:gap-6 border-t border-gray-400">
+                <Wrapper className="p-2 md:p-3 lg:p-4 mt-2 md:mt-4 lg:mt-6 flex justify-center items-center flex-col gap-2 md:gap-4 lg:gap-6">
                     <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-                        Malířské práce
+                        Malby
                     </h3>
                     <Wrapper className="flex flex-col gap-2 w-full md:max-w-3xl">
                         <p className="text-[15px] md:text-base lg:text-[17px]">

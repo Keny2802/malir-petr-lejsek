@@ -6,7 +6,7 @@ import "./globals.css";
 import LoadingScreen from "../../components/LoadingScreen";
 
 export const metadata: Metadata = {
-  title: "Malování bytů Brno | Profi Malby Petr Lejska",
+  title: "Malířství natěračství BRNO | Profi Malby Petr Lejska",
   description: "Profesionální malování bytů v Brně a okolí. Precizní práce, čisté provedení, kvalitní barvy a férové ceny. Nezávazná kalkulace zdarma.",
   icons: {
     icon: [
