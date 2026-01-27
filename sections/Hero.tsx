@@ -63,7 +63,7 @@ const Hero = () => {
                             Precizní práce, kvalitní materiály a čistý výsledek bez starostí. Postaráme se o vše - od přípravy až po finální úklid.
                         </p>
                     </Wrapper>
-                    <Wrapper className="p-1 md:p-3 lg:p-4 flex justify-center items-center gap-2 md:gap-2.5 md:flex-row flex-col">
+                    <Wrapper className="p-1 md:p-3 lg:p-4 flex justify-center items-center gap-2 md:gap-2.5 md:flex-row flex-col flex-wrap text-center w-full">
                         {
                             [
                             {
