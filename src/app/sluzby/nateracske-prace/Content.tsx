@@ -58,7 +58,7 @@ const Content = () => {
                 folderHref="/sluzby"
                 folderLink="Služby"
                 siteHref={pathName}
-                siteLink="Natěračské práce"
+                siteLink="Natěračské práce Brno"
                 className="mb-2 md:mb-4 lg:mb-6"
                 />
                 <PageLabel pageLabelText="Natěračské práce" />
@@ -116,7 +116,7 @@ const Content = () => {
                         </Wrapper>
                     </Wrapper>
                     <Wrapper className="w-full md:w-1/2">
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold border-b-5 border-black w-max">
                             Nátěry
                         </h2>
                         <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex flex-col gap-2 md:gap-3 lg:gap-4">
@@ -175,7 +175,7 @@ const Content = () => {
                         </Wrapper>
                     </Wrapper>
                 </Wrapper>
-                <Wrapper className="p-2 md:p-3 lg:p-4 mt-2 md:mt-4 lg:mt-6 flex justify-center items-center flex-col gap-2 md:gap-4 lg:gap-6 border-t border-gray-400">
+                <Wrapper className="p-2 md:p-3 lg:p-4 mt-2 md:mt-4 lg:mt-6 flex justify-center items-center flex-col gap-2 md:gap-4 lg:gap-6">
                     <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold">
                         Natěračské práce
                     </h3>
