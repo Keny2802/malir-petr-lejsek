@@ -58,7 +58,7 @@ const Content = () => {
                 folderHref="/sluzby"
                 folderLink="Služby"
                 siteHref={pathName}
-                siteLink="Natěračské práce"
+                siteLink="Natěračské práce Brno"
                 className="mb-2 md:mb-4 lg:mb-6"
                 />
                 <PageLabel pageLabelText="Natěračské práce Brno" />
