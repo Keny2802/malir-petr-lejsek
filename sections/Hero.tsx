@@ -16,6 +16,7 @@ import Link from "next/link";
 import Wrapper from "../components/Wrapper";
 import NoProofLink from "../components/NoProofLink";
 import setLinkWithoutHash from "../functions/setLinkWithoutHash";
+import FlexCol from "../components/FlexCol";
 import Flex from "../components/Flex";
 import Icon from "../components/Icon";
 
@@ -80,26 +81,43 @@ const Hero = () => {
                             Nezávazná poptávka
                         </NoProofLink>
                     </Wrapper>
-                    <Wrapper className="flex justify items-center gap-2 md:gap-4 lg:gap-5 md:flex-row flex-col">
+                    <Wrapper className="p-2.5 md:p-3 lg:p-4 flex justify items-center gap-2 md:gap-4 lg:gap-5 md:flex-row flex-col">
                             {
                                 [
-                                    "Zadejte poptávku",
-                                    "Schůzka na místě prací",
-                                    "Vypracování cenové nabídky",
-                                    "Domluvíme termín realizace"
-                                ].map((title, index) => {
+                                {
+                                    heading: "Zadejte poptávku",
+                                    desc: "Odpovíme do 24 hodin."
+                                },
+                                {
+                                    heading: "Schůzka na místě prací",
+                                    desc: "Nezávazná konzultace."
+                                },
+                                {
+                                    heading: "Vypracování cenové nabídky",
+                                    desc: "Pevná cena."
+                                },
+                                {
+                                    heading: "Domluvíme termín realizace",
+                                    desc: "Přijedeme v domluvený termín."
+                                }
+                            ].map((cardItem, index) => {
                                     return (
                                         <Fragment key={index}>
-                                            <Flex>
-                                                <Wrapper>
-                                                    <Icon>
-                                                        <CheckCircleIcon className="text-[#a11106]" />
-                                                    </Icon>
-                                                </Wrapper>
-                                                <h3 className="text-lg md:text-xl font-bold text-center">
-                                                    {title}
-                                                </h3>
-                                            </Flex>
+                                            <FlexCol>
+                                                <Flex>
+                                                    <Wrapper>
+                                                        <Icon>
+                                                            <CheckCircleIcon className="text-[#a11106]" />
+                                                        </Icon>
+                                                    </Wrapper>
+                                                    <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-center">
+                                                        {cardItem.heading}
+                                                    </h3>
+                                                </Flex>
+                                                <p className="text-[15px] md:text-base lg:text-[17px]">
+                                                    {cardItem.desc}
+                                                </p>
+                                            </FlexCol>
                                         </Fragment>
                                     );
                                 })

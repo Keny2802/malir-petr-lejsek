@@ -34,7 +34,7 @@ const WhyUs = () => {
                                 },
                                 {
                                     heading: "28 let odborné praxe",
-                                    desc: "profesionální přístup, vysoká kvalita služeb."
+                                    desc: "Profesionální přístup, vysoká kvalita služeb."
                                 },
                                 {
                                     heading: "Velký počet spokojených zákazníků",
