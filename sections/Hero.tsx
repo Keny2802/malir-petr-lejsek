@@ -85,7 +85,7 @@ const Hero = () => {
                         ].map((cardItem, index) => {
                                 return (
                                     <Fragment key={index}>
-                                        <Wrapper className="flex justify-center items-center gap-2 md:gap-2.5 p-1 md:p-3 lg:p-4 bg-black/50 w-full rounded-md">
+                                        <Wrapper className="flex justify-center items-center gap-2 md:gap-2.5 p-1 md:p-3 lg:p-4 bg-black/50 w-full md:w-max rounded-md">
                                             <Wrapper>
                                                 <Icon>
                                                     <CheckCircleIcon className="text-[#a11106]" />
