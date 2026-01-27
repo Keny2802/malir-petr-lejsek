@@ -63,6 +63,48 @@ const Hero = () => {
                             Precizní práce, kvalitní materiály a čistý výsledek bez starostí. Postaráme se o vše - od přípravy až po finální úklid.
                         </p>
                     </Wrapper>
+                    <Wrapper className="p-2.5 md:p-3 lg:p-4 flex justify items-center gap-2 md:gap-4 lg:gap-5 md:flex-row flex-col">
+                        {
+                            [
+                            {
+                                heading: "Zadejte poptávku",
+                                desc: "Odpovíme do 24 hodin."
+                            },
+                            {
+                                heading: "Schůzka na místě prací",
+                                desc: "Konzultace, zaměření."
+                            },
+                            {
+                                heading: "Nezávazná cenová nabídka",
+                                desc: "Pevná cena, čistá práce."
+                            },
+                            {
+                                heading: "Domluvíme termín realizace",
+                                desc: "Profesionální přístup, dodržíme termíny."
+                            }
+                        ].map((cardItem, index) => {
+                                return (
+                                    <Fragment key={index}>
+                                        <Flex className="p-2 md:p-3 lg:p-4 bg-black/50 rounded-md">
+                                            <Wrapper>
+                                                <Icon>
+                                                    <CheckCircleIcon className="text-[#a11106]" />
+                                                </Icon>
+                                            </Wrapper>
+                                            <Wrapper className="flex flex-col gap-2 md:gap-2.5 text-start">
+                                                <h3 className="text-lg md:text-xl font-bold">
+                                                    {cardItem.heading}
+                                                </h3>
+                                                <p className="text-[15px] md:text-base lg:text-[17px]">
+                                                    {cardItem.desc}
+                                                </p>
+                                            </Wrapper>
+                                        </Flex>
+                                    </Fragment>
+                                );
+                            })
+                        }
+                    </Wrapper>
                     <Wrapper className="p-4 md:p-5 lg:p-6 flex justify-center items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
                         <NoProofLink
                         href="proc-si-vybrat-nas"
@@ -81,48 +123,6 @@ const Hero = () => {
                             Nezávazná poptávka
                         </NoProofLink>
                     </Wrapper>
-                    <Wrapper className="p-2.5 md:p-3 lg:p-4 flex justify items-center gap-2 md:gap-4 lg:gap-5 md:flex-row flex-col">
-                            {
-                                [
-                                {
-                                    heading: "Zadejte poptávku",
-                                    desc: "Odpovíme do 24 hodin."
-                                },
-                                {
-                                    heading: "Schůzka na místě prací",
-                                    desc: "Konzultace, zaměření."
-                                },
-                                {
-                                    heading: "Nezávazná cenová nabídka",
-                                    desc: "Pevná cena, čistá práce."
-                                },
-                                {
-                                    heading: "Domluvíme termín realizace",
-                                    desc: "Profesionální přístup, dodržíme termíny."
-                                }
-                            ].map((cardItem, index) => {
-                                    return (
-                                        <Fragment key={index}>
-                                            <Flex className="p-2 md:p-3 lg:p-4 bg-black/50 rounded-md">
-                                                <Wrapper>
-                                                    <Icon>
-                                                        <CheckCircleIcon className="text-[#a11106]" />
-                                                    </Icon>
-                                                </Wrapper>
-                                                <Wrapper className="flex flex-col gap-2 md:gap-2.5 text-start">
-                                                    <h3 className="text-lg md:text-xl font-bold">
-                                                        {cardItem.heading}
-                                                    </h3>
-                                                    <p className="text-[15px] md:text-base lg:text-[17px]">
-                                                        {cardItem.desc}
-                                                    </p>
-                                                </Wrapper>
-                                            </Flex>
-                                        </Fragment>
-                                    );
-                                })
-                            }
-                        </Wrapper>
                 </Wrapper>
             </Wrapper>
             <Wrapper className="z-100 fixed right-5 bottom-6 flex items-center flex-col gap-2 md:gap-3 lg:gap-4">
