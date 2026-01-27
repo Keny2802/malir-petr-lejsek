@@ -90,7 +90,7 @@ const Hero = () => {
                                 },
                                 {
                                     heading: "Schůzka na místě prací",
-                                    desc: "Nezávazná konzultace."
+                                    desc: "Konzultace, zaměření."
                                 },
                                 {
                                     heading: "Nezávazná cenová nabídka",
