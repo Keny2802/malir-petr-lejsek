@@ -90,11 +90,11 @@ const Hero = () => {
                                 },
                                 {
                                     heading: "Schůzka na místě prací",
-                                    desc: "Nezávazná cenová nabídka."
+                                    desc: "Nezávazná konzultace."
                                 },
                                 {
                                     heading: "Vypracování cenové nabídky",
-                                    desc: "Pevná cena, čistá práce."
+                                    desc: "Nezávazná cenová nabídka."
                                 },
                                 {
                                     heading: "Domluvíme termín realizace",
