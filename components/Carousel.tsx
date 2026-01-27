@@ -121,8 +121,8 @@ const Carousel = ({ ...props }: CarouselType) => {
                                     key={index}>
                                         <Wrapper className="w-full flex justify-center items-center shrink-0 p-2 md:p-3 lg:p-4">
                                             <Image
-                                            width={1000}
-                                            height={1000}
+                                            width={1200}
+                                            height={1200}
                                             src={cardItem.image}
                                             alt={cardItem.heading || `Ukázka malířské a natěračské práce ${index + 1}. fotka ukázky zakázky | Profi Malby Brno Petr Lejska`}
                                             loading="lazy"

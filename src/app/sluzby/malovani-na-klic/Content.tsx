@@ -58,10 +58,10 @@ const Content = () => {
                 folderHref="/sluzby"
                 folderLink="Služby"
                 siteHref={pathName}
-                siteLink="Malování na klíč Brno"
+                siteLink="Malování na klíč"
                 className="mb-2 md:mb-4 lg:mb-6"
                 />
-                <PageLabel pageLabelText="Malování na klíč" />
+                <PageLabel pageLabelText="Malování na klíč Brno" />
                 <Wrapper className="flex justify-evenly flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
                     <Wrapper>
                         <Wrapper className="relative">
