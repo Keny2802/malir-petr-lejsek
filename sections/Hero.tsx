@@ -63,7 +63,7 @@ const Hero = () => {
                             Precizní práce, kvalitní materiály a čistý výsledek bez starostí. Postaráme se o vše - od přípravy až po finální úklid.
                         </p>
                     </Wrapper>
-                    <Wrapper className="p-1 md:p-3 lg:p-4 flex justify-center items-center gap-2 md:gap-2.5 md:flex-row flex-col w-full md:w-max">
+                    <Wrapper className="p-1 md:p-3 lg:p-4 flex justify-center items-center gap-2 md:gap-2.5 md:flex-row flex-col">
                         {
                             [
                             {
@@ -85,13 +85,13 @@ const Hero = () => {
                         ].map((cardItem, index) => {
                                 return (
                                     <Fragment key={index}>
-                                        <Flex className="p-1 md:p-3 lg:p-4 bg-black/50 w-full md:w-max rounded-md">
+                                        <Wrapper className="flex justify-center items-center gap-2 md:gap-2.5 p-1 md:p-3 lg:p-4 bg-black/50 w-full rounded-md">
                                             <Wrapper>
                                                 <Icon>
                                                     <CheckCircleIcon className="text-[#a11106]" />
                                                 </Icon>
                                             </Wrapper>
-                                            <Wrapper className="flex flex-col gap-2 text-center md:text-start">
+                                            <Wrapper className="flex items-start gap-2 flex-col text-start mx-auto">
                                                 <h3 className="text-lg md:text-xl font-bold">
                                                     {cardItem.heading}
                                                 </h3>
@@ -99,7 +99,7 @@ const Hero = () => {
                                                     {cardItem.desc}
                                                 </p>
                                             </Wrapper>
-                                        </Flex>
+                                        </Wrapper>
                                     </Fragment>
                                 );
                             })
