@@ -103,21 +103,21 @@ const Hero = () => {
                             ].map((cardItem, index) => {
                                     return (
                                         <Fragment key={index}>
-                                            <Wrapper className="p-2 md:p-3 lg:p-4 bg-black/50 flex flex-col gap-2 md:gap-2.5 rounded-md">
-                                                <Flex>
-                                                    <Wrapper>
-                                                        <Icon>
-                                                            <CheckCircleIcon className="text-[#a11106]" />
-                                                        </Icon>
-                                                    </Wrapper>
-                                                    <h3 className="text-lg md:text-xl font-bold text-center">
+                                            <Flex className="p-2 md:p-3 lg:p-4 bg-black/50 rounded-md">
+                                                <Wrapper>
+                                                    <Icon>
+                                                        <CheckCircleIcon className="text-[#a11106]" />
+                                                    </Icon>
+                                                </Wrapper>
+                                                <Wrapper className="flex flex-col gap-2 md:gap-2.5 text-start">
+                                                    <h3 className="text-lg md:text-xl font-bold">
                                                         {cardItem.heading}
                                                     </h3>
-                                                </Flex>
-                                                <p className="text-[15px] md:text-base lg:text-[17px]">
-                                                    {cardItem.desc}
-                                                </p>
-                                            </Wrapper>
+                                                    <p className="text-[15px] md:text-base lg:text-[17px]">
+                                                        {cardItem.desc}
+                                                    </p>
+                                                </Wrapper>
+                                            </Flex>
                                         </Fragment>
                                     );
                                 })
