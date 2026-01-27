@@ -6,9 +6,9 @@ import {
     Fragment
 } from "react";
 import {
-    CalculatorIcon,
     ChevronDoubleUpIcon,
-    DevicePhoneMobileIcon
+    DevicePhoneMobileIcon,
+    CheckCircleIcon
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,6 +16,8 @@ import Link from "next/link";
 import Wrapper from "../components/Wrapper";
 import NoProofLink from "../components/NoProofLink";
 import setLinkWithoutHash from "../functions/setLinkWithoutHash";
+import Flex from "../components/Flex";
+import Icon from "../components/Icon";
 
 const Hero = () => {
     const [isWindowScrolled, setWindowScrolled] = useState<boolean>(false);
@@ -78,6 +80,31 @@ const Hero = () => {
                             Nezávazná poptávka
                         </NoProofLink>
                     </Wrapper>
+                    <Wrapper className="flex justify items-center gap-2 md:gap-4 lg:gap-5 md:flex-row flex-col">
+                            {
+                                [
+                                    "Zadejte poptávku",
+                                    "Schůzka na místě prací",
+                                    "Vypracování cenové nabídky",
+                                    "Domluvíme termín realizace"
+                                ].map((title, index) => {
+                                    return (
+                                        <Fragment key={index}>
+                                            <Flex>
+                                                <Wrapper>
+                                                    <Icon>
+                                                        <CheckCircleIcon className="text-[#a11106]" />
+                                                    </Icon>
+                                                </Wrapper>
+                                                <h3 className="text-lg md:text-xl font-bold text-center">
+                                                    {title}
+                                                </h3>
+                                            </Flex>
+                                        </Fragment>
+                                    );
+                                })
+                            }
+                        </Wrapper>
                 </Wrapper>
             </Wrapper>
             <Wrapper className="z-100 fixed right-5 bottom-6 flex items-center flex-col gap-2 md:gap-3 lg:gap-4">
