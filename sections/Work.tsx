@@ -71,7 +71,7 @@ const Work = () => {
                                 return (
                                     <Fragment key={workItemIndex}>
                                         <Wrapper className="md:h-[700px] md:max-h-[1200px] p-4 md:p-5 lg:p-6 bg-white shadow-lg rounded-2xl flex justify-between flex-col gap-2.5 md:gap-3 lg:gap-4 w-full md:max-w-112.5">
-                                            <Wrapper className="flex justify-center items-center gap-4 md:gap-5 lg:gap-6">
+                                            <Wrapper className="flex justify-center items-center gap-4 md:gap-5 lg:gap-6 flex-1">
                                                 <h3 className="text-2xl md:text-[25px] lg:text-[28px] text-center font-bold uppercase">
                                                     {workItem.heading}
                                                 </h3>

@@ -76,7 +76,7 @@ const Services = () => {
                     {
                         servicesSet.map((service, serviceIndex) => (
                             <Fragment key={serviceIndex}>
-                                <Wrapper className="md:h-[700px] md:max-h-[1200px] rounded-md">
+                                <Wrapper className="md:min-h-[700px] md:max-h-[1000px]">
                                     <Image
                                     width={500}
                                     height={500}
@@ -85,7 +85,7 @@ const Services = () => {
                                     loading="lazy"
                                     decoding="async"
                                     draggable={false}
-                                    className="rounded-md"
+                                    className="aspect-square object-cover rounded-md"
                                     />
                                     <Wrapper className="mt-4 md:mt-5 lg:mt-6 flex flex-col gap-2 md:gap-3 lg:gap-4">
                                         <h3 className="text-[25px] md:text-3xl lg:text-[35px] font-semibold">
