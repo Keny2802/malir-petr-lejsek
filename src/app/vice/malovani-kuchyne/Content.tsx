@@ -96,8 +96,8 @@ const Content = () => {
                     <FlexCol>
                         <Wrapper className="relative">
                             <Image
-                            height={800}
-                            width={800}
+                            height={1000}
+                            width={1000}
                             src={carouselSet[currentIndex].imageSrc}
                             alt={carouselSet[currentIndex].imageAlt}
                             loading="lazy"
@@ -123,7 +123,7 @@ const Content = () => {
                                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />           
                             </button>
                         </Wrapper>
-                        <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex items-center gap-2 md:gap-4 lg:gap-6 flex-wrap w-full md:max-w-125">
+                        <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex items-center gap-2 md:gap-4 lg:gap-6 flex-wrap md:flex-nowrap w-full">
                             {
                                 carouselSet.map((image, imageIndex) => (
                                     <Fragment key={imageIndex}>
