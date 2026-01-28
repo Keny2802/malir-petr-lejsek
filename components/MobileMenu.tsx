@@ -8,7 +8,8 @@ import {
     usePathname
 } from "next/navigation";
 import {
-    DevicePhoneMobileIcon
+    DevicePhoneMobileIcon,
+    PhoneIcon
 } from "@heroicons/react/24/solid";
 import {
     headerSet
@@ -152,6 +153,12 @@ const MobileMenu = ({ ...props }: componentProps) => {
                     className="p-2 md:p-3 lg:p-4 flex justify-between items-center gap-2 md:gap-3 lg:gap-4 bg-[#1e1e1e] text-white font-semibold rounded-md">
                         <DevicePhoneMobileIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
                         +420 603 243 852
+                    </Link>
+                    <Link
+                    href="tel:+420547211709"
+                    className="p-2 md:p-3 lg:p-4 flex justify-between items-center gap-2 md:gap-3 lg:gap-4 bg-[#1e1e1e] text-white font-semibold rounded-md">
+                        <PhoneIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+                        +420 547 211 709
                     </Link>
                 </Wrapper>
                 <p className="text-black text-center">

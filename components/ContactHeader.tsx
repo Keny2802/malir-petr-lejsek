@@ -21,24 +21,24 @@ const ContactHeader = () => {
                 <Wrapper className="flex justify-between items-start md:items-center flex-col md:flex-row gap-2 md:gap-4 lg:gap-6">
                     <Link
                         href="tel:+420603243852"
-                        className="flex items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
+                        className="flex flex-row items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
                         <DevicePhoneMobileIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                         +420 603 243 852
                     </Link>
                     <Link
                     href="tel:+420547211709"
-                    className="flex items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
+                    className="flex flex-row items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
                         <PhoneIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                         +420 547 211 709
                     </Link>
                     <Link
                         href="mailto:info@profimalby.cz"
-                        className="flex items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
+                        className="flex flex-row items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
                         <EnvelopeIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                         info@profimalby.cz
                     </Link>
                     <Wrapper className="w-full md:w-max flex justify-between items-center gap-2 md:gap-4 lg:gap-6">
-                        <Wrapper className="flex items-center gap-2 md:gap-2.5 lg:gap-3">
+                        <Wrapper className="flex flex-row items-center gap-2 md:gap-2.5 lg:gap-3">
                             <ClockIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                             <p className="text-sm md:text-[15px] lg:text-base">
                                 Po-Pá: 07:00 - 20:00, So-Ne: 09:00 - 16:00
