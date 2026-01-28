@@ -3,6 +3,7 @@ import {
 } from "react";
 import {
     DevicePhoneMobileIcon,
+    PhoneIcon,
     EnvelopeIcon,
     ClockIcon
 } from "@heroicons/react/24/solid";
@@ -23,6 +24,12 @@ const ContactHeader = () => {
                         className="flex items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
                         <DevicePhoneMobileIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                         +420 603 243 852
+                    </Link>
+                    <Link
+                    href="tel:+420547211709"
+                    className="flex items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
+                        <PhoneIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
+                        +420 547 211 709
                     </Link>
                     <Link
                         href="mailto:info@profimalby.cz"
