@@ -11,7 +11,9 @@ const Facebook = () => {
             height="500"
             style={{
                 border: "none",
-                overflow: "hidden"
+                overflow: "hidden",
+                maxWidth: "100%",
+                margin: "0 auto"
             }}
             scrolling="no"
             frameBorder="0"

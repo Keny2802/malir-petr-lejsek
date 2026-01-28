@@ -58,7 +58,7 @@ const Work = () => {
                 <PageLabel pageLabelText="Zakázky" />
                 <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-3 lg:gap-4">
                     <h2 className="text-3xl md:text-4xl lg:text-[40px] text-center font-extrabold max-w-7xl">
-                        Naše práce a spokojenost klientů mluví za nás
+                        Naše práce mluví za nás
                     </h2>
                     <p className="text-[15px] md:text-base lg:text-lg font-medium md:max-w-3xl">
                         Podívejte se na zakázky prací, které máme již za sebou.

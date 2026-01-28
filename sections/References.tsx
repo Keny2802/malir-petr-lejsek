@@ -70,7 +70,7 @@ const References = () => {
                         Reference
                     </h2>
                     <p className="text-[15px] md:text-base lg:text-lg font-medium md:max-w-3xl">
-                        Přečtěte si, co o nás říkají naši spokojení zákazníci.
+                        Přečtěte si, co o nás říkají naši zákazníci.
                     </p>
                 </Wrapper>
                 <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-evenly md:items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8">

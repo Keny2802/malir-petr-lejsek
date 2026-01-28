@@ -80,7 +80,7 @@ const Hero = () => {
                             },
                             {
                                 heading: "Domluvíme termín realizace",
-                                desc: "Profesionální přístup, dodržíme termíny."
+                                desc: "Profesionální služby, dodržíme termíny."
                             }
                         ].map((cardItem, index) => {
                                 return (

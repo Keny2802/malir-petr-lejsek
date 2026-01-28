@@ -17,7 +17,7 @@ const ContactHeader = () => {
             <Wrapper
                 className="p-2 md:p-3 lg:p-4 bg-[#f8c73c] shadow-md contact-header"
                 id="contact-header">
-                <Wrapper className="flex justify-between items-center flex-col md:flex-row gap-2 md:gap-4 lg:gap-6">
+                <Wrapper className="flex justify-between items-start md:items-center flex-col md:flex-row gap-2 md:gap-4 lg:gap-6">
                     <Link
                         href="tel:+420603243852"
                         className="flex items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
