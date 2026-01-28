@@ -64,52 +64,54 @@ const Work = () => {
                         Podívejte se na zakázky prací, které máme již za sebou.
                     </p>
                 </Wrapper>
-                <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col md:flex-row flex-wrap gap-2.5 md:gap-4 lg:gap-6">
-                    {
-                        workSet.map((workItem, workItemIndex) => {
-                            return (
-                                <Fragment key={workItemIndex}>
-                                    <Wrapper className="md:h-[700px] md:max-h-[1200px] p-4 md:p-5 lg:p-6 bg-white shadow-lg rounded-2xl flex justify-between flex-col gap-2.5 md:gap-3 lg:gap-4 w-full md:max-w-112.5">
-                                        <Wrapper className="flex justify-center items-center gap-4 md:gap-5 lg:gap-6">
-                                            <h3 className="text-2xl md:text-[25px] lg:text-[28px] text-center font-bold uppercase">
-                                                {workItem.heading}
-                                            </h3>
+                <Wrapper>
+                    <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col md:flex-row flex-wrap gap-2.5 md:gap-4 lg:gap-6">
+                        {
+                            workSet.map((workItem, workItemIndex) => {
+                                return (
+                                    <Fragment key={workItemIndex}>
+                                        <Wrapper className="md:h-[700px] md:max-h-[1200px] p-4 md:p-5 lg:p-6 bg-white shadow-lg rounded-2xl flex justify-between flex-col gap-2.5 md:gap-3 lg:gap-4 w-full md:max-w-112.5">
+                                            <Wrapper className="flex justify-center items-center gap-4 md:gap-5 lg:gap-6">
+                                                <h3 className="text-2xl md:text-[25px] lg:text-[28px] text-center font-bold uppercase">
+                                                    {workItem.heading}
+                                                </h3>
+                                            </Wrapper>
+                                            <Image
+                                            width={500}
+                                            height={500}
+                                            src={workItem.imageSrc[0]}
+                                            alt={`${workItemIndex}. Ukázka zakázky malířské a natěračské práce | Profi Malby Brno a okolí Petr Lejska`}
+                                            fetchPriority="low"
+                                            decoding="async"
+                                            draggable={false}
+                                            onClick={() => {
+                                                openModal(workItem);
+                                            }}
+                                            className="mt-4 md:mt-6 lg:mt-8 w-full md:max-w-125 rounded-2xl cursor-pointer"
+                                            />
+                                            <p className="text-[15px] md:text-base lg:text-lg md:max-w-125">
+                                                {workItem.desc[0]}
+                                            </p>
+                                            <button
+                                            className="p-4 md:p-5 lg:p-6 mt-4 md:mt-5 lg:mt-6 bg-[#1e1e1e] text-white text-center rounded-md cursor-pointer"
+                                            onClick={() => {
+                                                openModal(workItem);
+                                                
+                                            }}>
+                                                Detail zakázky
+                                            </button>
                                         </Wrapper>
-                                        <Image
-                                        width={500}
-                                        height={500}
-                                        src={workItem.imageSrc[0]}
-                                        alt={`${workItemIndex}. Ukázka zakázky malířské a natěračské práce | Profi Malby Brno a okolí Petr Lejska`}
-                                        fetchPriority="low"
-                                        decoding="async"
-                                        draggable={false}
-                                        onClick={() => {
-                                            openModal(workItem);
-                                        }}
-                                        className="mt-4 md:mt-6 lg:mt-8 w-full md:max-w-125 rounded-2xl cursor-pointer"
-                                        />
-                                        <p className="text-[15px] md:text-base lg:text-lg md:max-w-125">
-                                            {workItem.desc[0]}
-                                        </p>
-                                        <button
-                                        className="p-4 md:p-5 lg:p-6 mt-4 md:mt-5 lg:mt-6 bg-[#1e1e1e] text-white text-center rounded-md cursor-pointer"
-                                        onClick={() => {
-                                            openModal(workItem);
-                                            
-                                        }}>
-                                            Detail zakázky
-                                        </button>
-                                    </Wrapper>
-                                </Fragment>
-                            );
-                        })
-                    }
+                                    </Fragment>
+                                );
+                            })
+                        }
+                    </Wrapper>
+                    <Link
+                    href="/zakazky"
+                    className="mx-auto block p-4 md:p-5 lg:p-6 mt-4 md:mt-5 lg:mt-6 bg-white text-black text-center w-full md:w-max rounded-md">
+                        Prohlédnout všechny zakázky
+                    </Link>
                 </Wrapper>
-                <Link
-                href="/zakazky"
-                className="p-4 md:p-5 lg:p-6 mt-4 md:mt-5 lg:mt-6 bg-white text-black text-center w-full md:w-75 rounded-md">
-                    Prohlédnout všechny zakázky
-                </Link>
             </Wrapper>
             {
                 isModalOpen && activeCard && activeIndex === null && (

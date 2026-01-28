@@ -19,7 +19,7 @@ const LoadingScreen = () => {
     useEffect(() => {
         const loadingTimeout = setTimeout(() => {
             SetLoading(false);
-        }, 2000);
+        }, 1000);
 
         return () => {
             clearTimeout(loadingTimeout);
@@ -36,7 +36,7 @@ const LoadingScreen = () => {
                             initial={{ opacity: 1 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            transition={{ duration: 0.6 }}
+                            transition={{ duration: 0.3 }}
                             className="p-4 md:p-5 lg:p-6 fixed inset-0 flex justify-center items-center gap-2 md:gap-4 lg:gap-6 flex-col h-screen z-1000 bg-[#f8c73c] shadow-md">
                                 <Logo />
                                 <motion.h1
