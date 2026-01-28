@@ -104,12 +104,12 @@ const Work = () => {
                             );
                         })
                     }
-                    <Link
-                    href="/zakazky"
-                    className="p-4 md:p-5 lg:p-6 mt-4 md:mt-5 lg:mt-6 bg-white text-black text-center w-full md:w-75 rounded-md">
-                        Prohlédnout všechny zakázky
-                    </Link>
                 </Wrapper>
+                <Link
+                href="/zakazky"
+                className="p-4 md:p-5 lg:p-6 mt-4 md:mt-5 lg:mt-6 bg-white text-black text-center w-full md:w-75 rounded-md">
+                    Prohlédnout všechny zakázky
+                </Link>
             </Wrapper>
             {
                 isModalOpen && activeCard && activeIndex === null && (
