@@ -66,8 +66,8 @@ const Content = () => {
                     <Wrapper>
                         <Wrapper className="relative">
                             <Image
-                            height={500}
-                            width={500}
+                            height={800}
+                            width={800}
                             src={serviceSet6[currentIndex].imageSrc}
                             alt={serviceSet6[currentIndex].imageAlt}
                             loading="lazy"

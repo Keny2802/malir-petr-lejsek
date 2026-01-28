@@ -66,8 +66,8 @@ const Content = () => {
                     <Wrapper>
                         <Wrapper className="relative">
                             <Image
-                            height={500}
-                            width={500}
+                            height={800}
+                            width={800}
                             src={serviceSet3[currentIndex].imageSrc}
                             alt={serviceSet3[currentIndex].imageAlt}
                             loading="lazy"
@@ -175,33 +175,6 @@ const Content = () => {
                         </Wrapper>
                     </Wrapper>
                 </Wrapper>
-                {/* <Wrapper className="p-2 md:p-3 lg:p-4 mt-2 md:mt-4 lg:mt-6 flex justify-center items-center flex-col gap-2 md:gap-4 lg:gap-6">
-                    <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-                        Nátěry střech
-                    </h3>
-                    <Wrapper className="flex flex-col gap-2 w-full md:max-w-3xl">
-                        <p className="text-[15px] md:text-base lg:text-[17px]">
-                            Provádíme odborné nátěry pozinkovaného plechu na střechách, okapech, parapetech a dalších klempířských prvcích. K obnovovacím nátěrům přistupujeme zejména v případech, kdy je původní vrstva barvy již stará, nesourodá, poškozená korozí nebo přestává plnit svou ochrannou funkci.
-                        </p>
-                        <p className="text-[15px] md:text-base lg:text-[17px]">
-                            Před každou aplikací nátěru věnujeme maximální pozornost důkladné přípravě podkladu, která je zásadní pro kvalitu a dlouhou životnost nátěru. Povrch nejprve zbavíme všech nečistot, které by mohly negativně ovlivnit přilnavost barvy, zejména mastnot, rzi a zbytků starých nátěrů.
-                        </p>
-                        <p className="text-[15px] md:text-base lg:text-[17px]">
-                            Nejprve provádíme hrubé očištění odstraněním prachu a volných částic ometením, vysátím nebo setřením. Pevně přilnuté nečistoty a poškozené vrstvy odstraňujeme mechanicky pomocí škrabek, smirkového papíru nebo ocelových kartáčů. Staré, soudržné nátěry bez známek podkladní koroze postačí pouze přebrousit.
-                        </p>
-                        <p className="text-[15px] md:text-base lg:text-[17px]">
-                            Následuje důkladné odmaštění povrchu pomocí vhodných technických rozpouštědel. Po kompletní přípravě podkladu aplikujeme nátěrový systém ve dvou vrstvách, který zajistí dlouhodobou ochranu pozinkovaného plechu proti korozi i povětrnostním vlivům.
-                        </p>
-                        <NoProofLink
-                        href="kontakt"
-                        onClick={(e) => {
-                            setLinkWithoutHash(e, "kontakt");
-                        }}
-                        className="p-4 md:p-5 lg:p-6 mt-2 md:mt-4 lg:mt-6 bg-[#1e1e1e] text-white text-center w-full md:w-75 rounded-md">
-                            Kontaktujte nás
-                        </NoProofLink>
-                    </Wrapper>
-                </Wrapper> */}
             </Wrapper>
             <References />
             <Contact />
