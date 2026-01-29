@@ -16,8 +16,6 @@ import Link from "next/link";
 import Wrapper from "../components/Wrapper";
 import NoProofLink from "../components/NoProofLink";
 import setLinkWithoutHash from "../functions/setLinkWithoutHash";
-import FlexCol from "../components/FlexCol";
-import Flex from "../components/Flex";
 import Icon from "../components/Icon";
 
 const Hero = () => {
@@ -47,7 +45,7 @@ const Hero = () => {
                 <Image
                 width={1000}
                 height={1000}
-                src="/Fotky/Hero (1).jpg"
+                src="/Fotky/hero/hero-1.avif"
                 alt="Malby Petr Lejska Fotka Hero Sekce"
                 loading="lazy"
                 decoding="async"

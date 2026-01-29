@@ -8,14 +8,14 @@ type cardItem = {
 export const wholeWorkSet:cardItem[] = [
     {
         imageSrc: [
-            "/Fotky/Realizace (1).jpg",
-            "/Fotky/Realizace (1-2).jpg",
-            "/Fotky/Realizace (1-3).jpg",
-            "/Fotky/Realizace (1-4).jpg",
-            "/Fotky/Realizace (1-5).jpg",
-            "/Fotky/Realizace (1-6).jpg",
-            "/Fotky/Realizace (1-7).jpg",
-            "/Fotky/Realizace (1-8).jpg"
+            "/Fotky/realizace/Realizace (1).avif",
+            "/Fotky/realizace/Realizace (1-2).avif",
+            "/Fotky/realizace/Realizace (1-3).avif",
+            "/Fotky/realizace/Realizace (1-4).avif",
+            "/Fotky/realizace/Realizace (1-5).avif",
+            "/Fotky/realizace/Realizace (1-6).avif",
+            "/Fotky/realizace/Realizace (1-7).avif",
+            "/Fotky/realizace/Realizace (1-8).avif"
         ],
         imageAlt: "Barevné malby interiérů | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Barevné malby interiérů",
@@ -34,12 +34,12 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (2).jpg",
-            "/Fotky/Realizace (2-2).jpg",
-            "/Fotky/Realizace (2-3).jpg",
-            "/Fotky/Realizace (2-4).jpg",
-            "/Fotky/Realizace (2-5).jpg",
-            "/Fotky/Realizace (2-6).jpg"
+            "/Fotky/realizace/Realizace (2).avif",
+            "/Fotky/realizace/Realizace (2-2).avif",
+            "/Fotky/realizace/Realizace (2-3).avif",
+            "/Fotky/realizace/Realizace (2-4).avif",
+            "/Fotky/realizace/Realizace (2-5).avif",
+            "/Fotky/realizace/Realizace (2-6).avif"
         ],
         imageAlt: "Malířské práce - malování pokojů Brno | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malířské práce - malování pokojů Brno",
@@ -52,15 +52,15 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (3).jpg",
-            "/Fotky/Realizace (3-1).jpg",
-            "/Fotky/Realizace (3-3).jpg",
-            "/Fotky/Realizace (3-4).jpg",
-            "/Fotky/Realizace (3-5).jpg",
-            "/Fotky/Realizace (3-6).jpg",
-            "/Fotky/Realizace (3-7).jpg",
-            "/Fotky/Realizace (3-8).jpg",
-            "/Fotky/Realizace (3-9).jpg"
+            "/Fotky/realizace/Realizace (3).avif",
+            "/Fotky/realizace/Realizace (3-1).avif",
+            "/Fotky/realizace/Realizace (3-3).avif",
+            "/Fotky/realizace/Realizace (3-4).avif",
+            "/Fotky/realizace/Realizace (3-5).avif",
+            "/Fotky/realizace/Realizace (3-6).avif",
+            "/Fotky/realizace/Realizace (3-7).avif",
+            "/Fotky/realizace/Realizace (3-8).avif",
+            "/Fotky/realizace/Realizace (3-9).avif"
         ],
         imageAlt: "Úklid po malování | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Úklid po malování",
@@ -74,15 +74,15 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (4).jpg",
-            "/Fotky/Realizace (4-2).jpg",
-            "/Fotky/Realizace (4-3).jpg",
-            "/Fotky/Realizace (4-4).jpg",
-            "/Fotky/Realizace (4-5).jpg",
-            "/Fotky/Realizace (4-6).jpg",
-            "/Fotky/Realizace (4-7).jpg",
-            "/Fotky/Realizace (4-8).jpg",
-            "/Fotky/Realizace (4-9).jpg"
+            "/Fotky/realizace/Realizace (4).avif",
+            "/Fotky/realizace/Realizace (4-2).avif",
+            "/Fotky/realizace/Realizace (4-3).avif",
+            "/Fotky/realizace/Realizace (4-4).avif",
+            "/Fotky/realizace/Realizace (4-5).avif",
+            "/Fotky/realizace/Realizace (4-6).avif",
+            "/Fotky/realizace/Realizace (4-7).avif",
+            "/Fotky/realizace/Realizace (4-8).avif",
+            "/Fotky/realizace/Realizace (4-9).avif"
         ],
         imageAlt: "Malba prodejny | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malba prodejny",
@@ -95,12 +95,12 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (5).jpg",
-            "/Fotky/Realizace (5-2).jpg",
-            "/Fotky/Realizace (5-3).jpg",
-            "/Fotky/Realizace (5-4).jpg",
-            "/Fotky/Realizace (5-5).jpg",
-            "/Fotky/Realizace (5-6).jpg"
+            "/Fotky/realizace/Realizace (5).avif",
+            "/Fotky/realizace/Realizace (5-2).avif",
+            "/Fotky/realizace/Realizace (5-3).avif",
+            "/Fotky/realizace/Realizace (5-4).avif",
+            "/Fotky/realizace/Realizace (5-5).avif",
+            "/Fotky/realizace/Realizace (5-6).avif"
         ],
         imageAlt: "Nátěr fasády a dřevěného obložení | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Nátěr fasády a dřevěného obložení",
@@ -113,15 +113,15 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (6).jpg",
-            "/Fotky/Realizace (6-2).jpg",
-            "/Fotky/Realizace (6-3).jpg",
-            "/Fotky/Realizace (6-4).jpg",
-            "/Fotky/Realizace (6-5).jpg",
-            "/Fotky/Realizace (6-6).jpg",
-            "/Fotky/Realizace (6-7).jpg",
-            "/Fotky/Realizace (6-8).jpg",
-            "/Fotky/Realizace (6-9).jpg"
+            "/Fotky/realizace/Realizace (6).avif",
+            "/Fotky/realizace/Realizace (6-2).avif",
+            "/Fotky/realizace/Realizace (6-3).avif",
+            "/Fotky/realizace/Realizace (6-4).avif",
+            "/Fotky/realizace/Realizace (6-5).avif",
+            "/Fotky/realizace/Realizace (6-6).avif",
+            "/Fotky/realizace/Realizace (6-7).avif",
+            "/Fotky/realizace/Realizace (6-8).avif",
+            "/Fotky/realizace/Realizace (6-9).avif"
         ],
         imageAlt: "Malování modních butiků | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malování modních butiků",
@@ -135,15 +135,15 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (7).jpg",
-            "/Fotky/Realizace (7-2).jpg",
-            "/Fotky/Realizace (7-3).jpg",
-            "/Fotky/Realizace (7-4).jpg",
-            "/Fotky/Realizace (7-5).jpg",
-            "/Fotky/Realizace (7-6).jpg",
-            "/Fotky/Realizace (7-7).jpg",
-            "/Fotky/Realizace (7-8).jpg",
-            "/Fotky/Realizace (7-9).jpg"
+            "/Fotky/realizace/Realizace (7).avif",
+            "/Fotky/realizace/Realizace (7-2).avif",
+            "/Fotky/realizace/Realizace (7-3).avif",
+            "/Fotky/realizace/Realizace (7-4).avif",
+            "/Fotky/realizace/Realizace (7-5).avif",
+            "/Fotky/realizace/Realizace (7-6).avif",
+            "/Fotky/realizace/Realizace (7-7).avif",
+            "/Fotky/realizace/Realizace (7-8).avif",
+            "/Fotky/realizace/Realizace (7-9).avif"
         ],
         imageAlt: "Malování bytu a nástřik radiátorů | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malování bytu a nástřik radiátorů",
@@ -157,15 +157,15 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (8).jpg",
-            "/Fotky/Realizace (8-1).jpg",
-            "/Fotky/Realizace (8-3).jpg",
-            "/Fotky/Realizace (8-4).jpg",
-            "/Fotky/Realizace (8-5).jpg",
-            "/Fotky/Realizace (8-6).jpg",
-            "/Fotky/Realizace (8-7).jpg",
-            "/Fotky/Realizace (8-8).jpg",
-            "/Fotky/Realizace (8-9).jpg"
+            "/Fotky/realizace/Realizace (8).avif",
+            "/Fotky/realizace/Realizace (8-1).avif",
+            "/Fotky/realizace/Realizace (8-3).avif",
+            "/Fotky/realizace/Realizace (8-4).avif",
+            "/Fotky/realizace/Realizace (8-5).avif",
+            "/Fotky/realizace/Realizace (8-6).avif",
+            "/Fotky/realizace/Realizace (8-7).avif",
+            "/Fotky/realizace/Realizace (8-8).avif",
+            "/Fotky/realizace/Realizace (8-9).avif"
         ],
         imageAlt: "Malba skladových prostor | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malba skladových prostor",
@@ -176,15 +176,15 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (9).jpg",
-            "/Fotky/Realizace (9-2).jpg",
-            "/Fotky/Realizace (9-3).jpg",
-            "/Fotky/Realizace (9-4).jpg",
-            "/Fotky/Realizace (9-5).jpg",
-            "/Fotky/Realizace (9-6).jpg",
-            "/Fotky/Realizace (9-7).jpg",
-            "/Fotky/Realizace (9-8).jpg",
-            "/Fotky/Realizace (9-9).jpg"
+            "/Fotky/realizace/Realizace (9).avif",
+            "/Fotky/realizace/Realizace (9-2).avif",
+            "/Fotky/realizace/Realizace (9-3).avif",
+            "/Fotky/realizace/Realizace (9-4).avif",
+            "/Fotky/realizace/Realizace (9-5).avif",
+            "/Fotky/realizace/Realizace (9-6).avif",
+            "/Fotky/realizace/Realizace (9-7).avif",
+            "/Fotky/realizace/Realizace (9-8).avif",
+            "/Fotky/realizace/Realizace (9-9).avif"
         ],
         imageAlt: "Výmalba novostavby Brno | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Výmalba novostavby Brno",
@@ -194,15 +194,15 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (10).jpg",
-            "/Fotky/Realizace (10-1).jpg",
-            "/Fotky/Realizace (10-3).jpg",
-            "/Fotky/Realizace (10-4).jpg",
-            "/Fotky/Realizace (10-5).jpg",
-            "/Fotky/Realizace (10-6).jpg",
-            "/Fotky/Realizace (10-7).jpg",
-            "/Fotky/Realizace (10-8).jpg",
-            "/Fotky/Realizace (10-9).jpg"
+            "/Fotky/realizace/Realizace (10).avif",
+            "/Fotky/realizace/Realizace (10-1).avif",
+            "/Fotky/realizace/Realizace (10-3).avif",
+            "/Fotky/realizace/Realizace (10-4).avif",
+            "/Fotky/realizace/Realizace (10-5).avif",
+            "/Fotky/realizace/Realizace (10-6).avif",
+            "/Fotky/realizace/Realizace (10-7).avif",
+            "/Fotky/realizace/Realizace (10-8).avif",
+            "/Fotky/realizace/Realizace (10-9).avif"
         ],
         imageAlt: "Malování kanceláří | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malování kanceláří",
@@ -215,15 +215,15 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (11).jpg",
-            "/Fotky/Realizace (11-1).jpg",
-            "/Fotky/Realizace (11-3).jpg",
-            "/Fotky/Realizace (11-4).jpg",
-            "/Fotky/Realizace (11-5).jpg",
-            "/Fotky/Realizace (11-6).jpg",
-            "/Fotky/Realizace (11-7).jpg",
-            "/Fotky/Realizace (11-8).jpg",
-            "/Fotky/Realizace (11-9).jpg"
+            "/Fotky/realizace/Realizace (11).avif",
+            "/Fotky/realizace/Realizace (11-1).avif",
+            "/Fotky/realizace/Realizace (11-3).avif",
+            "/Fotky/realizace/Realizace (11-4).avif",
+            "/Fotky/realizace/Realizace (11-5).avif",
+            "/Fotky/realizace/Realizace (11-6).avif",
+            "/Fotky/realizace/Realizace (11-7).avif",
+            "/Fotky/realizace/Realizace (11-8).avif",
+            "/Fotky/realizace/Realizace (11-9).avif"
         ],
         imageAlt: "Malba vysoké školy | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malba vysoké školy",
@@ -235,12 +235,12 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (12).jpg",
-            "/Fotky/Realizace (12-1).jpg",
-            "/Fotky/Realizace (12-3).jpg",
-            "/Fotky/Realizace (12-4).jpg",
-            "/Fotky/Realizace (12-5).jpg",
-            "/Fotky/Realizace (12-6).jpg"
+            "/Fotky/realizace/Realizace (12).avif",
+            "/Fotky/realizace/Realizace (12-1).avif",
+            "/Fotky/realizace/Realizace (12-3).avif",
+            "/Fotky/realizace/Realizace (12-4).avif",
+            "/Fotky/realizace/Realizace (12-5).avif",
+            "/Fotky/realizace/Realizace (12-6).avif"
         ],
         imageAlt: "Malířství pokojů Brno | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malířství pokojů Brno",
@@ -252,11 +252,11 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (13).jpg",
-            "/Fotky/Realizace (13-2).jpg",
-            "/Fotky/Realizace (13-3).jpg",
-            "/Fotky/Realizace (13-4).jpg",
-            "/Fotky/Realizace (13-6).jpg"
+            "/Fotky/realizace/Realizace (13).avif",
+            "/Fotky/realizace/Realizace (13-2).avif",
+            "/Fotky/realizace/Realizace (13-3).avif",
+            "/Fotky/realizace/Realizace (13-4).avif",
+            "/Fotky/realizace/Realizace (13-6).avif"
         ],
         imageAlt: "Malování bytu 3+1 | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malování bytu 3+1",
@@ -268,15 +268,15 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (14).jpg",
-            "/Fotky/Realizace (14-2).jpg",
-            "/Fotky/Realizace (14-3).jpg",
-            "/Fotky/Realizace (14-4).jpg",
-            "/Fotky/Realizace (14-5).jpg",
-            "/Fotky/Realizace (14-6).jpg",
-            "/Fotky/Realizace (14-7).jpg",
-            "/Fotky/Realizace (14-8).jpg",
-            "/Fotky/Realizace (14-9).jpg"
+            "/Fotky/realizace/Realizace (14).avif",
+            "/Fotky/realizace/Realizace (14-2).avif",
+            "/Fotky/realizace/Realizace (14-3).avif",
+            "/Fotky/realizace/Realizace (14-4).avif",
+            "/Fotky/realizace/Realizace (14-5).avif",
+            "/Fotky/realizace/Realizace (14-6).avif",
+            "/Fotky/realizace/Realizace (14-7).avif",
+            "/Fotky/realizace/Realizace (14-8).avif",
+            "/Fotky/realizace/Realizace (14-9).avif"
         ],
         imageAlt: "Malba outdoorového obchodu | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malba outdoorového obchodu",
@@ -287,14 +287,14 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (15).jpg",
-            "/Fotky/Realizace (15-1).jpg",
-            "/Fotky/Realizace (15-3).jpg",
-            "/Fotky/Realizace (15-4).jpg",
-            "/Fotky/Realizace (15-5).jpg",
-            "/Fotky/Realizace (15-6).jpg",
-            "/Fotky/Realizace (15-7).jpg",
-            "/Fotky/Realizace (15-8).jpg"
+            "/Fotky/realizace/Realizace (15).avif",
+            "/Fotky/realizace/Realizace (15-1).avif",
+            "/Fotky/realizace/Realizace (15-3).avif",
+            "/Fotky/realizace/Realizace (15-4).avif",
+            "/Fotky/realizace/Realizace (15-5).avif",
+            "/Fotky/realizace/Realizace (15-6).avif",
+            "/Fotky/realizace/Realizace (15-7).avif",
+            "/Fotky/realizace/Realizace (15-8).avif"
         ],
         imageAlt: "Vymalování rodinného domu | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Vymalování rodinného domu",
@@ -305,15 +305,15 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (16).jpg",
-            "/Fotky/Realizace (16-2).jpg",
-            "/Fotky/Realizace (16-3).jpg",
-            "/Fotky/Realizace (16-4).jpg",
-            "/Fotky/Realizace (16-5).jpg",
-            "/Fotky/Realizace (16-6).jpg",
-            "/Fotky/Realizace (16-7).jpg",
-            "/Fotky/Realizace (16-8).jpg",
-            "/Fotky/Realizace (16-9).jpg"
+            "/Fotky/realizace/Realizace (16).avif",
+            "/Fotky/realizace/Realizace (16-2).avif",
+            "/Fotky/realizace/Realizace (16-3).avif",
+            "/Fotky/realizace/Realizace (16-4).avif",
+            "/Fotky/realizace/Realizace (16-5).avif",
+            "/Fotky/realizace/Realizace (16-6).avif",
+            "/Fotky/realizace/Realizace (16-7).avif",
+            "/Fotky/realizace/Realizace (16-8).avif",
+            "/Fotky/realizace/Realizace (16-9).avif"
         ],
         imageAlt: "Malba městského úřadu | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malba městského úřadu",
@@ -323,15 +323,15 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (17).jpg",
-            "/Fotky/Realizace (17-2).jpg",
-            "/Fotky/Realizace (17-3).jpg",
-            "/Fotky/Realizace (17-4).jpg",
-            "/Fotky/Realizace (17-5).jpg",
-            "/Fotky/Realizace (17-6).jpg",
-            "/Fotky/Realizace (17-7).jpg",
-            "/Fotky/Realizace (17-8).jpg",
-            "/Fotky/Realizace (17-9).jpg"
+            "/Fotky/realizace/Realizace (17).avif",
+            "/Fotky/realizace/Realizace (17-2).avif",
+            "/Fotky/realizace/Realizace (17-3).avif",
+            "/Fotky/realizace/Realizace (17-4).avif",
+            "/Fotky/realizace/Realizace (17-5).avif",
+            "/Fotky/realizace/Realizace (17-6).avif",
+            "/Fotky/realizace/Realizace (17-7).avif",
+            "/Fotky/realizace/Realizace (17-8).avif",
+            "/Fotky/realizace/Realizace (17-9).avif"
         ],
         imageAlt: "Nástřik radiátorů | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Nástřik radiátorů",
@@ -341,9 +341,9 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (18).jpg",
-            "/Fotky/Realizace (18-1).jpg",
-            "/Fotky/Realizace (18-3).jpg"
+            "/Fotky/realizace/Realizace (18).avif",
+            "/Fotky/realizace/Realizace (18-1).avif",
+            "/Fotky/realizace/Realizace (18-3).avif"
         ],
         imageAlt: "Nátěr betonové podlahy | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Nátěr betonové podlahy",
@@ -353,13 +353,13 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (19).jpg",
-            "/Fotky/Realizace (19-2).jpg",
-            "/Fotky/Realizace (19-3).jpg",
-            "/Fotky/Realizace (19-4).jpg",
-            "/Fotky/Realizace (19-5).jpg",
-            "/Fotky/Realizace (19-6).jpg",
-            "/Fotky/Realizace (19-7).jpg"
+            "/Fotky/realizace/Realizace (19).avif",
+            "/Fotky/realizace/Realizace (19-2).avif",
+            "/Fotky/realizace/Realizace (19-3).avif",
+            "/Fotky/realizace/Realizace (19-4).avif",
+            "/Fotky/realizace/Realizace (19-5).avif",
+            "/Fotky/realizace/Realizace (19-6).avif",
+            "/Fotky/realizace/Realizace (19-7).avif"
         ],
         imageAlt: "Nátěr fasády rodinného domu | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Nátěr fasády rodinného domu",
@@ -369,15 +369,15 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (20).jpg",
-            "/Fotky/Realizace (20-1).jpg",
-            "/Fotky/Realizace (20-3).jpg",
-            "/Fotky/Realizace (20-4).jpg",
-            "/Fotky/Realizace (20-5).jpg",
-            "/Fotky/Realizace (20-6).jpg",
-            "/Fotky/Realizace (20-7).jpg",
-            "/Fotky/Realizace (20-8).jpg",
-            "/Fotky/Realizace (20-9).jpg"
+            "/Fotky/realizace/Realizace (20).avif",
+            "/Fotky/realizace/Realizace (20-1).avif",
+            "/Fotky/realizace/Realizace (20-3).avif",
+            "/Fotky/realizace/Realizace (20-4).avif",
+            "/Fotky/realizace/Realizace (20-5).avif",
+            "/Fotky/realizace/Realizace (20-6).avif",
+            "/Fotky/realizace/Realizace (20-7).avif",
+            "/Fotky/realizace/Realizace (20-8).avif",
+            "/Fotky/realizace/Realizace (20-9).avif"
         ],
         imageAlt: "Nátěr fasády nájemního domu | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Nátěr fasády nájemního domu",
@@ -388,15 +388,15 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (21).jpg",
-            "/Fotky/Realizace (21-1).jpg",
-            "/Fotky/Realizace (21-3).jpg",
-            "/Fotky/Realizace (21-4).jpg",
-            "/Fotky/Realizace (21-5).jpg",
-            "/Fotky/Realizace (21-6).jpg",
-            "/Fotky/Realizace (21-7).jpg",
-            "/Fotky/Realizace (21-8).jpg",
-            "/Fotky/Realizace (21-9).jpg"
+            "/Fotky/realizace/Realizace (21).avif",
+            "/Fotky/realizace/Realizace (21-1).avif",
+            "/Fotky/realizace/Realizace (21-3).avif",
+            "/Fotky/realizace/Realizace (21-4).avif",
+            "/Fotky/realizace/Realizace (21-5).avif",
+            "/Fotky/realizace/Realizace (21-6).avif",
+            "/Fotky/realizace/Realizace (21-7).avif",
+            "/Fotky/realizace/Realizace (21-8).avif",
+            "/Fotky/realizace/Realizace (21-9).avif"
         ],
         imageAlt: "Malování školy a školky v Holasicích | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malování školy a školky v Holasicích",
@@ -407,15 +407,15 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (22).jpg",
-            "/Fotky/Realizace (22-1).jpg",
-            "/Fotky/Realizace (22-2).jpg",
-            "/Fotky/Realizace (22-4).jpg",
-            "/Fotky/Realizace (22-5).jpg",
-            "/Fotky/Realizace (22-6).jpg",
-            "/Fotky/Realizace (22-7).jpg",
-            "/Fotky/Realizace (22-8).jpg",
-            "/Fotky/Realizace (22-9).jpg"
+            "/Fotky/realizace/Realizace (22).avif",
+            "/Fotky/realizace/Realizace (22-1).avif",
+            "/Fotky/realizace/Realizace (22-2).avif",
+            "/Fotky/realizace/Realizace (22-4).avif",
+            "/Fotky/realizace/Realizace (22-5).avif",
+            "/Fotky/realizace/Realizace (22-6).avif",
+            "/Fotky/realizace/Realizace (22-7).avif",
+            "/Fotky/realizace/Realizace (22-8).avif",
+            "/Fotky/realizace/Realizace (22-9).avif"
         ],
         imageAlt: "Malování rodinného domu s úklidem do malování | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malování rodinného domu s úklidem do malování",

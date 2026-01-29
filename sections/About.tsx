@@ -53,7 +53,7 @@ const About = () => {
                         <Image
                         width={700}
                         height={700}
-                        src="/Fotky/About.jpg"
+                        src="/Fotky/o-nas/o-nas.avif"
                         alt="Fotka sekce o nás, malíři jak pracují"
                         loading="lazy"
                         decoding="async"

@@ -26,27 +26,35 @@ import Footer from "../../../../components/Footer";
 
 const carouselSet = [
     {
-        imageSrc: "/Fotky/nater-oken/Fotka-1.jpg",
+        imageSrc: "/Fotky/sluzby/nater-oken/nater-oken-1.jpg",
         imageAlt: "Ukázka nátěru oken Brno foto 1. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/nater-oken/Fotka-2.jpg",
+        imageSrc: "/Fotky/sluzby/nater-oken/nater-oken-2.jpg",
         imageAlt: "Ukázka nátěru oken Brno foto 2. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/nater-oken/Fotka-3.jpg",
+        imageSrc: "/Fotky/sluzby/nater-oken/nater-oken-3.jpg",
         imageAlt: "Ukázka nátěru oken Brno foto 3. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/nater-oken/Fotka-4.jpg",
+        imageSrc: "/Fotky/sluzby/nater-oken/nater-oken-4.jpg",
         imageAlt: "Ukázka nátěru oken Brno foto 4. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/nater-oken/Fotka-5.jpg",
+        imageSrc: "/Fotky/sluzby/nater-oken/nater-oken-5.jpg",
         imageAlt: "Ukázka nátěru oken Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/nater-oken/Fotka-6.jpg",
+        imageSrc: "/Fotky/sluzby/nater-oken/nater-oken-6.jpg",
+        imageAlt: "Ukázka nátěru oken Brno foto 6. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/sluzby/nater-oken/nater-oken-7.jpg",
+        imageAlt: "Ukázka nátěru oken Brno foto 6. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/sluzby/nater-oken/nater-oken-8.jpg",
         imageAlt: "Ukázka nátěru oken Brno foto 6. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     }
 ];

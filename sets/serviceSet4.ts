@@ -1,20 +1,36 @@
 import paintingServicesProps from "../types/paintingServicesProps";
 
-export const serviceSet4:paintingServicesProps[] = [
+export const serviceSet4: paintingServicesProps[] = [
     {
-        imageSrc: "/Fotky/Nastrik radiatoru (1).jpg",
-        imageAlt: "Ukázka nástřiku radiátoru Brno foto 1. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+        imageSrc: "/Fotky/sluzby/nateracske-prace/nateracske-prace-1.avif",
+        imageAlt: "1. Ukázka nátěračských prací Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/Nater oken (1).jpg",
-        imageAlt: "Ukázka nátěrů oken Brno foto. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+        imageSrc: "/Fotky/sluzby/nateracske-prace/nateracske-prace-2.avif",
+        imageAlt: "2. Ukázka nátěračských prací Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/Nater dveri (1).jpg",
-        imageAlt: "Ukázka nátěrů dveří Brno foto. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+        imageSrc: "/Fotky/sluzby/nateracske-prace/nateracske-prace-3.avif",
+        imageAlt: "3. Ukázka nátěračských prací Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/Natery strech (1).jpg",
-        imageAlt: "Ukázka nátěru střechy Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+        imageSrc: "/Fotky/sluzby/nateracske-prace/nateracske-prace-4.avif",
+        imageAlt: "4. Ukázka nátěračských prací Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/sluzby/nateracske-prace/nateracske-prace-5.avif",
+        imageAlt: "5. Ukázka nátěračských prací Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/sluzby/nateracske-prace/nateracske-prace-6.avif",
+        imageAlt: "6. Ukázka nátěračských prací Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/sluzby/nateracske-prace/nateracske-prace-7.avif",
+        imageAlt: "7. Ukázka nátěračských prací Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/sluzby/nateracske-prace/nateracske-prace-8.avif",
+        imageAlt: "8. Ukázka nátěračských prací Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     }
 ];

@@ -1,36 +1,3 @@
-// export const workSet:workSetProps[] = [
-//     {
-//         workImage: "/Fotky/Realizace (1).jpg",
-//         workHeading: "Barevné malby interiérů",
-//         workDescription: "Na malování rodinného domu v Brně Tuřanech jsme použili interiérovou barvu Primalex polar, otěruvzdorný vnitřní nátěr s vysokou bělostí. Tato malířská barva je především vhodná pro malování obývací prostorů, reprezentativních prostorů, kanceláří, dětských pokojů...Omítky jsme nejprve napenetrovali penetračním prostředkem primalex univerzální..."
-//     },
-//     {
-//         workImage: "/Fotky/Realizace (2).jpg",
-//         workHeading: "Malířské práce - malování pokojů Brno",
-//         workDescription: "Na vymalování bytu v Brně jsme použili klasickou malířskou barvu Primalex plus. Vymalování pokoje jsme na přání zákazníka provedli na bílo s tím, že jedna stěna bude malována hráškově zelenou barvou, vybraným odstínem dle vzorníku Primalex procolor. Malba interiéru kuchyně byla provedena našimi malíři pokojů v jemném nádechu béžové barvy. Ostatní..."
-//     },
-//     {
-//         workImage: "/Fotky/Realizace (3).jpg",
-//         workHeading: "Úklid po malování",
-//         workDescription: "Aby naše služby byly kompletní nabízíme Vám i úklidové práce."
-//     },
-//     {
-//         workImage: "/Fotky/Realizace (4).jpg",
-//         workHeading: "Malba prodejny",
-//         workDescription: "Pro malbu obvodových stěn si investor vybral Finskou barvou Tikkurila v omyvatelné variantě Optiva 5 celkové rozloze 720 m2. . Podklad byl neošetřený vybroušený sádrokarton. Před samotným malováním jsme celkovou plochu napenetrovali hloubkovou penetrací pro zpevnění a sjednocení podkladu."
-//     },
-//     {
-//         workImage: "/Fotky/Realizace (5).jpg",
-//         workHeading: "Nátěr fasády a dřevěného obložení",
-//         workDescription: "Nátěr fasády jsme prováděli na relativně novou omítku ještě neošetřenou žádným nátěrem. S majitelem objektu jsme se domluvili na Francouzském nátěrovém systému TOLLENS. Na sjednocení podkladu byla použita penetrace PEN - FIX a jako vrchní nátěr akrylátová barva TOL FACADE ACRYL v jemně žlutém odstínu 1060-1. Dřevěné obložení jsme ošetřili nátěrem."
-//     },
-//     {
-//         workImage: "/Fotky/Realizace (6).jpg",
-//         workHeading: "MALOVÁNÍ MODNÍCH BUTIKŮ",
-//         workDescription: "Na stěny a stropy luxusních butiků Jacpot a Cottonfield jsme aplikovali malířský nátěr Finské značky Tikkurila v omyvatelné bázi Optiva 5 a na malbu kabinek Optiva 20. Jedná se o materiál nejvyšší kvality který splňuje nejpřísnější kritéria. Dle požadavku investora jsme použili odstín RAL 9010. Tento decentní s citem vybraný odstín ve finále působí..."
-//     }
-// ];
-
 type workSetProps = {
     imageSrc: string[];
     imageAlt: string;
@@ -41,14 +8,14 @@ type workSetProps = {
 export const workSet:workSetProps[] = [
     {
         imageSrc: [
-            "/Fotky/Realizace (1).jpg",
-            "/Fotky/Realizace (1-2).jpg",
-            "/Fotky/Realizace (1-3).jpg",
-            "/Fotky/Realizace (1-4).jpg",
-            "/Fotky/Realizace (1-5).jpg",
-            "/Fotky/Realizace (1-6).jpg",
-            "/Fotky/Realizace (1-7).jpg",
-            "/Fotky/Realizace (1-8).jpg"
+            "/Fotky/realizace/Realizace (1).avif",
+            "/Fotky/realizace/Realizace (1-2).avif",
+            "/Fotky/realizace/Realizace (1-3).avif",
+            "/Fotky/realizace/Realizace (1-4).avif",
+            "/Fotky/realizace/Realizace (1-5).avif",
+            "/Fotky/realizace/Realizace (1-6).avif",
+            "/Fotky/realizace/Realizace (1-7).avif",
+            "/Fotky/realizace/Realizace (1-8).avif"
         ],
         imageAlt: "Barevné malby interiérů | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Barevné malby interiérů",
@@ -67,12 +34,12 @@ export const workSet:workSetProps[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (2).jpg",
-            "/Fotky/Realizace (2-2).jpg",
-            "/Fotky/Realizace (2-3).jpg",
-            "/Fotky/Realizace (2-4).jpg",
-            "/Fotky/Realizace (2-5).jpg",
-            "/Fotky/Realizace (2-6).jpg"
+            "/Fotky/realizace/Realizace (2).avif",
+            "/Fotky/realizace/Realizace (2-2).avif",
+            "/Fotky/realizace/Realizace (2-3).avif",
+            "/Fotky/realizace/Realizace (2-4).avif",
+            "/Fotky/realizace/Realizace (2-5).avif",
+            "/Fotky/realizace/Realizace (2-6).avif"
         ],
         imageAlt: "Malířské práce - malování pokojů Brno | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malířské práce - malování pokojů Brno",
@@ -85,15 +52,15 @@ export const workSet:workSetProps[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (3).jpg",
-            "/Fotky/Realizace (3-1).jpg",
-            "/Fotky/Realizace (3-3).jpg",
-            "/Fotky/Realizace (3-4).jpg",
-            "/Fotky/Realizace (3-5).jpg",
-            "/Fotky/Realizace (3-6).jpg",
-            "/Fotky/Realizace (3-7).jpg",
-            "/Fotky/Realizace (3-8).jpg",
-            "/Fotky/Realizace (3-9).jpg"
+            "/Fotky/realizace/Realizace (3).avif",
+            "/Fotky/realizace/Realizace (3-1).avif",
+            "/Fotky/realizace/Realizace (3-3).avif",
+            "/Fotky/realizace/Realizace (3-4).avif",
+            "/Fotky/realizace/Realizace (3-5).avif",
+            "/Fotky/realizace/Realizace (3-6).avif",
+            "/Fotky/realizace/Realizace (3-7).avif",
+            "/Fotky/realizace/Realizace (3-8).avif",
+            "/Fotky/realizace/Realizace (3-9).avif"
         ],
         imageAlt: "Úklid po malování | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Úklid po malování",
@@ -107,15 +74,15 @@ export const workSet:workSetProps[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (4).jpg",
-            "/Fotky/Realizace (4-2).jpg",
-            "/Fotky/Realizace (4-3).jpg",
-            "/Fotky/Realizace (4-4).jpg",
-            "/Fotky/Realizace (4-5).jpg",
-            "/Fotky/Realizace (4-6).jpg",
-            "/Fotky/Realizace (4-7).jpg",
-            "/Fotky/Realizace (4-8).jpg",
-            "/Fotky/Realizace (4-9).jpg"
+            "/Fotky/realizace/Realizace (4).avif",
+            "/Fotky/realizace/Realizace (4-2).avif",
+            "/Fotky/realizace/Realizace (4-3).avif",
+            "/Fotky/realizace/Realizace (4-4).avif",
+            "/Fotky/realizace/Realizace (4-5).avif",
+            "/Fotky/realizace/Realizace (4-6).avif",
+            "/Fotky/realizace/Realizace (4-7).avif",
+            "/Fotky/realizace/Realizace (4-8).avif",
+            "/Fotky/realizace/Realizace (4-9).avif"
         ],
         imageAlt: "Malba prodejny | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malba prodejny",
@@ -128,12 +95,12 @@ export const workSet:workSetProps[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (5).jpg",
-            "/Fotky/Realizace (5-2).jpg",
-            "/Fotky/Realizace (5-3).jpg",
-            "/Fotky/Realizace (5-4).jpg",
-            "/Fotky/Realizace (5-5).jpg",
-            "/Fotky/Realizace (5-6).jpg"
+            "/Fotky/realizace/Realizace (5).avif",
+            "/Fotky/realizace/Realizace (5-2).avif",
+            "/Fotky/realizace/Realizace (5-3).avif",
+            "/Fotky/realizace/Realizace (5-4).avif",
+            "/Fotky/realizace/Realizace (5-5).avif",
+            "/Fotky/realizace/Realizace (5-6).avif"
         ],
         imageAlt: "Nátěr fasády a dřevěného obložení | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Nátěr fasády a dřevěného obložení",
@@ -146,15 +113,15 @@ export const workSet:workSetProps[] = [
     },
     {
         imageSrc: [
-            "/Fotky/Realizace (6).jpg",
-            "/Fotky/Realizace (6-2).jpg",
-            "/Fotky/Realizace (6-3).jpg",
-            "/Fotky/Realizace (6-4).jpg",
-            "/Fotky/Realizace (6-5).jpg",
-            "/Fotky/Realizace (6-6).jpg",
-            "/Fotky/Realizace (6-7).jpg",
-            "/Fotky/Realizace (6-8).jpg",
-            "/Fotky/Realizace (6-9).jpg"
+            "/Fotky/realizace/Realizace (6).avif",
+            "/Fotky/realizace/Realizace (6-2).avif",
+            "/Fotky/realizace/Realizace (6-3).avif",
+            "/Fotky/realizace/Realizace (6-4).avif",
+            "/Fotky/realizace/Realizace (6-5).avif",
+            "/Fotky/realizace/Realizace (6-6).avif",
+            "/Fotky/realizace/Realizace (6-7).avif",
+            "/Fotky/realizace/Realizace (6-8).avif",
+            "/Fotky/realizace/Realizace (6-9).avif"
         ],
         imageAlt: "Malování modních butiků | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malování modních butiků",

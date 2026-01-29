@@ -27,32 +27,36 @@ import Footer from "../../../../components/Footer";
 
 const carouselSet = [
     {
-        imageSrc: "/Fotky/malovani-detskeho-pokoje/Fotka-1.jpg",
+        imageSrc: "/Fotky/malovani-detskeho-pokoje/malovani-detskeho-pokoje-1.avif",
         imageAlt: "Ukázka malování dětského pokoje Brno foto 1. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-detskeho-pokoje/Fotka-2.jpg",
+        imageSrc: "/Fotky/malovani-detskeho-pokoje/malovani-detskeho-pokoje-2.avif",
         imageAlt: "Ukázka malování dětského pokoje Brno foto 2. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-detskeho-pokoje/Fotka-3.jpg",
+        imageSrc: "/Fotky/malovani-detskeho-pokoje/malovani-detskeho-pokoje-3.avif",
         imageAlt: "Ukázka malování dětského pokoje Brno foto 3. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-detskeho-pokoje/Fotka-4.jpg",
+        imageSrc: "/Fotky/malovani-detskeho-pokoje/malovani-detskeho-pokoje-4.avif",
         imageAlt: "Ukázka malování dětského pokoje Brno foto 4. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-detskeho-pokoje/Fotka-5.jpg",
+        imageSrc: "/Fotky/malovani-detskeho-pokoje/malovani-detskeho-pokoje-5.avif",
         imageAlt: "Ukázka malování dětského pokoje Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-detskeho-pokoje/Fotka-6.jpg",
+        imageSrc: "/Fotky/malovani-detskeho-pokoje/malovani-detskeho-pokoje-6.avif",
         imageAlt: "Ukázka malování dětského pokoje Brno foto 6. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-detskeho-pokoje/Fotka-7.jpg",
+        imageSrc: "/Fotky/malovani-detskeho-pokoje/malovani-detskeho-pokoje-7.avif",
         imageAlt: "Ukázka malování dětského pokoje Brno foto 7. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/malovani-detskeho-pokoje/malovani-detskeho-pokoje-8.avif",
+        imageAlt: "Ukázka malování dětského pokoje Brno foto 8. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
 ];
 

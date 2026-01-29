@@ -69,7 +69,7 @@ const Content = () => {
                             height={800}
                             width={800}
                             src={paintingServicesSet[currentIndex].imageSrc}
-                            alt={paintingServicesSet[currentIndex].imageAlt}
+                            alt={paintingServicesSet[currentIndex].imageAlt || ""}
                             loading="lazy"
                             decoding="async"
                             draggable={false}

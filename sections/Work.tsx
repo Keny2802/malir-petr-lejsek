@@ -80,7 +80,7 @@ const Work = () => {
                                             width={500}
                                             height={500}
                                             src={workItem.imageSrc[0]}
-                                            alt={`${workItemIndex}. Ukázka zakázky malířské a natěračské práce | Profi Malby Brno a okolí Petr Lejska`}
+                                            alt={`${workItemIndex + 1}. Ukázka zakázky malířské a natěračské práce | Profi Malby Brno a okolí Petr Lejska`}
                                             fetchPriority="low"
                                             decoding="async"
                                             draggable={false}

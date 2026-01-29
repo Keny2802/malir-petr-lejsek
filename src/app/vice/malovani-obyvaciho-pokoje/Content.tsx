@@ -27,25 +27,37 @@ import Footer from "../../../../components/Footer";
 
 const carouselSet = [
     {
-        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/Fotka-1.jpg",
+        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-1.avif",
         imageAlt: "Ukázka malování obývacího pokoje Brno foto 1. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/Fotka-2.jpg",
+        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-2.avif",
         imageAlt: "Ukázka malování obývacího pokoje Brno foto 2. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/Fotka-3.jpg",
+        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-3.avif",
         imageAlt: "Ukázka malování obývacího pokoje Brno foto 3. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/Fotka-4.jpg",
+        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-4.avif",
         imageAlt: "Ukázka malování obývacího pokoje Brno foto 4. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/Fotka-5.jpg",
+        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-5.avif",
         imageAlt: "Ukázka malování obývacího pokoje Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
-    }
+    },
+    {
+        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-6.avif",
+        imageAlt: "Ukázka malování obývacího pokoje Brno foto 6. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-7.avif",
+        imageAlt: "Ukázka malování obývacího pokoje Brno foto 7. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-8.avif",
+        imageAlt: "Ukázka malování obývacího pokoje Brno foto 8. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
 ];
 
 const Content = () => {
