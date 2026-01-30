@@ -1,0 +1,51 @@
+import {
+    Fragment
+} from "react";
+
+import Wrapper from "../../../components/Wrapper";
+import ContactHeader from "../../../components/ContactHeader";
+import Header from "../../../components/Header";
+import PathLink from "../../../components/PathLink";
+import PageLabel from "../../../components/pageLabel";
+import References from "../../../sections/References";
+import Contact from "../../../sections/Contact";
+import Footer from "../../../components/Footer";
+
+const Content = () => {
+    return (
+        <Fragment>
+            <ContactHeader />
+            <Header />
+            <Wrapper
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#ffd24d]/92 shadow-md"
+            id="cenik">
+                <PathLink
+                rootHref="/"
+                rootLink="Domov"
+                siteHref="/cenik"
+                siteLink="Ceník"
+                className="mb-2 md:mb-4 lg:mb-6"
+                />
+                <PageLabel pageLabelText="Ceník / rozpočty" />
+                <Wrapper>
+                    <h2 className="text-3xl md:text-4xl lg:text-[40px] text-center font-extrabold max-w-7xl">
+                        Orientační ceník
+                    </h2>
+                    <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col gap-2.5 md:gap-4 lg:gap-6">
+                        <p className="text-[15px] md:text-base lg:text-lg font-medium">
+                            Ke každé zakázce přistupujeme individuálně. Nabízíme nezávaznou osobní schůzku přímo na místě prací. Seznámíme se s Vašimi představami, vše společně prokonzultujeme a navrhneme optimální řešení vedoucí k maximální spokojenosti. Cenovou nabídku za malířské práce či natěračské práce pro vás vypracujeme zdarma a obdaříte ji obvykle do 48 hodin e-mailem nebo telefonicky.
+                        </p>
+                        <p className="text-[15px] md:text-base lg:text-lg font-medium">
+                            Konečná cena na se vypočítá dle, charakteru, rozsahu, použitého materiálu a konkrétního stavu ploch a prostor.
+                        </p>
+                    </Wrapper>
+                </Wrapper>
+            </Wrapper>
+            <References />
+            <Contact />
+            <Footer />
+        </Fragment>
+    );
+};
+
+export default Content;

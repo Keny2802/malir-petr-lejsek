@@ -90,7 +90,7 @@ const Header = () => {
                                                 pathName === "/" ? (
                                                     <Link
                                                     href={headerItem.href!}
-                                                    className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}
+                                                    className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-[15px] md:text-[15.5px] lg:text-base font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}
                                                     onClick={(e) => {
                                                         setLinkWithoutHash(e, headerItem.href!);
                                                         setMobileMenuClicked(false);
@@ -100,7 +100,7 @@ const Header = () => {
                                                 ) : (
                                                     <Link
                                                     href={`/#${headerItem.href}`}
-                                                    className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}>
+                                                    className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-[15px] md:text-[15.5px] lg:text-base font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}>
                                                         {headerItem.link}
                                                     </Link>
                                                 )

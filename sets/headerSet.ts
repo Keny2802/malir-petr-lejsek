@@ -28,6 +28,10 @@ export const headerSet:headerSetProps[] = [
         href: "galerie"
     },
     {
+        pageLink: "Ceník / rozpočty",
+        pageHref: "/cenik"
+    },
+    {
         link: "Kontakt",
         href: "kontakt"
     }
