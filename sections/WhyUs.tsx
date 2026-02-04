@@ -77,7 +77,7 @@ const WhyUs = () => {
                         <Image
                         width={800}
                         height={800}
-                        src="/Fotky/proc-si-vybrat-nas.jpg"
+                        src="/Fotky/proc-si-vybrat-nas/proc-si-vybrat-nas.avif"
                         alt="Profi Malby Petr Lejska - Proč si vybrat nás fotka auta"
                         loading="lazy"
                         decoding="async"
