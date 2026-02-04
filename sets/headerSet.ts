@@ -34,5 +34,13 @@ export const headerSet:headerSetProps[] = [
     {
         link: "Kontakt",
         href: "kontaktni-informace"
-    }
+    },
+    {
+        pageLink: "GDPR",
+        pageHref: "/gdpr"
+    },
+    {
+        pageLink: "Nastavení cookies",
+        pageHref: "/cenik"
+    },
 ];

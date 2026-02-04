@@ -36,7 +36,7 @@ const Footer = () => {
                     <Wrapper className="flex justify-evenly md:items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8">
                         <Wrapper className="flex flex-col gap-2 md:gap-3 lg:gap-4">
                             <h3 className="text-xl md:text-[22px] lg:text-2xl font-semibold">
-                                Nabídka
+                                Rychlé odkazy
                             </h3>
                             <ul className="flex flex-col gap-2 header-list">
                                 {
@@ -48,7 +48,7 @@ const Footer = () => {
                                                         pathName === "/" ? (
                                                             <Link
                                                             href={headerItem.href!}
-                                                            className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}
+                                                            className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-[15px] md:text-[16.5px] lg:text-[18px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}
                                                             onClick={(e) => {
                                                                 setLinkWithoutHash(e, headerItem.href!);
                                                             }}>
@@ -57,22 +57,34 @@ const Footer = () => {
                                                         ) : (
                                                             <Link
                                                             href={`/#${headerItem.href}`}
-                                                            className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-base md:text-[17px] lg:text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}>
+                                                            className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-[15px] md:text-[16.5px] lg:text-[18px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}>
                                                                 {headerItem.link}
                                                             </Link>
                                                         )
                                                     )
                                                 }
                                             </li>
+                                            {
+                                                headerItem.pageLink && (
+                                                    <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
+                                                        <Link
+                                                        href={headerItem.pageHref!}
+                                                        className="text-[15px] md:text-[16.5px] lg:text-[18px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]"
+                                                        >
+                                                            {headerItem.pageLink}
+                                                        </Link>
+                                                    </li>
+                                                )
+                                            }
                                         </Fragment>
                                     ))
                                 }
                             </ul>
                         </Wrapper>
                         <Wrapper id="kontaktni-informace">
-                            <p className="mb-2 md:mb-2.5 lg:mb-3 text-xl md:text-[22px] lg:text-[25px] text-[#a11106] font-bold uppercase">
+                            {/* <p className="mb-2 md:mb-2.5 lg:mb-3 text-xl md:text-[22px] lg:text-[25px] text-[#a11106] font-bold uppercase">
                                 Kontakt
-                            </p>
+                            </p> */}
                             <ContactInfo />
                         </Wrapper>
                         <Facebook />

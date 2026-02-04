@@ -117,7 +117,7 @@ const Header = () => {
                                                     setMobileMenuClicked(false);
                                                 }}
                                                 >
-                                                    {headerItem.pageLink}
+                                                    {headerItem.pageLink !== "GDPR" && headerItem.pageLink !== "Nastavení cookies" && headerItem.pageLink}
                                                 </Link>
                                             </li>
                                         )
