@@ -92,12 +92,14 @@ export const workSet:workSetProps[] = [
     },
     {
         imageSrc: [
-            // "/Fotky/realizace/Realizace (4).avif",
-            "/Fotky/realizace/Realizace (5-2).avif",
-            "/Fotky/realizace/Realizace (5-3).avif",
-            "/Fotky/realizace/Realizace (5-4).avif",
-            "/Fotky/realizace/Realizace (5-5).avif",
-            "/Fotky/realizace/Realizace (5-6).avif"
+            "/Fotky/realizace/Realizace (8-1).avif",
+            "/Fotky/realizace/Realizace (8-3).avif",
+            "/Fotky/realizace/Realizace (8-4).avif",
+            "/Fotky/realizace/Realizace (8-5).avif",
+            "/Fotky/realizace/Realizace (8-6).avif",
+            "/Fotky/realizace/Realizace (8-7).avif",
+            "/Fotky/realizace/Realizace (8-8).avif",
+            "/Fotky/realizace/Realizace (8-9).avif",
         ],
         imageAlt: "Nátěr fasády a dřevěného obložení | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Nátěr fasády a dřevěného obložení",
