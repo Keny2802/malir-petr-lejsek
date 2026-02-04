@@ -72,11 +72,11 @@ const Services = () => {
                         Moderní malování s precizním přístupem a dlouhou životností.
                     </p>
                 </Wrapper>
-                <Wrapper className="mt-4 md:mt-6 lg:mt-12 flex justify-center items-center flex-col md:flex-row flex-wrap gap-4 md:gap-8 lg:gap-16">
+                <Wrapper className="mt-4 md:mt-6 lg:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-16">
                     {
                         servicesSet.map((service, serviceIndex) => (
                             <Fragment key={serviceIndex}>
-                                <Wrapper className="md:min-h-[700px] md:max-h-[1000px]">
+                                <Wrapper className="flex flex-col h-full md:min-h-[700px] md:max-h-[1000px]">
                                     <Image
                                     width={500}
                                     height={500}
@@ -87,7 +87,7 @@ const Services = () => {
                                     draggable={false}
                                     className="aspect-square object-cover rounded-md"
                                     />
-                                    <Wrapper className="mt-4 md:mt-5 lg:mt-6 flex flex-col gap-2 md:gap-3 lg:gap-4">
+                                    <Wrapper className="mt-4 md:mt-5 lg:mt-6 flex flex-col gap-2 md:gap-3 lg:gap-4 flex-1">
                                         <h3 className="text-[25px] md:text-3xl lg:text-[35px] font-semibold">
                                             {service.serviceHeading}
                                         </h3>
@@ -96,7 +96,7 @@ const Services = () => {
                                         </p>
                                         <Link
                                         href={service.serviceHref}
-                                        className="p-4 md:p-5 lg:p-6 bg-[#1e1e1e] text-white text-center w-full rounded-md">
+                                        className="mt-auto p-4 md:p-5 lg:p-6 bg-[#1e1e1e] text-white text-center w-full rounded-md">
                                             Prohlédnout službu
                                         </Link>
                                     </Wrapper>
