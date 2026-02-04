@@ -9,6 +9,7 @@ import ContactHeader from "../../../components/ContactHeader";
 import Header from "../../../components/Header";
 import Services from "../../../sections/Services";
 import References from "../../../sections/References";
+import WhyUs from "../../../sections/WhyUs";
 import Contact from "../../../sections/Contact";
 import Footer from "../../../components/Footer";
 
@@ -61,6 +62,7 @@ const App = () => {
             <Header />
             <Services />
             <References />
+            <WhyUs />
             <Contact />
             <Footer />
         </Fragment>

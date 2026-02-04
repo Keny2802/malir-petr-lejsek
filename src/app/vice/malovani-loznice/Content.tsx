@@ -21,40 +21,41 @@ import PageLabel from "../../../../components/pageLabel";
 import FlexRow from "../../../../components/FlexRow";
 import FlexCol from "../../../../components/FlexCol";
 import References from "../../../../sections/References";
+import WhyUs from "../../../../sections/WhyUs";
 import Contact from "../../../../sections/Contact";
 import Footer from "../../../../components/Footer";
 
 const carouselSet = [
     {
-        imageSrc: "/Fotky/malovani-loznice/malovani-loznice/malovani-loznice-1.avif",
+        imageSrc: "/Fotky/malovani-loznice/malovani-loznice-1.avif",
         imageAlt: "Ukázka malování ložnice Brno foto 1. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-loznice/malovani-loznice/malovani-loznice-2.avif",
+        imageSrc: "/Fotky/malovani-loznice/malovani-loznice-2.avif",
         imageAlt: "Ukázka malování ložnice Brno foto 2. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-loznice/malovani-loznice/malovani-loznice-3.avif",
+        imageSrc: "/Fotky/malovani-loznice/malovani-loznice-3.avif",
         imageAlt: "Ukázka malování ložnice Brno foto 3. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-loznice/malovani-loznice/malovani-loznice-4.avif",
+        imageSrc: "/Fotky/malovani-loznice/malovani-loznice-4.avif",
         imageAlt: "Ukázka malování ložnice Brno foto 4. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-loznice/malovani-loznice/malovani-loznice-5.avif",
+        imageSrc: "/Fotky/malovani-loznice/malovani-loznice-5.avif",
         imageAlt: "Ukázka malování kuchyně Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-loznice/malovani-loznice/malovani-loznice-6.avif",
+        imageSrc: "/Fotky/malovani-loznice/malovani-loznice-6.avif",
         imageAlt: "Ukázka malování ložnice Brno foto 6. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-loznice/malovani-loznice/malovani-loznice-7.avif",
+        imageSrc: "/Fotky/malovani-loznice/malovani-loznice-7.avif",
         imageAlt: "Ukázka malování ložnice Brno foto 7. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-loznice/malovani-loznice/malovani-loznice-8.avif",
+        imageSrc: "/Fotky/malovani-loznice/malovani-loznice-8.avif",
         imageAlt: "Ukázka malování ložnice Brno foto 8. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     }
 ];
@@ -136,7 +137,7 @@ const Content = () => {
                                         loading="lazy"
                                         decoding="async"
                                         draggable={false}
-                                        className="rounded-md cursor-pointer"
+                                        className="w-20 h-20 object-cover rounded-md cursor-pointer"
                                         onClick={(e) => {
                                             setCurrentIndex(imageIndex);
                                         }}
@@ -169,6 +170,7 @@ const Content = () => {
                 </FlexRow>
             </Wrapper>
             <References />
+            <WhyUs />
             <Contact />
             <Footer />
         </Fragment>

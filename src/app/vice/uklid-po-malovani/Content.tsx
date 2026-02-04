@@ -21,28 +21,29 @@ import PageLabel from "../../../../components/pageLabel";
 import FlexRow from "../../../../components/FlexRow";
 import FlexCol from "../../../../components/FlexCol";
 import References from "../../../../sections/References";
+import WhyUs from "../../../../sections/WhyUs";
 import Contact from "../../../../sections/Contact";
 import Footer from "../../../../components/Footer";
 
 const carouselSet = [
     {
-        imageSrc: "/Fotky/uklid-po-malovani/Fotka-1.jpg",
+        imageSrc: "/Fotky/uklid-po-malovani/uklid-po-malovani-1.avif",
         imageAlt: "Ukázka úklidu po malování Brno foto 1. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/uklid-po-malovani/Fotka-2.jpg",
+        imageSrc: "/Fotky/uklid-po-malovani/uklid-po-malovani-2.avif",
         imageAlt: "Ukázka úklidu po malování Brno foto 2. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/uklid-po-malovani/Fotka-3.jpg",
+        imageSrc: "/Fotky/uklid-po-malovani/uklid-po-malovani-3.avif",
         imageAlt: "Ukázka úklidu po malování Brno foto 3. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/uklid-po-malovani/Fotka-4.jpg",
+        imageSrc: "/Fotky/uklid-po-malovani/uklid-po-malovani-4.avif",
         imageAlt: "Ukázka úklidu po malování Brno foto 4. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/uklid-po-malovani/Fotka-5.jpg",
+        imageSrc: "/Fotky/uklid-po-malovani/uklid-po-malovani-5.avif",
         imageAlt: "Ukázka úklidu po malování Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     }
 ];
@@ -122,7 +123,7 @@ const Content = () => {
                                         loading="lazy"
                                         decoding="async"
                                         draggable={false}
-                                        className="rounded-md cursor-pointer"
+                                        className="w-20 h-20 object-cover rounded-md cursor-pointer"
                                         onClick={(e) => {
                                             setCurrentIndex(imageIndex);
                                         }}
@@ -154,6 +155,10 @@ const Content = () => {
                     </FlexCol>
                 </FlexRow>
             </Wrapper>
+            <References />
+            <WhyUs />
+            <Contact />
+            <Footer />
         </Fragment>
     );
 };

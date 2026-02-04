@@ -29,8 +29,8 @@ export const serviceSet6:paintingServicesProps[] = [
         imageSrc: "/Fotky/sluzby/nater-strech/nater-strech-7.avif",
         imageAlt: "Ukázka nátěru střechy Brno foto 7. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
-    {
-        imageSrc: "/Fotky/sluzby/nater-strech/nater-strech-8.avif",
-        imageAlt: "Ukázka nátěru střechy Brno foto 8. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
-    },
+    // {
+    //     imageSrc: "/Fotky/sluzby/nater-strech/nater-strech-8.avif",
+    //     imageAlt: "Ukázka nátěru střechy Brno foto 8. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    // },
 ];

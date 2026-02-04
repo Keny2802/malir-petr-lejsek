@@ -3,6 +3,7 @@ import {
 } from "react";
 import Link from "next/link";
 import clsx from "clsx";
+import { span } from "framer-motion/client";
 
 interface pathLinkType {
     rootHref: string;
@@ -48,9 +49,13 @@ const PathLink = ({ ...props }: pathLinkType) => {
                                     {folderLink}
                                 </Link>
                             </li>
-                            <span>
-                                /
-                            </span>
+                            {
+                                !siteHref && !siteLink && (
+                                    <span>
+                                        /
+                                    </span>
+                                )
+                            }
                         </Fragment>
                     )
                 }

@@ -26,6 +26,7 @@ import NoProofLink from "../../../../components/NoProofLink";
 import Flex from "../../../../components/Flex";
 import setLinkWithoutHash from "../../../../functions/setLinkWithoutHash";
 import References from "../../../../sections/References";
+import WhyUs from "../../../../sections/WhyUs";
 import Contact from "../../../../sections/Contact";
 import Footer from "../../../../components/Footer";
 
@@ -201,6 +202,7 @@ const Content = () => {
                 </Wrapper>
             </Wrapper>
             <References />
+            <WhyUs />
             <Contact />
             <Footer />
         </Fragment>

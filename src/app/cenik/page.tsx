@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/Fotky/logo/logo-bez-pozadi.avif",
-        type: "image/png"
+        url: "/Fotky/Ikonky/favicon.ico",
+        type: "image/vnd.microsoft.icon"
       }
     ]
   },

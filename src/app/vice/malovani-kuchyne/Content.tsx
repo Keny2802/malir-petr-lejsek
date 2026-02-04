@@ -22,40 +22,41 @@ import FlexRow from "../../../../components/FlexRow";
 import FlexCol from "../../../../components/FlexCol";
 import Flex from "../../../../components/Flex";
 import References from "../../../../sections/References";
+import WhyUs from "../../../../sections/WhyUs";
 import Contact from "../../../../sections/Contact";
 import Footer from "../../../../components/Footer";
 
 const carouselSet = [
     {
-        imageSrc: "/Fotky/malovani-kuchyne/Fotka-1.jpg",
+        imageSrc: "/Fotky/malovani-kuchyne/malovani-kuchyne-1.avif",
         imageAlt: "Ukázka malování kuchyně Brno foto 1. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-kuchyne/Fotka-2.jpg",
+        imageSrc: "/Fotky/malovani-kuchyne/malovani-kuchyne-2.avif",
         imageAlt: "Ukázka malování kuchyně Brno foto 2. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-kuchyne/Fotka-3.jpg",
+        imageSrc: "/Fotky/malovani-kuchyne/malovani-kuchyne-3.avif",
         imageAlt: "Ukázka malování kuchyně Brno foto 3. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-kuchyne/Fotka-4.jpg",
+        imageSrc: "/Fotky/malovani-kuchyne/malovani-kuchyne-4.avif",
         imageAlt: "Ukázka malování kuchyně Brno foto 4. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-kuchyne/Fotka-5.jpg",
+        imageSrc: "/Fotky/malovani-kuchyne/malovani-kuchyne-5.avif",
         imageAlt: "Ukázka malování kuchyně Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-kuchyne/Fotka-6.jpg",
+        imageSrc: "/Fotky/malovani-kuchyne/malovani-kuchyne-6.avif",
         imageAlt: "Ukázka malování kuchyně Brno foto 6. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-kuchyne/Fotka-7.jpg",
+        imageSrc: "/Fotky/malovani-kuchyne/malovani-kuchyne-7.avif",
         imageAlt: "Ukázka malování kuchyně Brno foto 7. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-kuchyne/Fotka-8.jpg",
+        imageSrc: "/Fotky/malovani-kuchyne/malovani-kuchyne-8.avif",
         imageAlt: "Ukázka malování kuchyně Brno foto 8. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     }
 ];
@@ -135,7 +136,7 @@ const Content = () => {
                                         loading="lazy"
                                         decoding="async"
                                         draggable={false}
-                                        className="rounded-md cursor-pointer"
+                                        className="w-20 h-20 object-cover rounded-md cursor-pointer"
                                         onClick={(e) => {
                                             setCurrentIndex(imageIndex);
                                         }}
@@ -189,6 +190,7 @@ const Content = () => {
                 </Flex>
             </Wrapper>
             <References />
+            <WhyUs />
             <Contact />
             <Footer />
         </Fragment>

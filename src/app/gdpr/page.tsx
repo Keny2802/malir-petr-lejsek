@@ -8,7 +8,7 @@ import {
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Galerie realizací | Profi Malby Petr Lejska",
+  title: "Ochrana o osobních údajů | Profi Malby Petr Lejska",
   description: "Profesionální malování bytů v Brně a okolí. Precizní práce, čisté provedení, kvalitní barvy a férové ceny. Nezávazná kalkulace zdarma.",
   icons: {
     icon: [

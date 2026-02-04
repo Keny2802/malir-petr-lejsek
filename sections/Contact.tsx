@@ -4,10 +4,10 @@ import {
 import {
     PaperAirplaneIcon
 } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 import Wrapper from "../components/Wrapper";
 import PageLabel from "../components/pageLabel";
-import ContactInfo from "../components/ContactInfo";
 
 const Contact = () => {
     return (
@@ -113,6 +113,15 @@ const Contact = () => {
                                 aria-invalid={true}
                                 className="p-4 md:p-5 lg:p-6 bg-white text-black rounded-md focus:outline-none resize-none w-full md:max-w-120 min-h-50 h-full"
                                 id="message"></textarea>
+                                <p className="text-sm text-gray-500 text-center">
+                                    Odesláním formuláře souhlasíte se zpracováním osobních údajů dle zásad ochrany osobních údajů.
+                                    {" "}
+                                    <Link
+                                    href="/gdpr"
+                                    className="text-[#a11106]">
+                                        Přečíst ochranu o osobních údajů.
+                                    </Link>
+                                </p>
                             </Wrapper>
                         </Wrapper>
                         <button className="mt-4 md:mt-6 lg:mt-8 p-4 md:p-5 lg:p-6 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-center w-full rounded-2xl cursor-pointer">

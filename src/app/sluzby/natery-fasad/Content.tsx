@@ -26,6 +26,7 @@ import NoProofLink from "../../../../components/NoProofLink";
 import Flex from "../../../../components/Flex";
 import setLinkWithoutHash from "../../../../functions/setLinkWithoutHash";
 import References from "../../../../sections/References";
+import WhyUs from "../../../../sections/WhyUs";
 import Contact from "../../../../sections/Contact";
 import Footer from "../../../../components/Footer";
 
@@ -140,10 +141,10 @@ const Content = () => {
                             <Flex className="mt-4 md:mt-5 lg:mt-6 flex-wrap">
                                 {
                                     [
-                                        {
-                                            href: "/sluzby/natery-fasady",
-                                            link: "Nátěry fasád"
-                                        },
+                                        // {
+                                        //     href: "/sluzby/natery-fasad",
+                                        //     link: "Nátěry fasád"
+                                        // },
                                         {
                                             href: "/sluzby/natery-strech",
                                             link: "Nátěr střech"
@@ -204,6 +205,7 @@ const Content = () => {
                 </Wrapper>
             </Wrapper>
             <References />
+            <WhyUs />
             <Contact />
             <Footer />
         </Fragment>

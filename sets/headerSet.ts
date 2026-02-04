@@ -39,8 +39,8 @@ export const headerSet:headerSetProps[] = [
         pageLink: "GDPR",
         pageHref: "/gdpr"
     },
-    {
-        pageLink: "Nastavení cookies",
-        pageHref: "/nastaveni-cookies"
-    },
+    // {
+    //     pageLink: "Nastavení cookies",
+    //     pageHref: "/nastaveni-cookies"
+    // },
 ];

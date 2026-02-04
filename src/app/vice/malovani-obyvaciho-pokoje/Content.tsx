@@ -12,7 +12,6 @@ import {
     usePathname
 } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link";
 
 import Wrapper from "../../../../components/Wrapper";
 import ContactHeader from "../../../../components/ContactHeader";
@@ -27,35 +26,35 @@ import Footer from "../../../../components/Footer";
 
 const carouselSet = [
     {
-        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-1.avif",
+        imageSrc: "/Fotky/sluzby/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-1.avif",
         imageAlt: "Ukázka malování obývacího pokoje Brno foto 1. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-2.avif",
+        imageSrc: "/Fotky/sluzby/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-2.avif",
         imageAlt: "Ukázka malování obývacího pokoje Brno foto 2. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-3.avif",
+        imageSrc: "/Fotky/sluzby/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-3.avif",
         imageAlt: "Ukázka malování obývacího pokoje Brno foto 3. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-4.avif",
+        imageSrc: "/Fotky/sluzby/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-4.avif",
         imageAlt: "Ukázka malování obývacího pokoje Brno foto 4. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-5.avif",
+        imageSrc: "/Fotky/sluzby/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-5.avif",
         imageAlt: "Ukázka malování obývacího pokoje Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-6.avif",
+        imageSrc: "/Fotky/sluzby/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-6.avif",
         imageAlt: "Ukázka malování obývacího pokoje Brno foto 6. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-7.avif",
+        imageSrc: "/Fotky/sluzby/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-7.avif",
         imageAlt: "Ukázka malování obývacího pokoje Brno foto 7. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-8.avif",
+        imageSrc: "/Fotky/sluzby/malovani-obyvaciho-pokoje/malovani-obyvaciho-pokoje-8.avif",
         imageAlt: "Ukázka malování obývacího pokoje Brno foto 8. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
 ];
@@ -134,7 +133,7 @@ const Content = () => {
                                         loading="lazy"
                                         decoding="async"
                                         draggable={false}
-                                        className="rounded-md cursor-pointer"
+                                        className="w-20 h-20 object-cover rounded-md cursor-pointer"
                                         onClick={(e) => {
                                             setCurrentIndex(imageIndex);
                                         }}

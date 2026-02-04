@@ -8,6 +8,7 @@ import Header from "../../../components/Header";
 import PathLink from "../../../components/PathLink";
 import PageLabel from "../../../components/pageLabel";
 import References from "../../../sections/References";
+import WhyUs from "../../../sections/WhyUs";
 import Contact from "../../../sections/Contact";
 import Footer from "../../../components/Footer";
 
@@ -39,6 +40,7 @@ const Content = () => {
                 </Wrapper>
             </Wrapper>
             <References />
+            <WhyUs />
             <Contact />
             <Footer />
         </Fragment>
