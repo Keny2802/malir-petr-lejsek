@@ -105,7 +105,7 @@ const Content = () => {
                                         loading="lazy"
                                         decoding="async"
                                         draggable={false}
-                                        className="rounded-md cursor-pointer"
+                                        className="w-20 h-20 object-cover rounded-md cursor-pointer"
                                         onClick={(e) => {
                                             setCurrentIndex(serviceIndex);
                                         }}

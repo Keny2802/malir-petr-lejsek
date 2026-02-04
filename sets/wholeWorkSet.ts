@@ -8,11 +8,6 @@ type cardItem = {
 export const wholeWorkSet:cardItem[] = [
     {
         imageSrc: [
-            "/Fotky/realizace/Realizace (1).avif",
-            "/Fotky/realizace/Realizace (1-2).avif",
-            "/Fotky/realizace/Realizace (1-3).avif",
-            "/Fotky/realizace/Realizace (1-4).avif",
-            "/Fotky/realizace/Realizace (1-5).avif",
             "/Fotky/realizace/Realizace (1-6).avif",
             "/Fotky/realizace/Realizace (1-7).avif",
             "/Fotky/realizace/Realizace (1-8).avif"
@@ -75,14 +70,11 @@ export const wholeWorkSet:cardItem[] = [
     {
         imageSrc: [
             "/Fotky/realizace/Realizace (4).avif",
-            "/Fotky/realizace/Realizace (4-2).avif",
-            "/Fotky/realizace/Realizace (4-3).avif",
-            "/Fotky/realizace/Realizace (4-4).avif",
-            "/Fotky/realizace/Realizace (4-5).avif",
-            "/Fotky/realizace/Realizace (4-6).avif",
-            "/Fotky/realizace/Realizace (4-7).avif",
-            "/Fotky/realizace/Realizace (4-8).avif",
-            "/Fotky/realizace/Realizace (4-9).avif"
+            "/Fotky/realizace/Realizace (5-2).avif",
+            "/Fotky/realizace/Realizace (5-3).avif",
+            "/Fotky/realizace/Realizace (5-4).avif",
+            "/Fotky/realizace/Realizace (5-5).avif",
+            "/Fotky/realizace/Realizace (5-6).avif"
         ],
         imageAlt: "Malba prodejny | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malba prodejny",
@@ -96,11 +88,14 @@ export const wholeWorkSet:cardItem[] = [
     {
         imageSrc: [
             "/Fotky/realizace/Realizace (5).avif",
-            "/Fotky/realizace/Realizace (5-2).avif",
-            "/Fotky/realizace/Realizace (5-3).avif",
-            "/Fotky/realizace/Realizace (5-4).avif",
-            "/Fotky/realizace/Realizace (5-5).avif",
-            "/Fotky/realizace/Realizace (5-6).avif"
+            "/Fotky/realizace/Realizace (8-1).avif",
+            "/Fotky/realizace/Realizace (8-3).avif",
+            "/Fotky/realizace/Realizace (8-4).avif",
+            "/Fotky/realizace/Realizace (8-5).avif",
+            "/Fotky/realizace/Realizace (8-6).avif",
+            "/Fotky/realizace/Realizace (8-7).avif",
+            "/Fotky/realizace/Realizace (8-8).avif",
+            "/Fotky/realizace/Realizace (8-9).avif",
         ],
         imageAlt: "Nátěr fasády a dřevěného obložení | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Nátěr fasády a dřevěného obložení",
@@ -114,14 +109,14 @@ export const wholeWorkSet:cardItem[] = [
     {
         imageSrc: [
             "/Fotky/realizace/Realizace (6).avif",
-            "/Fotky/realizace/Realizace (6-2).avif",
-            "/Fotky/realizace/Realizace (6-3).avif",
-            "/Fotky/realizace/Realizace (6-4).avif",
-            "/Fotky/realizace/Realizace (6-5).avif",
-            "/Fotky/realizace/Realizace (6-6).avif",
-            "/Fotky/realizace/Realizace (6-7).avif",
-            "/Fotky/realizace/Realizace (6-8).avif",
-            "/Fotky/realizace/Realizace (6-9).avif"
+            "/Fotky/realizace/Realizace (9-2).avif",
+            "/Fotky/realizace/Realizace (9-3).avif",
+            "/Fotky/realizace/Realizace (9-4).avif",
+            "/Fotky/realizace/Realizace (9-5).avif",
+            "/Fotky/realizace/Realizace (9-6).avif",
+            "/Fotky/realizace/Realizace (9-7).avif",
+            "/Fotky/realizace/Realizace (9-8).avif",
+            "/Fotky/realizace/Realizace (9-9).avif"
         ],
         imageAlt: "Malování modních butiků | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malování modních butiků",
@@ -143,7 +138,14 @@ export const wholeWorkSet:cardItem[] = [
             "/Fotky/realizace/Realizace (7-6).avif",
             "/Fotky/realizace/Realizace (7-7).avif",
             "/Fotky/realizace/Realizace (7-8).avif",
-            "/Fotky/realizace/Realizace (7-9).avif"
+            "/Fotky/realizace/Realizace (7-9).avif",
+            "/Fotky/realizace/Realizace (4-3).avif",
+            "/Fotky/realizace/Realizace (4-4).avif",
+            "/Fotky/realizace/Realizace (4-5).avif",
+            "/Fotky/realizace/Realizace (4-6).avif",
+            "/Fotky/realizace/Realizace (4-7).avif",
+            "/Fotky/realizace/Realizace (4-8).avif",
+            "/Fotky/realizace/Realizace (4-9).avif",
         ],
         imageAlt: "Malování bytu a nástřik radiátorů | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malování bytu a nástřik radiátorů",
@@ -157,15 +159,16 @@ export const wholeWorkSet:cardItem[] = [
     },
     {
         imageSrc: [
-            "/Fotky/realizace/Realizace (8).avif",
-            "/Fotky/realizace/Realizace (8-1).avif",
-            "/Fotky/realizace/Realizace (8-3).avif",
-            "/Fotky/realizace/Realizace (8-4).avif",
-            "/Fotky/realizace/Realizace (8-5).avif",
-            "/Fotky/realizace/Realizace (8-6).avif",
-            "/Fotky/realizace/Realizace (8-7).avif",
-            "/Fotky/realizace/Realizace (8-8).avif",
-            "/Fotky/realizace/Realizace (8-9).avif"
+            "/Fotky/realizace/Realizace (6-2).avif",
+            "/Fotky/realizace/Realizace (6-3).avif",
+            "/Fotky/realizace/Realizace (6-3).avif",
+            "/Fotky/realizace/Realizace (6-3).avif",
+            "/Fotky/realizace/Realizace (6-4).avif",
+            "/Fotky/realizace/Realizace (6-5).avif",
+            "/Fotky/realizace/Realizace (6-6).avif",
+            "/Fotky/realizace/Realizace (6-7).avif",
+            "/Fotky/realizace/Realizace (6-8).avif",
+            "/Fotky/realizace/Realizace (6-9).avif"
         ],
         imageAlt: "Malba skladových prostor | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malba skladových prostor",
@@ -174,24 +177,24 @@ export const wholeWorkSet:cardItem[] = [
             "V kancelářích a schodišti byly poměrně nové omítky a sádrokartonové stopy což je pro malování ideální stav. Ve Skladových prostorech však byly omítky původní ještě s klenbovým stropem, na kterém jsme opravovali silně protečená místa. Konečný výsledek se nám opravdu povedl a výmalbou jsme vytvořili reprezentativní prostory."
         ]
     },
-    {
-        imageSrc: [
-            "/Fotky/realizace/Realizace (9).avif",
-            "/Fotky/realizace/Realizace (9-2).avif",
-            "/Fotky/realizace/Realizace (9-3).avif",
-            "/Fotky/realizace/Realizace (9-4).avif",
-            "/Fotky/realizace/Realizace (9-5).avif",
-            "/Fotky/realizace/Realizace (9-6).avif",
-            "/Fotky/realizace/Realizace (9-7).avif",
-            "/Fotky/realizace/Realizace (9-8).avif",
-            "/Fotky/realizace/Realizace (9-9).avif"
-        ],
-        imageAlt: "Výmalba novostavby Brno | Profi Malby Petr Lejska malby a natěračské práce",
-        heading: "Výmalba novostavby Brno",
-        desc: [
-            "V moderním bytě v novém sídlišti Kamechy jsme prováděli výmalbu ve mnohabarevné variantě. Stavební firma, která staví domy v této atraktivní lokalitě, předává byty vymalované základní barvou na bílo. Nový vlastník si potom doladí interiér barvami podle svých představ. Paní majitelce jsme zapůjčili vzorníky několika výrobců barev, ve kterých je nabízena obrovská škála odstínů, ve kterých si vybere, ten svůj, opravdu každý. Po několika denním pečlivém výběru jsme v interiéru bytu aplikovali materiály od firem Primalex procolor a Dulux.Vinyl matt."
-        ]
-    },
+    // {
+    //     imageSrc: [
+    //         "/Fotky/realizace/Realizace (9).avif",
+    //         "/Fotky/realizace/Realizace (9-2).avif",
+    //         "/Fotky/realizace/Realizace (9-3).avif",
+    //         "/Fotky/realizace/Realizace (9-4).avif",
+    //         "/Fotky/realizace/Realizace (9-5).avif",
+    //         "/Fotky/realizace/Realizace (9-6).avif",
+    //         "/Fotky/realizace/Realizace (9-7).avif",
+    //         "/Fotky/realizace/Realizace (9-8).avif",
+    //         "/Fotky/realizace/Realizace (9-9).avif"
+    //     ],
+    //     imageAlt: "Výmalba novostavby Brno | Profi Malby Petr Lejska malby a natěračské práce",
+    //     heading: "Výmalba novostavby Brno",
+    //     desc: [
+    //         "V moderním bytě v novém sídlišti Kamechy jsme prováděli výmalbu ve mnohabarevné variantě. Stavební firma, která staví domy v této atraktivní lokalitě, předává byty vymalované základní barvou na bílo. Nový vlastník si potom doladí interiér barvami podle svých představ. Paní majitelce jsme zapůjčili vzorníky několika výrobců barev, ve kterých je nabízena obrovská škála odstínů, ve kterých si vybere, ten svůj, opravdu každý. Po několika denním pečlivém výběru jsme v interiéru bytu aplikovali materiály od firem Primalex procolor a Dulux.Vinyl matt."
+    //     ]
+    // },
     {
         imageSrc: [
             "/Fotky/realizace/Realizace (10).avif",
@@ -216,7 +219,7 @@ export const wholeWorkSet:cardItem[] = [
     {
         imageSrc: [
             "/Fotky/realizace/Realizace (11).avif",
-            "/Fotky/realizace/Realizace (11-1).avif",
+            "/Fotky/realizace/Realizace (11-2).avif",
             "/Fotky/realizace/Realizace (11-3).avif",
             "/Fotky/realizace/Realizace (11-4).avif",
             "/Fotky/realizace/Realizace (11-5).avif",
@@ -324,7 +327,6 @@ export const wholeWorkSet:cardItem[] = [
     {
         imageSrc: [
             "/Fotky/realizace/Realizace (17).avif",
-            "/Fotky/realizace/Realizace (17-2).avif",
             "/Fotky/realizace/Realizace (17-3).avif",
             "/Fotky/realizace/Realizace (17-4).avif",
             "/Fotky/realizace/Realizace (17-5).avif",
@@ -342,7 +344,7 @@ export const wholeWorkSet:cardItem[] = [
     {
         imageSrc: [
             "/Fotky/realizace/Realizace (18).avif",
-            "/Fotky/realizace/Realizace (18-1).avif",
+            "/Fotky/realizace/Realizace (18-2).avif",
             "/Fotky/realizace/Realizace (18-3).avif"
         ],
         imageAlt: "Nátěr betonové podlahy | Profi Malby Petr Lejska malby a natěračské práce",
@@ -392,7 +394,6 @@ export const wholeWorkSet:cardItem[] = [
             "/Fotky/realizace/Realizace (21-1).avif",
             "/Fotky/realizace/Realizace (21-3).avif",
             "/Fotky/realizace/Realizace (21-4).avif",
-            "/Fotky/realizace/Realizace (21-5).avif",
             "/Fotky/realizace/Realizace (21-6).avif",
             "/Fotky/realizace/Realizace (21-7).avif",
             "/Fotky/realizace/Realizace (21-8).avif",

@@ -154,9 +154,6 @@ const Content = () => {
                     </FlexCol>
                 </FlexRow>
             </Wrapper>
-            <References />
-            <Contact />
-            <Footer />
         </Fragment>
     );
 };

@@ -8,11 +8,11 @@ type workSetProps = {
 export const workSet:workSetProps[] = [
     {
         imageSrc: [
-            "/Fotky/realizace/Realizace (1).avif",
-            "/Fotky/realizace/Realizace (1-2).avif",
-            "/Fotky/realizace/Realizace (1-3).avif",
-            "/Fotky/realizace/Realizace (1-4).avif",
-            "/Fotky/realizace/Realizace (1-5).avif",
+            // "/Fotky/realizace/Realizace (1).avif",
+            // "/Fotky/realizace/Realizace (1-2).avif",
+            // "/Fotky/realizace/Realizace (1-3).avif",
+            // "/Fotky/realizace/Realizace (1-4).avif",
+            // "/Fotky/realizace/Realizace (1-5).avif",
             "/Fotky/realizace/Realizace (1-6).avif",
             "/Fotky/realizace/Realizace (1-7).avif",
             "/Fotky/realizace/Realizace (1-8).avif"
@@ -75,14 +75,11 @@ export const workSet:workSetProps[] = [
     {
         imageSrc: [
             "/Fotky/realizace/Realizace (4).avif",
-            "/Fotky/realizace/Realizace (4-2).avif",
-            "/Fotky/realizace/Realizace (4-3).avif",
-            "/Fotky/realizace/Realizace (4-4).avif",
-            "/Fotky/realizace/Realizace (4-5).avif",
-            "/Fotky/realizace/Realizace (4-6).avif",
-            "/Fotky/realizace/Realizace (4-7).avif",
-            "/Fotky/realizace/Realizace (4-8).avif",
-            "/Fotky/realizace/Realizace (4-9).avif"
+            "/Fotky/realizace/Realizace (5-2).avif",
+            "/Fotky/realizace/Realizace (5-3).avif",
+            "/Fotky/realizace/Realizace (5-4).avif",
+            "/Fotky/realizace/Realizace (5-5).avif",
+            "/Fotky/realizace/Realizace (5-6).avif"
         ],
         imageAlt: "Malba prodejny | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malba prodejny",
@@ -95,7 +92,7 @@ export const workSet:workSetProps[] = [
     },
     {
         imageSrc: [
-            "/Fotky/realizace/Realizace (5).avif",
+            // "/Fotky/realizace/Realizace (4).avif",
             "/Fotky/realizace/Realizace (5-2).avif",
             "/Fotky/realizace/Realizace (5-3).avif",
             "/Fotky/realizace/Realizace (5-4).avif",
@@ -114,14 +111,14 @@ export const workSet:workSetProps[] = [
     {
         imageSrc: [
             "/Fotky/realizace/Realizace (6).avif",
-            "/Fotky/realizace/Realizace (6-2).avif",
-            "/Fotky/realizace/Realizace (6-3).avif",
-            "/Fotky/realizace/Realizace (6-4).avif",
-            "/Fotky/realizace/Realizace (6-5).avif",
-            "/Fotky/realizace/Realizace (6-6).avif",
-            "/Fotky/realizace/Realizace (6-7).avif",
-            "/Fotky/realizace/Realizace (6-8).avif",
-            "/Fotky/realizace/Realizace (6-9).avif"
+            "/Fotky/realizace/Realizace (9-2).avif",
+            "/Fotky/realizace/Realizace (9-3).avif",
+            "/Fotky/realizace/Realizace (9-4).avif",
+            "/Fotky/realizace/Realizace (9-5).avif",
+            "/Fotky/realizace/Realizace (9-6).avif",
+            "/Fotky/realizace/Realizace (9-7).avif",
+            "/Fotky/realizace/Realizace (9-8).avif",
+            "/Fotky/realizace/Realizace (9-9).avif"
         ],
         imageAlt: "Malování modních butiků | Profi Malby Petr Lejska malby a natěračské práce",
         heading: "Malování modních butiků",

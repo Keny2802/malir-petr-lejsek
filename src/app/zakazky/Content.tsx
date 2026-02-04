@@ -2,6 +2,7 @@
 
 import {
     useState,
+    useEffect,
     Fragment
 } from "react";
 import {
@@ -41,6 +42,16 @@ const Content = () => {
     const [isModalOpen, setModalOpen] = useState<boolean>(false);
     const [activeCard, setActiveCard] = useState<CardItem | null>(null);
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+    useEffect(() => {
+        const body = document.body;
+
+        if (activeCard !== null) {
+            body.style.overflow = "hidden";
+        } else {
+            body.style.overflow = "";
+        };
+    }, [activeCard]);
 
     const openModal = (card: CardItem) => {
         setActiveCard(card);

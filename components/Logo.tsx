@@ -37,7 +37,7 @@ const Logo = ({ ...props }: LogoProps) => {
                     <Image
                     height={180}
                     width={180}
-                    src="/Fotky/Clean Logo.png"
+                    src="/Fotky/logo/logo-bez-pozadi.avif"
                     alt="Malby Petr Lejska | Malíř Petr Lejska Logo"
                     loading="lazy"
                     decoding="async"
