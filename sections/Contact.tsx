@@ -15,7 +15,7 @@ const Contact = () => {
             <Wrapper
             className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 border-t border-gray-300 bg-[#ffd24d]/92 shadow-md section"
             id="kontakt">
-                <PageLabel pageLabelText="Kontakt" />
+                <PageLabel pageLabelText="Nezávazná poptávka" />
                 <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-3 lg:gap-4">
                     <h2 className="text-3xl md:text-4xl lg:text-[40px] text-center font-extrabold max-w-7xl">
                         Jsme tu pro vás
@@ -111,7 +111,7 @@ const Contact = () => {
                                 aria-label="Zpráva"
                                 aria-required={true}
                                 aria-invalid={true}
-                                className="p-4 md:p-5 lg:p-6 bg-white text-black rounded-md focus:outline-none resize-none w-full max-w-120 min-h-50 h-full"
+                                className="p-4 md:p-5 lg:p-6 bg-white text-black rounded-md focus:outline-none resize-none w-full md:max-w-120 min-h-50 h-full"
                                 id="message"></textarea>
                             </Wrapper>
                         </Wrapper>
@@ -120,7 +120,7 @@ const Contact = () => {
                             <PaperAirplaneIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer" />
                         </button>
                     </form>
-                    <ContactInfo />
+                    {/* <ContactInfo /> */}
                 </Wrapper>
             </Wrapper>
         </Fragment>

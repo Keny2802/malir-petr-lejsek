@@ -33,6 +33,6 @@ export const headerSet:headerSetProps[] = [
     },
     {
         link: "Kontakt",
-        href: "kontakt"
+        href: "kontaktni-informace"
     }
 ];

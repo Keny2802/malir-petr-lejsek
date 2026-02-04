@@ -16,6 +16,7 @@ import clsx from "clsx";
 import Wrapper from "./Wrapper";
 import Logo from "./Logo";
 import setLinkWithoutHash from "../functions/setLinkWithoutHash";
+import PageLabel from "./pageLabel";
 import ContactInfo from "./ContactInfo";
 import Facebook from "./Facebook";
 
@@ -68,7 +69,12 @@ const Footer = () => {
                                 }
                             </ul>
                         </Wrapper>
-                        <ContactInfo />
+                        <Wrapper id="kontaktni-informace">
+                            <p className="mb-2 md:mb-2.5 lg:mb-3 text-xl md:text-[22px] lg:text-[25px] text-[#a11106] font-bold uppercase">
+                                Kontakt
+                            </p>
+                            <ContactInfo />
+                        </Wrapper>
                         <Facebook />
                     </Wrapper>
                 </Wrapper>
