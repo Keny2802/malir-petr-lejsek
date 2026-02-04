@@ -119,7 +119,7 @@ const Carousel = ({ ...props }: CarouselType) => {
                                 return (
                                     <Fragment
                                     key={index}>
-                                        <Wrapper className="shrink-0 p-2 md:p-3 lg:p-4">
+                                        <Wrapper className="w-full shrink-0 p-2 md:p-3 lg:p-4">
                                             <Image
                                             width={1000}
                                             height={1000}
@@ -129,7 +129,7 @@ const Carousel = ({ ...props }: CarouselType) => {
                                             decoding="async"
                                             draggable={false}
                                             quality={90}
-                                            className="object-contain cursor-pointer"
+                                            className="object-cover cursor-pointer"
                                             />
                                         </Wrapper>
                                     </Fragment>
