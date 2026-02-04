@@ -32,16 +32,17 @@ const Footer = () => {
             className="border-t border-gray-300 bg-[#ffd24d]/92 shadow-m"
             id="footer">
                 <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14">
-                    <Logo />
-                    <Wrapper className="flex justify-evenly md:items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8">
-                        <Wrapper id="kontaktni-informace">
+                    {/* <Logo /> */}
+                    <Wrapper className="flex justify-between md:items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8">
+                        <Wrapper className="flex flex-col gap-2">
+                            <Wrapper id="kontaktni-informace">
                             {/* <p className="mb-2 md:mb-2.5 lg:mb-3 text-xl md:text-[22px] lg:text-[25px] text-[#a11106] font-bold uppercase">
                                 Kontakt
                             </p> */}
                             <ContactInfo />
                         </Wrapper>
                         <Wrapper className="flex flex-col gap-2 md:gap-3 lg:gap-4">
-                            <h3 className="text-xl md:text-[22px] lg:text-2xl font-semibold">
+                            <h3 className="mt-2 md:mt-2.5 lg:mt-3 md:text-[22px] lg:text-[25px] text-[#a11106] font-bold uppercase">
                                 Rychlé odkazy
                             </h3>
                             <ul className="flex flex-col gap-2 header-list">
@@ -87,7 +88,10 @@ const Footer = () => {
                                 }
                             </ul>
                         </Wrapper>
-                        <Facebook />
+                        </Wrapper>
+                        <Wrapper>
+                            <Facebook />
+                        </Wrapper>
                     </Wrapper>
                 </Wrapper>
                 <Wrapper className="p-4 md:p-6 lg:p-8 mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col gap-2 text-center font-medium">

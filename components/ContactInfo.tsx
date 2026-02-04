@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 
 import Wrapper from "./Wrapper";
+import Logo from "./Logo";
 
 const ContactInfo = () => {
     return (
@@ -18,10 +19,11 @@ const ContactInfo = () => {
                 <Wrapper className="flex flex-col gap-2 md:gap-3 lg:gap-4">
                     <h3
                     // className="text-xl md:text-[22px] lg:text-2xl font-semibold"
-                    className="mb-2 md:mb-2.5 lg:mb-3 text-xl md:text-[22px] lg:text-[25px] text-[#a11106] font-bold uppercase"
+                    className="mt-2 md:mt-2.5 lg:mt-3 text-xl md:text-[22px] lg:text-[25px] text-[#a11106] font-bold uppercase"
                     >
                         Kontakt
                     </h3>
+                    <Logo />
                     <p className="text-[15px] md:text-base lg:text-lg font-medium">
                         PROFI MALBY - Lejska Petr
                     </p>
