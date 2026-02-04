@@ -23,14 +23,11 @@ const Content = () => {
                 rootHref="/"
                 rootLink="Domov"
                 siteHref="/cenik"
-                siteLink="Ceník"
+                siteLink="Ceny / rozpočty"
                 className="mb-2 md:mb-4 lg:mb-6"
                 />
-                <PageLabel pageLabelText="Ceník / rozpočty" />
+                <PageLabel pageLabelText="Ceny / rozpočty" />
                 <Wrapper>
-                    <h2 className="text-3xl md:text-4xl lg:text-[40px] text-center font-extrabold max-w-7xl">
-                        Orientační ceník
-                    </h2>
                     <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-center items-center flex-col gap-2.5 md:gap-4 lg:gap-6">
                         <p className="text-[15px] md:text-base lg:text-lg font-medium">
                             Ke každé zakázce přistupujeme individuálně. Nabízíme nezávaznou osobní schůzku přímo na místě prací. Seznámíme se s Vašimi představami, vše společně prokonzultujeme a navrhneme optimální řešení vedoucí k maximální spokojenosti. Cenovou nabídku za malířské práce či natěračské práce pro vás vypracujeme zdarma a obdaříte ji obvykle do 48 hodin e-mailem nebo telefonicky.
