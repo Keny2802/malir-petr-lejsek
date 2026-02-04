@@ -41,6 +41,6 @@ export const headerSet:headerSetProps[] = [
     },
     {
         pageLink: "Nastavení cookies",
-        pageHref: "/cenik"
+        pageHref: "/nastaveni-cookies"
     },
 ];
