@@ -28,7 +28,7 @@ export const headerSet:headerSetProps[] = [
         href: "galerie"
     },
     {
-        pageLink: "Ceník / rozpočty",
+        pageLink: "Ceny / rozpočty",
         pageHref: "/cenik"
     },
     {

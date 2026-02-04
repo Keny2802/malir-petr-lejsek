@@ -20,7 +20,6 @@ import Image from "next/image";
 
 import Wrapper from "./Wrapper";
 import Logo from "./Logo";
-import NoProofLink from "./NoProofLink";
 import setLinkWithoutHash from "../functions/setLinkWithoutHash";
 
 interface componentProps {
