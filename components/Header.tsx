@@ -80,7 +80,7 @@ const Header = () => {
             id="header">
                 <Wrapper className="flex justify-between items-center gap-2 md:gap-4 lg:gap-6">
                     <Logo />
-                    <ul className="hidden lg:flex justify-center items-center gap-2 md:gap-4 lg:gap-6 header-list">
+                    <ul className="md:hidden lg:flex justify-center items-center gap-2 md:gap-4 lg:gap-6 flex-wrap header-list">
                         {
                             headerSet.map((headerItem, headerItemIndex) => (
                                 <Fragment key={headerItemIndex}>
@@ -90,7 +90,7 @@ const Header = () => {
                                                 pathName === "/" ? (
                                                     <Link
                                                     href={headerItem.href!}
-                                                    className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-[15px] md:text-[16.5px] lg:text-[15.5px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}
+                                                    className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-[15px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}
                                                     onClick={(e) => {
                                                         setLinkWithoutHash(e, headerItem.href!);
                                                         setMobileMenuClicked(false);
@@ -100,7 +100,7 @@ const Header = () => {
                                                 ) : (
                                                     <Link
                                                     href={`/#${headerItem.href}`}
-                                                    className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-[15px] md:text-[16.5px] lg:text-[15.5px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}>
+                                                    className={clsx(`${isActiveLink === headerItem.href && "relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0.5_1] text-[#a11106]"} text-[15px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]`)}>
                                                         {headerItem.link}
                                                     </Link>
                                                 )
@@ -112,7 +112,7 @@ const Header = () => {
                                             <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
                                                 <Link
                                                 href={headerItem.pageHref!}
-                                                className="text-[15px] md:text-[16.5px] lg:text-[15.5px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]"
+                                                className="text-[15px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]"
                                                 onClick={(e) => {
                                                     setMobileMenuClicked(false);
                                                 }}
@@ -125,7 +125,7 @@ const Header = () => {
                                 </Fragment>
                             ))
                         }
-                        {/* <Wrapper className="group relative text-base md:text-[18px] lg:text-lg font-semibold cursor-pointer">
+                        <Wrapper className="group relative text-base md:text-[18px] lg:text-lg font-semibold cursor-pointer">
                             Více
                             <ul className="z-100 w-60 max-w-100 absolute top-full right-0 p-2 md:p-2.5 lg:p-3 mt-1 md:mt-1.5 lg:mt-2 bg-white shadow-md rounded-md scale-y-0 group-hover:scale-y-100 origin-top duration-200">
                                 {
@@ -177,11 +177,11 @@ const Header = () => {
                                     })
                                 }
                             </ul>
-                        </Wrapper> */}
+                        </Wrapper>
                     </ul>
                     <Link
                     href="tel:+420603243852"
-                    className="p-2 md:p-3 lg:p-4 hidden lg:flex justify-between items-center gap-2 md:gap-3 lg:gap-4 bg-[#1e1e1e] text-white font-semibold rounded-md">
+                    className="p-2 md:p-3 lg:p-4 hidden lg:flex justify-between items-center flex-wrap gap-2 md:gap-3 lg:gap-4 bg-[#1e1e1e] text-white font-semibold rounded-md">
                         <DevicePhoneMobileIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                         +420 603 243 852
                     </Link>
