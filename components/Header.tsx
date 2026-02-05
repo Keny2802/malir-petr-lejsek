@@ -80,7 +80,7 @@ const Header = () => {
             id="header">
                 <Wrapper className="flex justify-between items-center gap-2 md:gap-4 lg:gap-6">
                     <Logo />
-                    <ul className="md:hidden lg:flex justify-center items-center gap-2 md:gap-4 lg:gap-6 flex-wrap header-list">
+                    <ul className="hidden lg:flex justify-center items-center gap-2 md:gap-4 lg:gap-6 header-list">
                         {
                             headerSet.map((headerItem, headerItemIndex) => (
                                 <Fragment key={headerItemIndex}>

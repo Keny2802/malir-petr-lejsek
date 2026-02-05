@@ -45,6 +45,18 @@ const carouselSet = [
     {
         imageSrc: "/Fotky/uklid-po-malovani/uklid-po-malovani-5.avif",
         imageAlt: "Ukázka úklidu po malování Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/uklid-po-malovani/uklid-po-malovani-6.avif",
+        imageAlt: "Ukázka úklidu po malování Brno foto 6. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/uklid-po-malovani/uklid-po-malovani-7.avif",
+        imageAlt: "Ukázka úklidu po malování Brno foto 7. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
+        imageSrc: "/Fotky/uklid-po-malovani/uklid-po-malovani-8.avif",
+        imageAlt: "Ukázka úklidu po malování Brno foto 8. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     }
 ];
 
