@@ -68,7 +68,7 @@ const Content = () => {
                             }
                         ].map((card, index) => {
                             return (
-                                <Fragment>
+                                <Fragment key={index}>
                                     <Wrapper
                                     key={index}>
                                         <h3 className="text-lg md:text-xl lg:text-2xl font-semibold">
