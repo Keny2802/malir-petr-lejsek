@@ -124,7 +124,7 @@ const Content = () => {
                                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />           
                             </button>
                         </Wrapper>
-                        <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex items-center gap-2 md:gap-4 lg:gap-6 flex-wrap md:flex-nowrap w-full">
+                        <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex items-center gap-2 md:gap-4 lg:gap-6 overflow-x-auto whitespace-nowrap">
                             {
                                 carouselSet.map((image, imageIndex) => (
                                     <Fragment key={imageIndex}>

@@ -42,22 +42,22 @@ const carouselSet = [
         imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-4.avif",
         imageAlt: "Ukázka nátěru dveří Brno foto 4. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
-    {
-        imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-5.avif",
-        imageAlt: "Ukázka nátěru dveří Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
-    },
-    {
-        imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-6.avif",
-        imageAlt: "Ukázka nátěru dveří Brno foto 6. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
-    },
-    {
-        imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-7.avif",
-        imageAlt: "Ukázka nátěru dveří Brno foto 7. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
-    },
-    {
-        imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-8.avif",
-        imageAlt: "Ukázka nátěru dveří Brno foto 8. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
-    }
+    // {
+    //     imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-5.avif",
+    //     imageAlt: "Ukázka nátěru dveří Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    // },
+    // {
+    //     imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-6.avif",
+    //     imageAlt: "Ukázka nátěru dveří Brno foto 6. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    // },
+    // {
+    //     imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-7.avif",
+    //     imageAlt: "Ukázka nátěru dveří Brno foto 7. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    // },
+    // {
+    //     imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-8.avif",
+    //     imageAlt: "Ukázka nátěru dveří Brno foto 8. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    // }
 ];
 
 const Content = () => {
@@ -123,7 +123,7 @@ const Content = () => {
                                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />           
                             </button>
                         </Wrapper>
-                        <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex items-center gap-2 md:gap-4 lg:gap-6 flex-wrap w-full md:max-w-125">
+                        <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex items-center gap-2 md:gap-4 lg:gap-6 overflow-x-auto whitespace-nowrap">
                             {
                                 carouselSet.map((image, imageIndex) => (
                                     <Fragment key={imageIndex}>
