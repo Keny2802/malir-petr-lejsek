@@ -142,7 +142,7 @@ const Content = () => {
                                 {
                                     [
                                         {
-                                            href: "/sluzby/natery-fasady",
+                                            href: "/sluzby/natery-fasad",
                                             link: "Nátěry fasád"
                                         },
                                         {

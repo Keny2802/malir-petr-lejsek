@@ -26,27 +26,27 @@ import Footer from "../../../../components/Footer";
 
 const carouselSet = [
     {
-        imageSrc: "/Fotky/nater-dveri/Fotka-1.jpg",
+        imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-1.avif",
         imageAlt: "Ukázka nátěru dveří Brno foto 1. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/nater-dveri/Fotka-2.jpg",
+        imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-2.avif",
         imageAlt: "Ukázka nátěru dveří Brno foto 2. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/nater-dveri/Fotka-3.jpg",
+        imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-3.avif",
         imageAlt: "Ukázka nátěru dveří Brno foto 3. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/nater-dveri/Fotka-4.jpg",
+        imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-4.avif",
         imageAlt: "Ukázka nátěru dveří Brno foto 4. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/nater-dveri/Fotka-5.jpg",
+        imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-5.avif",
         imageAlt: "Ukázka nátěru dveří Brno foto 5. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
-        imageSrc: "/Fotky/nater-dveri/Fotka-6.jpg",
+        imageSrc: "/Fotky/sluzby/nater-dveri/nater-dveri-6.avif",
         imageAlt: "Ukázka nátěru dveří Brno foto 6. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     }
 ];
