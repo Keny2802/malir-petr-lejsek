@@ -34,7 +34,8 @@ const Content = () => {
                             Ke každé zakázce přistupujeme individuálně. Nabízíme nezávaznou osobní schůzku přímo na místě prací. Seznámíme se s Vašimi představami, vše společně prokonzultujeme a navrhneme optimální řešení vedoucí k maximální spokojenosti. Cenovou nabídku za malířské práce či natěračské práce pro vás vypracujeme zdarma a obdaříte ji obvykle do 48 hodin e-mailem nebo telefonicky.
                         </p>
                         <p className="text-[15px] md:text-base lg:text-lg font-medium">
-                            Konečná cena na se vypočítá dle, charakteru, rozsahu, použitého materiálu a konkrétního stavu ploch a prostor.
+                            {/* Konečná cena na se vypočítá dle, charakteru, rozsahu, použitého materiálu a konkrétního stavu ploch a prostor. */}
+                            Konečná cena na se vypočítá dle, konkrétního stavu ploch, použitého materiálu, rozsahu a charakteru prací.
                         </p>
                     </Wrapper>
                 </Wrapper>
