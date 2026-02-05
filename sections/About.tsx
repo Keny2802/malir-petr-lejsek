@@ -96,7 +96,7 @@ const About = () => {
                                 Specializujeme se na malířské a natěračské práce všech typů - od bytů a domů až po firmy a komerční prostory. Působíme především v Brně a celém Jihomoravském kraji.
                             </p>
                             <p className="text-sm md:text-[15px] lg:text-base">
-                                Dbáme na čistotu, kvalitní materiály a precizní výsledek. Ke každému projektu přistupujeme individuálně, s důrazem na detail a dlouhou životnost nátěru.
+                                Dbáme na čistotu, kvalitní materiály a dokonalý výsledek. Ke každému projektu přistupujeme individuálně, s důrazem na detail a dlouhou životnost nátěru.
                             </p>
                             <p className="text-sm md:text-[15px] lg:text-base">
                                 Rádi vám zdarma poradíme s výběrem vhodného řešení a připravíme nezávaznou cenovou nabídku. Stačí nás kontaktovat - na všechny práce poskytujeme záruku.
