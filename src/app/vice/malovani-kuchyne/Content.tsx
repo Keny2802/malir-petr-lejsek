@@ -28,6 +28,10 @@ import Footer from "../../../../components/Footer";
 
 const carouselSet = [
     {
+        imageSrc: "/Fotky/malovani-kuchyne/malovani-kuchyne-7.avif",
+        imageAlt: "Ukázka malování kuchyně Brno foto 7. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
+    },
+    {
         imageSrc: "/Fotky/malovani-kuchyne/malovani-kuchyne-1.avif",
         imageAlt: "Ukázka malování kuchyně Brno foto 1. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
@@ -50,10 +54,6 @@ const carouselSet = [
     {
         imageSrc: "/Fotky/malovani-kuchyne/malovani-kuchyne-6.avif",
         imageAlt: "Ukázka malování kuchyně Brno foto 6. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
-    },
-    {
-        imageSrc: "/Fotky/malovani-kuchyne/malovani-kuchyne-7.avif",
-        imageAlt: "Ukázka malování kuchyně Brno foto 7. Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska"
     },
     {
         imageSrc: "/Fotky/malovani-kuchyne/malovani-kuchyne-8.avif",

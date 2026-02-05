@@ -21,6 +21,7 @@ import PageLabel from "../../../../components/pageLabel";
 import FlexRow from "../../../../components/FlexRow";
 import FlexCol from "../../../../components/FlexCol";
 import References from "../../../../sections/References";
+import WhyUs from "../../../../sections/WhyUs";
 import Contact from "../../../../sections/Contact";
 import Footer from "../../../../components/Footer";
 
@@ -166,6 +167,7 @@ const Content = () => {
                 </FlexRow>
             </Wrapper>
             <References />
+            <WhyUs />
             <Contact />
             <Footer />
         </Fragment>

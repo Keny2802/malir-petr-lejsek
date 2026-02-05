@@ -106,8 +106,23 @@ const Header = () => {
                                                 )
                                             )
                                         }
+                                        {
+                                        headerItem.pageLink && (
+                                            // <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
+                                                <Link
+                                                href={headerItem.pageHref!}
+                                                className="text-[15px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]"
+                                                onClick={(e) => {
+                                                    setMobileMenuClicked(false);
+                                                }}
+                                                >
+                                                    {headerItem.pageLink !== "GDPR" && headerItem.pageLink !== "Nastavení cookies" && headerItem.pageLink}
+                                                </Link>
+                                            // </li>
+                                        )
+                                    }
                                     </li>
-                                    {
+                                    {/* {
                                         headerItem.pageLink && (
                                             <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
                                                 <Link
@@ -121,11 +136,11 @@ const Header = () => {
                                                 </Link>
                                             </li>
                                         )
-                                    }
+                                    } */}
                                 </Fragment>
                             ))
                         }
-                        <Wrapper className="group relative text-base md:text-[18px] lg:text-lg font-semibold cursor-pointer">
+                        <Wrapper className="group relative right-[20px] text-[15px] font-medium cursor-pointer">
                             Více
                             <ul className="z-100 w-60 max-w-100 absolute top-full right-0 p-2 md:p-2.5 lg:p-3 mt-1 md:mt-1.5 lg:mt-2 bg-white shadow-md rounded-md scale-y-0 group-hover:scale-y-100 origin-top duration-200">
                                 {
