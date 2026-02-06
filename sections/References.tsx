@@ -39,22 +39,19 @@ const References = () => {
             prev === referencesCarouselSet.length - 1 ? 0 : prev + 1
         ));
     };
-    const animationRef = useRef<HTMLDivElement>(null);
-    
-    useEffect(() => {
-        if (!animationRef.current) return;
 
-        gsap.from(animationRef.current, {
-            opacity: 0,
-            y: 40,
-            ease: "power2.out",
-            duration: 0.3,
-            scrollTrigger: {
-                trigger: animationRef.current,
-                start: "top 85%",
-                toggleActions: "play none none reverse"
-            }
-        });
+    useEffect(() => {
+        let interval = 10000;
+
+        const referencesIntverval = setInterval(() => {
+            setCurrentIndex(
+                prev => prev === referencesCarouselSet.length - 1 ? 0 : prev + 1
+            );
+        }, interval);
+
+        return () => {
+            clearInterval(referencesIntverval);
+        };
     }, []);
 
     return (
@@ -103,8 +100,11 @@ const References = () => {
                             <p className="text-[15px] md:text-base lg:text-lg">
                                 „{referencesCarouselSet[currentIndex].reference}“
                             </p>
-                            <h3 className="text-xl md:text-2xl lg:text-[28px] font-semibold">
+                            {/* <h3 className="text-xl md:text-2xl lg:text-[28px] font-semibold">
                                 {referencesCarouselSet[currentIndex].referenceName}
+                            </h3> */}
+                            <h3 className="mt-2 md:mt-3 lg:mt-4 text-xl md:text-2xl lg:text-[28px] font-semibold">
+                                {currentIndex + 1} / {referencesCarouselSet.length}
                             </h3>
                         </Wrapper>
                         <Wrapper className="flex justify-between items-center gap-4 md:gap-6 lg:gap-8">

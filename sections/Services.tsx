@@ -69,10 +69,10 @@ const Services = () => {
                         Co pro vás uděláme
                     </h2>
                     <p className="text-[15px] md:text-base lg:text-lg font-medium md:max-w-3xl">
-                        Moderní malování s precizním přístupem a dlouhou životností.
+                        Malířské a natěračské práce s důrazem na kvalitu a dlouhou životnost.
                     </p>
                 </Wrapper>
-                <Wrapper className="mt-4 md:mt-6 lg:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-16">
+                <Wrapper className="mt-4 md:mt-6 lg:mt-12 w-max md:w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-16">
                     {
                         servicesSet.map((service, serviceIndex) => (
                             <Fragment key={serviceIndex}>
