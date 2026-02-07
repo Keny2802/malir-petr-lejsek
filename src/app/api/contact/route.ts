@@ -39,7 +39,7 @@ export async function POST(req: Request) {
         await resend.emails.send({
             from: "onboarding@resend.dev",
             // to: `${process.env.MY_EMAIL}`,
-            to: process.env.MY_EMAIL || "info.modernizujme@gmail.com",
+            to: process.env.MY_EMAIL || "info@profimalby.cz",
             subject: `Nová zpráva z profimalby.cz | od ${email}`,
             html: `
             <p>Jméno: ${name}</p>
