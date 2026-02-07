@@ -6,8 +6,8 @@ import "./globals.css";
 import LoadingScreen from "../../components/LoadingScreen";
 
 export const metadata: Metadata = {
-  title: "Malířství natěračství BRNO | Profi Malby Petr Lejska",
-  description: "Profesionální malování bytů v Brně a okolí. Precizní práce, čisté provedení, kvalitní barvy a férové ceny. Nezávazná kalkulace zdarma.",
+  title: "Malířství Natěračství Brno | PROFIMALBY - Petr Lejska",
+  description: "Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska. Malíři Brno - malování bytových interiérů, malování pokojů, malby pokojů. Natěrači Brno - nátěry fasád domu, nátěry radiátorů, dveří, nátěry střech, nátěry železných konstrukcí. Štukové omítky, sádrové omítky, probarvené omítky.",
   icons: {
     icon: [
       {
@@ -29,12 +29,13 @@ export const metadata: Metadata = {
     "profesionální malíř Brno"
   ],
   openGraph: {
-    title: "Malování bytů Brno | Profi Malby Petr Lejska",
-    description: "Hledáte spolehlivého malíře bytů v Brně? Zajistíme profesionální výmalbu bez starostí.",
+    title: "Malířství Natěračství Brno",
+    description: "Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska. Malíři Brno - malování bytových interiérů, malování pokojů, malby pokojů. Natěrači Brno - nátěry fasád domu, nátěry radiátorů, dveří, nátěry střech, nátěry železných konstrukcí. Štukové omítky, sádrové omítky, probarvené omítky.",
     url: "https://www.profimaby.cz",
-    siteName: "Profi Malby Petr Lejska",
+    siteName: "profimaby.cz",
     locale: "cs_CZ",
     type: "website",
+    
     images: [
       {
         url: "/Fotky/hero/hero-1.avif",
