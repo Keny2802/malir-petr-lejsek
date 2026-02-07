@@ -196,7 +196,7 @@ const Header = () => {
                     </ul>
                     <Link
                     href="/kariera"
-                    className="text-[15px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]"
+                    className="hidden md:inline-block text-[15px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]"
                     >
                         Kariéra
                     </Link>
