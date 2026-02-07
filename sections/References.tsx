@@ -68,7 +68,7 @@ const References = () => {
                         Reference od našich zákazníků z firmy.cz a Googlu
                     </h2>
                     <p className="text-[15px] md:text-base lg:text-lg font-medium md:max-w-3xl">
-                        Na Firmy.cz figurujeme na 1. místě v žebříčku nejlépe hodnocených firem v kategorii malířství - tapetářství v Brně - město.
+                        Na Firmy.cz figurujeme na 1. místě v žebříčku nejlépe hodnocených firem v kategorii malířství - tapetářství, malíří pokojů v Brně - město.
                     </p>
                 </Wrapper>
                 <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-evenly md:items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8">
