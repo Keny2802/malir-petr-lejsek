@@ -35,7 +35,7 @@ const Content = () => {
                         </p>
                         <p className="text-[15px] md:text-base lg:text-lg font-medium">
                             {/* Konečná cena na se vypočítá dle, charakteru, rozsahu, použitého materiálu a konkrétního stavu ploch a prostor. */}
-                            Konečná cena se vypočítá dle, konkrétního stavu ploch a malovaných prostor použitého materiálu, rozsahu a charakteru prací.
+                            Konečná cena se vypočítá dle, konkrétního stavu ploch a malovaných prostor - použitého materiálu, rozsahu a charakteru prací.
                         </p>
                         <p className="text-sm italic">
                             Petr Lejska
