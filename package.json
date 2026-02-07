@@ -20,7 +20,8 @@
     "react": "19.2.1",
     "react-dom": "19.2.1",
     "vercel": "^50.1.2",
-    "zod": "^3.25.76"
+    "zod": "^3.25.76",
+    "resend": "^6.9.1"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^5.15.3",
