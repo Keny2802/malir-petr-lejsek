@@ -70,6 +70,9 @@ const References = () => {
                     <p className="text-[15px] md:text-base lg:text-lg font-medium ">
                         Na Firmy.cz figurujeme na 1. místě v žebříčku nejlépe hodnocených firem v kategorii malířství - tapetářství a malíří pokojů v Brně - město.
                     </p>
+                    <p className="text-[15px] md:text-base lg:text-[17px] font-medium">
+                        2. místo pak malíři pokojů v Jihomoravském kraji.
+                    </p>
                 </Wrapper>
                 <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-evenly md:items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8">
                     <Wrapper className="flex flex-col gap-4 md:gap-6 lg:gap-6 max-w-2xl">
