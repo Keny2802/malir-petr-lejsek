@@ -195,6 +195,12 @@ const Header = () => {
                         </Wrapper>
                     </ul>
                     <Link
+                    href="/kariera"
+                    className="text-[15px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]"
+                    >
+                        Kariéra
+                    </Link>
+                    <Link
                     href="tel:+420603243852"
                     className="p-2 md:p-3 lg:p-4 hidden lg:flex justify-between items-center flex-wrap gap-2 md:gap-3 lg:gap-4 bg-[#1e1e1e] text-white font-semibold rounded-md">
                         <DevicePhoneMobileIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
