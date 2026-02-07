@@ -9,7 +9,7 @@ import {
 } from "next/server";
 
 // const resend = new Resend(process.env.RESEND_API_KEY);
-const resend = new Resend("re_7A7eaSkr_PrirfHoDhY4knf8Ao2Dt2K7t");
+const resend = new Resend("re_HaiAoJFx_DzyvQk13bUaUhrRf7oCBjrCY");
 
 export async function POST(req: Request) {
     try {

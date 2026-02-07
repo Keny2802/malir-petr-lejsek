@@ -1,6 +1,11 @@
+"use client";
+
 import {
     Fragment
 } from "react";
+import {
+    useRouter
+} from "next/navigation";
 import {
     PaperAirplaneIcon
 } from "@heroicons/react/24/solid";
@@ -20,6 +25,8 @@ import Wrapper from "../components/Wrapper";
 import PageLabel from "../components/pageLabel";
 
 const Contact = () => {
+    const router = useRouter();
+
     const {
         register,
         handleSubmit,
@@ -55,6 +62,7 @@ const Contact = () => {
                 return;
             };
 
+            router.replace("/dekujeme");
             reset();
         } catch (catchError) {
             console.error("Chyba při odesílání zprávy:", catchError);
