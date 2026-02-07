@@ -64,10 +64,10 @@ const References = () => {
                 <PageLabel pageLabelText="Reference" />
                 <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-3 lg:gap-4 text-center">
                     <h2 className="text-3xl md:text-4xl lg:text-[40px] text-center font-extrabold max-w-7xl">
-                        Reference
+                        Reference od našich zákazníků z firmy.cz a Googlu
                     </h2>
                     <p className="text-[15px] md:text-base lg:text-lg font-medium md:max-w-3xl">
-                        Přečtěte si, co o nás říkají naši zákazníci.
+                        Na Firmy.cz figurujeme na 1. místě v žebříčku nejlépe hodnocených firem v kategorii malířství - tapetářství v Brně město.
                     </p>
                 </Wrapper>
                 <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex justify-evenly md:items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8">
