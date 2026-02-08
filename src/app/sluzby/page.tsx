@@ -14,8 +14,8 @@ import Contact from "../../../sections/Contact";
 import Footer from "../../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Malování bytů Brno | Profi Malby Petr Lejska",
-  description: "Profesionální malování bytů v Brně a okolí. Precizní práce, čisté provedení, kvalitní barvy a férové ceny. Nezávazná kalkulace zdarma.",
+  title: "Služby - Malování bytů Brno | Profi Malby Petr Lejska",
+  description: "Profesionální malířské a natěračské služby v Brně a okolí. Malování bytů, malování domů, nátěry fasád, dveří a radiátorů - vše precizně a kvalitně.",
   icons: {
     icon: [
       {
@@ -37,22 +37,29 @@ export const metadata: Metadata = {
     "malířské služby Brno"
   ],
   openGraph: {
-    title: "Malování bytů Brno | Profi Malby Petr Lejska",
-    description: "Hledáte spolehlivého malíře bytů v Brně? Zajistíme profesionální výmalbu bez starostí.",
+    title: "Služby - Malování bytů Brno | Profi Malby Petr Lejska",
+    description: "Profesionální malířské a natěračské služby v Brně a okolí. Malování bytů, malování domů, nátěry fasád, dveří a radiátorů - vše precizně a kvalitně.",
     url: "https://www.profimaby.cz/sluzby",
-    siteName: "Profi Malby Petr Lejska",
+    siteName: "profimalby.cz",
     locale: "cs_CZ",
     type: "website",
     images: [
       {
-        url: "/Fotky/Clean Logo.png",
+        url: "/Fotky/hero/hero-1.avif",
         alt: "Malování bytů Brno - Profi Malby Petr Lejska",
-        type: "image/png",
+        type: "image/avif",
         width: 1200,
         height: 630,
       }
     ]
-  }
+  },
+  twitter: {
+    card: "summary",
+    title: "Služby - Malířské a natěračské služby Brno | Profi Malby Petr Lejska",
+    description:
+      "Profesionální malířské a natěračské služby v Brně a okolí. Malování bytů, malování domů, nátěry fasád, dveří a radiátorů – vše precizně a kvalitně.",
+    images: ["/Fotky/hero/hero-1.avif"],
+  },
 };
 
 const App = () => {

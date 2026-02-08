@@ -40,12 +40,18 @@ export const metadata: Metadata = {
       {
         url: "/Fotky/hero/hero-1.avif",
         alt: "Malování bytů Brno - Profi Malby Petr Lejska",
-        type: "image/jpg",
+        type: "image/avif",
         width: 1200,
         height: 630,
       }
-    ]
-  }
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Malířství Natěračství Brno | PROFIMALBY",
+    description: "Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska.",
+    images: ["/Fotky/hero/hero-1.avif"]
+  },
 };
 
 export default function RootLayout({

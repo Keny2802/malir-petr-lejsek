@@ -8,8 +8,8 @@ import {
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Malování bytů Brno | Profi Malby Petr Lejska",
-  description: "Profesionální malování bytů v Brně a okolí. Precizní práce, čisté provedení, kvalitní barvy a férové ceny. Nezávazná kalkulace zdarma.",
+  title: "Malířství, malby, malíř Brno a okolí | PROFIMALBY - Petr Lejska",
+  description: "Malířské a natěračské práce Brno a okolí. Malíři zajišťují malování bytových interiérů, malování bytu na klíč, malování pokojů, malování obývacího pokoje, malování dětského pokoje, malování kuchyně, malování ložnice, úklid po malování.",
   icons: {
     icon: [
       {
@@ -31,21 +31,27 @@ export const metadata: Metadata = {
     "malířské práce cena Brno",
   ],
   openGraph: {
-    title: "Malování bytů Brno | Profi Malby Petr Lejska",
-    description: "Hledáte spolehlivého malíře bytů v Brně? Zajistíme profesionální výmalbu bez starostí.",
+    title: "Malířství, malby, malíř Brno a okolí",
+    description: "Malířské a natěračské práce Brno a okolí. Malíři zajišťují malování bytových interiérů, malování bytu na klíč, malování pokojů, malování obývacího pokoje, malování dětského pokoje, malování kuchyně, malování ložnice, úklid po malování.",
     url: "https://www.profimaby.cz/sluzby/malirske-prace",
-    siteName: "Profi Malby Petr Lejska",
+    siteName: "profimalby.cz",
     locale: "cs_CZ",
     type: "website",
     images: [
       {
-        url: "/Fotky/Clean Logo.png",
-        alt: "Malování bytů Brno - Profi Malby Petr Lejska",
-        type: "image/png",
+        url: "/Fotky/hero/hero-1.avif",
+        alt: "Služby - Malování bytů Brno - Profi Malby Petr Lejska",
+        type: "image/avif",
         width: 1200,
         height: 630,
       }
     ]
+  },
+  twitter: {
+    card: "summary",
+    title: "Malířství, malby, malíř Brno a okolí",
+    description: "Malířské a natěračské práce Brno a okolí. Malíři zajišťují malování bytových interiérů, malování bytu na klíč, malování pokojů, malování obývacího pokoje, malování dětského pokoje, malování kuchyně, malování ložnice, úklid po malování.",
+    images: ["/Fotky/hero/hero-1.avif"],
   }
 };
 
