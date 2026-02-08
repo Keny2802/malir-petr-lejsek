@@ -54,7 +54,7 @@ const About = () => {
                         width={700}
                         height={700}
                         src="/Fotky/o-nas/o-nas.avif"
-                        alt="Fotka sekce o nás, malíři jak pracují"
+                        alt="Profesionální malíři z Profimalby pracují na malování stěny"
                         loading="lazy"
                         decoding="async"
                         draggable={false}

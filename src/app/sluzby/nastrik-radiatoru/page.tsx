@@ -8,8 +8,8 @@ import {
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Nástřik radiátorů | Profi Malby Petr Lejska",
-  description: "Profesionální malování bytů v Brně a okolí. Precizní práce, čisté provedení, kvalitní barvy a férové ceny. Nezávazná kalkulace zdarma.",
+  title: "Nástřik radiátorů Brno a okolí | PROFIMALBY - Petr Lejska",
+  description: "Natěračství Brno. Nátěry fasád, nástřik radiátorů, nátěr dveří, nátěry střech, nátěry železných konstrukcí.",
   icons: {
     icon: [
       {
@@ -31,21 +31,27 @@ export const metadata: Metadata = {
     "malířské práce cena Brno",
   ],
   openGraph: {
-    title: "Nástřik radiátorů | Profi Malby Petr Lejska",
-    description: "Hledáte spolehlivého malíře bytů v Brně? Zajistíme profesionální výmalbu bez starostí.",
+    title: "Nástřik radiátorů Brno a okolí",
+    description: "Natěračství Brno. Nátěry fasád, nástřik radiátorů, nátěr dveří, nátěry střech, nátěry železných konstrukcí.",
     url: "https://www.profimaby.cz/sluzby/nastrik-radiatoru",
-    siteName: "Profi Malby Petr Lejska",
+    siteName: "profimalby.cz",
     locale: "cs_CZ",
     type: "website",
     images: [
       {
-        url: "/Fotky/Clean Logo.png",
-        alt: "Nástřik radiátorů - Profi Malby Petr Lejska",
-        type: "image/png",
+        url: "/Fotky/hero/hero-1.avif",
+        alt: "Nátěry střech - Profi Malby Petr Lejska",
+        type: "image/avif",
         width: 1200,
         height: 630,
       }
     ]
+  },
+  twitter: {
+    card: "summary",
+    title: "Nátěr střechy Brno a okolí",
+    description: "Natěračství Brno. Nátěry fasád, nátěry radiátorů, nátěr dveří, nátěry střech, nátěry železných konstrukcí.",
+    images: ["/Fotky/hero/hero-1.avif"]
   }
 };
 

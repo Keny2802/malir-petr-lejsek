@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Služby - Malířské a natěračské služby Brno | Profi Malby Petr Lejska",
     description:
-      "Profesionální malířské a natěračské služby v Brně a okolí. Malování bytů, malování domů, nátěry fasád, dveří a radiátorů – vše precizně a kvalitně.",
+      "Profesionální malířské a natěračské služby v Brně a okolí. Malování bytů, malování domů, nátěry fasád, dveří a radiátorů - vše precizně a kvalitně.",
     images: ["/Fotky/hero/hero-1.avif"],
   },
 };

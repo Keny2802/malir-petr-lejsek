@@ -8,8 +8,8 @@ import {
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Malování bytů Brno | Profi Malby Petr Lejska",
-  description: "Profesionální malování bytů v Brně a okolí. Precizní práce, čisté provedení, kvalitní barvy a férové ceny. Nezávazná kalkulace zdarma.",
+  title: "Malování na klíč Brno a okolí | PROFIMALBY - Petr Lejska",
+  description: "Malířské a natěračské práce Brno a okolí. Malíři zajišťují malování bytových interiérů, malování pokojů. Natěrači zase nátěry fasád domu, nátěry radiátorů, dveří, nátěry střech, nátěry železných konstrukcí. Naši zedníci pak dělají štukové omítky, sádrové omítky a probarvené omítky (fasády domů).",
   icons: {
     icon: [
       {
@@ -31,21 +31,27 @@ export const metadata: Metadata = {
     "malířské práce cena Brno",
   ],
   openGraph: {
-    title: "Malování bytů Brno | Profi Malby Petr Lejska",
-    description: "Hledáte spolehlivého malíře bytů v Brně? Zajistíme profesionální výmalbu bez starostí.",
-    url: "https://www.profimaby.cz/sluzby/malirske-prace",
+    title: "Malování na klíč Brno a okolí",
+    description: "Malířské a natěračské práce Brno a okolí. Malíři zajišťují malování bytových interiérů, malování pokojů. Natěrači zase nátěry fasád domu, nátěry radiátorů, dveří, nátěry střech, nátěry železných konstrukcí. Naši zedníci pak dělají štukové omítky, sádrové omítky a probarvené omítky (fasády domů).",
+    url: "https://www.profimaby.cz/sluzby/malovani-na-klic",
     siteName: "Profi Malby Petr Lejska",
     locale: "cs_CZ",
     type: "website",
     images: [
       {
-        url: "/Fotky/Clean Logo.png",
-        alt: "Malování bytů Brno - Profi Malby Petr Lejska",
-        type: "image/png",
+        url: "/Fotky/hero/hero-1.avif",
+        alt: "Malování na klíč Brno - Profi Malby Petr Lejska",
+        type: "image/avif",
         width: 1200,
         height: 630,
       }
     ]
+  },
+  twitter: {
+    card: "summary",
+    title: "Malování na klíč Brno a okolí",
+    description: "Malířské a natěračské práce Brno a okolí. Malíři zajišťují malování bytových interiérů, malování pokojů. Natěrači zase nátěry fasád domu, nátěry radiátorů, dveří, nátěry střech, nátěry železných konstrukcí. Naši zedníci pak dělají štukové omítky, sádrové omítky a probarvené omítky (fasády domů).",
+    images: ["/Fotky/hero/hero-1.avif"]
   }
 };
 
