@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/Fotky/hero/hero-1.avif",
-        alt: "Služby - Malování bytů Brno - Profi Malby Petr Lejska",
+        alt: "Malířství, malby, malíř Brno a okolí",
         type: "image/avif",
         width: 1200,
         height: 630,
