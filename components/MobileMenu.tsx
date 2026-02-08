@@ -154,6 +154,14 @@ const MobileMenu = ({ ...props }: componentProps) => {
                                 Kariéra
                             </Link>
                         </li>
+                        <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.75 after:w-full after:bg-[#a11106] after:scale-[0_1] after:transition-transform after:duration-300 after:ease-in-out hover:after:scale-[1_1] header-item">
+                            <Link
+                            href="/cenik"
+                            className="text-[15px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]"
+                            >
+                                Ceny / rozpočty
+                            </Link>
+                        </li>
                     </ul>
                     <Link
                     href="tel:+420603243852"

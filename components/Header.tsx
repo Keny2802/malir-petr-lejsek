@@ -178,6 +178,10 @@ const Header = () => {
                                             link: "Úklid po malování"
                                         },
                                         {
+                                            href: "/cenik",
+                                            link: "Ceny / rozpočty"
+                                        },
+                                        {
                                             href: "/kariera",
                                             link: "Kariéra"
                                         }
