@@ -7,7 +7,8 @@ import LoadingScreen from "../../components/LoadingScreen";
 
 export const metadata: Metadata = {
   title: "Malířství Natěračství Brno | PROFIMALBY - Petr Lejska",
-  description: "Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska. Malíři Brno - malování bytových interiérů, malování pokojů, malby pokojů. Natěrači Brno - nátěry fasád domu, nátěry radiátorů, dveří, nátěry střech, nátěry železných konstrukcí. Štukové omítky, sádrové omítky, probarvené omítky.",
+  // description: "Malířské a natěračské práce Brno a okolí - Profimalby - Petr Lejska. Malíři Brno - malování bytových interiérů, malování pokojů, malby pokojů. Natěrači Brno - nátěry fasád domu, nátěry radiátorů, dveří, nátěry střech, nátěry železných konstrukcí. Štukové omítky, sádrové omítky, probarvené omítky.",
+  description: "Jsme profesionální malíři pokojů a natěrači již od roku 1998. Provádíme veškeré malířské a natěračské práce všech typů a rozsahů. Působíme převážně v Brně.",
   icons: {
     icon: [
       {
