@@ -176,6 +176,10 @@ const Header = () => {
                                         {
                                             href: "/vice/uklid-po-malovani",
                                             link: "Úklid po malování"
+                                        },
+                                        {
+                                            href: "/kariera",
+                                            link: "Kariéra"
                                         }
                                     ].map((link, linkIndex) => {
                                         return (
@@ -194,12 +198,12 @@ const Header = () => {
                             </ul>
                         </Wrapper>
                     </ul>
-                    <Link
+                    {/* <Link
                     href="/kariera"
                     className="hidden md:inline-block text-[15px] font-medium transition-colors duration-300 ease-in-out hover:text-[#a11106]"
                     >
                         Kariéra
-                    </Link>
+                    </Link> */}
                     <Link
                     href="tel:+420603243852"
                     className="p-2 md:p-3 lg:p-4 hidden lg:flex justify-between items-center flex-wrap gap-2 md:gap-3 lg:gap-4 bg-[#1e1e1e] text-white font-semibold rounded-md">
