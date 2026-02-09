@@ -36,6 +36,10 @@ export const headerSet:headerSetProps[] = [
         href: "kontaktni-informace"
     },
     {
+        pageLink: "Kariéra",
+        pageHref: "/kariera"
+    },
+    {
         pageLink: "GDPR",
         pageHref: "/gdpr"
     },
