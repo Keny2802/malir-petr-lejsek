@@ -12,6 +12,7 @@ import {
     usePathname
 } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 import Wrapper from "../../../../components/Wrapper";
 import ContactHeader from "../../../../components/ContactHeader";
@@ -20,6 +21,7 @@ import PathLink from "../../../../components/PathLink";
 import PageLabel from "../../../../components/pageLabel";
 import FlexRow from "../../../../components/FlexRow";
 import FlexCol from "../../../../components/FlexCol";
+import Flex from "../../../../components/Flex";
 import References from "../../../../sections/References";
 import WhyUs from "../../../../sections/WhyUs";
 import Contact from "../../../../sections/Contact";
@@ -91,7 +93,7 @@ const Content = () => {
                 className="mb-2 md:mb-4 lg:mb-6"
                 />
                 <PageLabel pageLabelText="Malování obývacího pokoje" />
-                <FlexRow className="flex-wrap">
+                <FlexRow>
                     <FlexCol>
                         <Wrapper className="relative">
                             <Image
@@ -163,6 +165,41 @@ const Content = () => {
                                 );
                             })
                         }
+                    <Flex className="mt-4 md:mt-5 lg:mt-6 flex-wrap">
+                            {
+                                [
+                                    {
+                                        href: "/vice/malovani-detskeho-pokoje",
+                                        link: "Malování dětského pokoje"
+                                    },
+                                    {
+                                        href: "/vice/malovani-kuchyne",
+                                        link: "Malování kuchyně"
+                                    },
+                                    {
+                                        href: "/vice/malovani-loznice",
+                                        link: "Malování ložnice"
+                                    },
+                                    {
+                                        href: "/sluzby/malovani-na-klic",
+                                        link: "Malování na klíč"
+                                    },
+                                    {
+                                        href: "/vice/uklid-po-malovani",
+                                        link: "Úklid po malování"
+                                    }
+                                ].map((link, linkIndex) => {
+                                    return (
+                                        <Link
+                                        key={linkIndex}
+                                        href={link.href}
+                                        className="p-4 md:p-4 lg:p-8 w-full md:w-max bg-[#a11106] text-white flex justify-center items-center rounded-2xl">
+                                            {link.link}
+                                        </Link>
+                                    );
+                                })
+                            }
+                        </Flex>
                     </FlexCol>
                 </FlexRow>
             </Wrapper>

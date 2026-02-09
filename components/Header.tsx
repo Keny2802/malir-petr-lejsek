@@ -132,10 +132,6 @@ const Header = () => {
                             <ul className="z-100 w-60 max-w-100 absolute top-full right-0 p-2 md:p-2.5 lg:p-3 mt-1 md:mt-1.5 lg:mt-2 bg-white shadow-md rounded-md scale-y-0 group-hover:scale-y-100 origin-top duration-200">
                                 {
                                     [
-                                        // {
-                                        //     href: "/vice/proc-si-vybrat-nas",
-                                        //     link: "Proč si vybrat nás"
-                                        // },
                                         {
                                             href: "/vice/malovani-obyvaciho-pokoje",
                                             link: "Malování obývacího pokoje"
