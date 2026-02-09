@@ -92,10 +92,10 @@ const Content = () => {
                 rootHref="/"
                 rootLink="Domov"
                 siteHref={pathName}
-                siteLink="Úklid po malování"
+                siteLink="Úklid po malování Brno"
                 className="mb-2 md:mb-4 lg:mb-6"
                 />
-                <PageLabel pageLabelText="Úklid po malování" />
+                <PageLabel pageLabelText="Úklid po malování Brno" />
                 <FlexRow>
                     <FlexCol>
                         <Wrapper className="relative">
@@ -150,7 +150,7 @@ const Content = () => {
                         </Wrapper>
                     </FlexCol>
                     <FlexCol>
-                        <h2 className="text-3xl md:text-4xl lg:text-[40px] text-center font-extrabold max-w-7xl">
+                        <h2 className="text-3xl md:text-4xl lg:text-[40px] font-extrabold max-w-7xl">
                             Úklid po malování
                         </h2>
                         {

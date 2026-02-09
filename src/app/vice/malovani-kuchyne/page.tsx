@@ -8,7 +8,7 @@ import {
 import Content from "./Content";
 
 export const metadata: Metadata = {
-  title: "Malování bytů Brno | Profi Malby Petr Lejska",
+  title: "Malování kuchyně Brno a okolí | PROFIMALBY - Petr Lejska",
   description: "Malířské a natěračské práce Brno a okolí. Malíři zajišťují malování bytových interiérů, malování pokojů. Natěrači zase nátěry fasád domu, nátěry radiátorů, dveří, nátěry střech, nátěry železných konstrukcí. Naši zedníci pak dělají štukové omítky, sádrové omítky a probarvené omítky (fasády domů).",
   icons: {
     icon: [

@@ -94,10 +94,10 @@ const Content = () => {
                 folderHref="/vice"
                 folderLink="Více"
                 siteHref={pathName}
-                siteLink="Malování ložnice"
+                siteLink="Malování ložnice Brno"
                 className="mb-2 md:mb-4 lg:mb-6"
                 />
-                <PageLabel pageLabelText="Malování ložnice" />
+                <PageLabel pageLabelText="Malování ložnice Brno" />
                 <FlexRow>
                     <FlexCol>
                         <Wrapper className="relative">
@@ -152,7 +152,7 @@ const Content = () => {
                         </Wrapper>
                     </FlexCol>
                     <FlexCol>
-                        <h2 className="text-3xl md:text-4xl lg:text-[40px] text-center font-extrabold max-w-7xl">
+                        <h2 className="text-3xl md:text-4xl lg:text-[40px] font-extrabold max-w-7xl">
                             Malba ložnice
                         </h2>
                         {

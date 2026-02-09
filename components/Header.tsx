@@ -153,7 +153,7 @@ const Header = () => {
                                             link: "Malování na klíč"
                                         },
                                         {
-                                            href: "/sluzby//vice/uklid-po-malovani",
+                                            href: "/vice/uklid-po-malovani",
                                             link: "Úklid po malování"
                                         },
                                         {
@@ -165,22 +165,12 @@ const Header = () => {
                                             link: "Nátěry střech"
                                         },
                                         {
-                                            href: "/sluzby/natery-strech",
-                                            link: "Nátěry střech"
-                                        },
-                                        {
                                             href: "/vice/nater-dveri",
                                             link: "Nátěr dvěří"
                                         },
-
                                         {
                                             href: "/vice/nater-oken",
                                             link: "Nátěr oken"
-                                        },
-
-                                        {
-                                            href: "/sluzby/nastrik-radiatoru",
-                                            link: "Nástřik radiátorů"
                                         },
                                         {
                                             href: "/sluzby/nastrik-radiatoru",
