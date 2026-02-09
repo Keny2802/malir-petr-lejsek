@@ -128,48 +128,52 @@ const Content = () => {
                                 Hlavní výhoda spočívá v tom, že veškeré starosti spojené s malováním bytu, domu či kanceláře přenecháte nám. Vaše jediná starost je výběr barevných odstínů a předání klíčů. O vše ostatní - od přípravy prostoru až po finální úklid - se postaráme my.
                             </p>
                             <NoProofLink
-                            href="kontakt"
-                            onClick={(e) => {
-                                setLinkWithoutHash(e, "kontakt");
-                            }}
-                            className="p-4 md:p-5 lg:p-6 bg-[#1e1e1e] text-white text-center w-full md:w-75 rounded-md">
-                                Nezávazně poptat
-                            </NoProofLink>
-                            <Flex className="mt-4 md:mt-5 lg:mt-6 flex-wrap">
-                                {
-                                    [
-                                        {
-                                            href: "/vice/malovani-obyvaciho-pokoje",
-                                            link: "Malování obývacího pokoje"
-                                        },
-                                        {
-                                            href: "/vice/malovani-detskeho-pokoje",
-                                            link: "Malování dětského pokoje"
-                                        },
-                                        {
-                                            href: "/vice/malovani-kuchyne",
-                                            link: "Malování kuchyně"
-                                        },
-                                        {
-                                            href: "/vice/malovani-loznice",
-                                            link: "Malování ložnice"
-                                        },
-                                        {
-                                            href: "/sluzby/malovani-na-klic",
-                                            link: "Malování na klíč"
-                                        }
-                                    ].map((link, linkIndex) => {
-                                        return (
-                                            <Link
-                                            key={linkIndex}
-                                            href={link.href}
-                                            className="p-8 bg-[#a11106] text-white flex justify-center items-center rounded-2xl">
-                                                {link.link}
-                                            </Link>
-                                        );
-                                    })
-                                }
-                            </Flex>
+                        href="kontakt"
+                        onClick={(e) => {
+                            setLinkWithoutHash(e, "kontakt");
+                        }}
+                        className="p-4 md:p-5 lg:p-6 bg-[#1e1e1e] text-white text-center w-full md:w-75 rounded-md">
+                            Nezávazně poptat
+                        </NoProofLink>
+                        <Flex className="mt-4 md:mt-5 lg:mt-6 flex-wrap">
+                            {
+                                [
+                                    {
+                                        href: "/vice/malovani-obyvaciho-pokoje",
+                                        link: "Malování obývacího pokoje"
+                                    },
+                                    {
+                                        href: "/vice/malovani-detskeho-pokoje",
+                                        link: "Malování dětského pokoje"
+                                    },
+                                    {
+                                        href: "/vice/malovani-kuchyne",
+                                        link: "Malování kuchyně"
+                                    },
+                                    {
+                                        href: "/vice/malovani-loznice",
+                                        link: "Malování ložnice"
+                                    },
+                                    // {
+                                    //     href: "/sluzby/malovani-na-klic",
+                                    //     link: "Malování na klíč"
+                                    // },
+                                    {
+                                        href: "/vice/uklid-po-malovani",
+                                        link: "Úklid po malování"
+                                    }
+                                ].map((link, linkIndex) => {
+                                    return (
+                                        <Link
+                                        key={linkIndex}
+                                        href={link.href}
+                                        className="p-4 md:p-4 lg:p-8 w-full md:w-max bg-[#a11106] text-white flex justify-center items-center rounded-2xl">
+                                            {link.link}
+                                        </Link>
+                                    );
+                                })
+                            }
+                        </Flex>
                         </Wrapper>
                     </Wrapper>
                 </Wrapper>

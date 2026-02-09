@@ -167,7 +167,7 @@ const Content = () => {
                                             <Link
                                             key={linkIndex}
                                             href={link.href}
-                                            className="p-8 bg-[#a11106] text-white flex justify-center items-center rounded-2xl">
+                                            className="p-4 md:p-4 lg:p-8 w-full md:w-max bg-[#a11106] text-white flex justify-center items-center rounded-2xl">
                                                 {link.link}
                                             </Link>
                                         );

@@ -11,6 +11,7 @@ import {
 import {
     usePathname
 } from "next/navigation";
+import setLinkWithoutHash from "../../../../functions/setLinkWithoutHash";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,6 +23,7 @@ import PageLabel from "../../../../components/pageLabel";
 import FlexRow from "../../../../components/FlexRow";
 import FlexCol from "../../../../components/FlexCol";
 import Flex from "../../../../components/Flex";
+import NoProofLink from "../../../../components/NoProofLink";
 import References from "../../../../sections/References";
 import WhyUs from "../../../../sections/WhyUs";
 import Contact from "../../../../sections/Contact";
@@ -165,41 +167,49 @@ const Content = () => {
                                 );
                             })
                         }
+                    <NoProofLink
+                    href="kontakt"
+                    onClick={(e) => {
+                        setLinkWithoutHash(e, "kontakt");
+                    }}
+                    className="p-4 md:p-5 lg:p-6 bg-[#1e1e1e] text-white text-center w-full md:w-75 rounded-md">
+                        Nezávazně poptat
+                    </NoProofLink>
                     <Flex className="mt-4 md:mt-5 lg:mt-6 flex-wrap">
-                            {
-                                [
-                                    {
-                                        href: "/vice/malovani-detskeho-pokoje",
-                                        link: "Malování dětského pokoje"
-                                    },
-                                    {
-                                        href: "/vice/malovani-kuchyne",
-                                        link: "Malování kuchyně"
-                                    },
-                                    {
-                                        href: "/vice/malovani-loznice",
-                                        link: "Malování ložnice"
-                                    },
-                                    {
-                                        href: "/sluzby/malovani-na-klic",
-                                        link: "Malování na klíč"
-                                    },
-                                    {
-                                        href: "/vice/uklid-po-malovani",
-                                        link: "Úklid po malování"
-                                    }
-                                ].map((link, linkIndex) => {
-                                    return (
-                                        <Link
-                                        key={linkIndex}
-                                        href={link.href}
-                                        className="p-4 md:p-4 lg:p-8 w-full md:w-max bg-[#a11106] text-white flex justify-center items-center rounded-2xl">
-                                            {link.link}
-                                        </Link>
-                                    );
-                                })
-                            }
-                        </Flex>
+                        {
+                            [
+                                {
+                                    href: "/vice/malovani-detskeho-pokoje",
+                                    link: "Malování dětského pokoje"
+                                },
+                                {
+                                    href: "/vice/malovani-kuchyne",
+                                    link: "Malování kuchyně"
+                                },
+                                {
+                                    href: "/vice/malovani-loznice",
+                                    link: "Malování ložnice"
+                                },
+                                {
+                                    href: "/sluzby/malovani-na-klic",
+                                    link: "Malování na klíč"
+                                },
+                                {
+                                    href: "/vice/uklid-po-malovani",
+                                    link: "Úklid po malování"
+                                }
+                            ].map((link, linkIndex) => {
+                                return (
+                                    <Link
+                                    key={linkIndex}
+                                    href={link.href}
+                                    className="p-4 md:p-4 lg:p-8 w-full md:w-max bg-[#a11106] text-white flex justify-center items-center rounded-2xl">
+                                        {link.link}
+                                    </Link>
+                                );
+                            })
+                        }
+                    </Flex>
                     </FlexCol>
                 </FlexRow>
             </Wrapper>
