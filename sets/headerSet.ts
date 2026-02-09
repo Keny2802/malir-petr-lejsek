@@ -27,10 +27,10 @@ export const headerSet:headerSetProps[] = [
         link: "Galerie",
         href: "galerie"
     },
-    // {
-    //     pageLink: "Ceny / rozpočty",
-    //     pageHref: "/cenik"
-    // },
+    {
+        pageLink: "Ceny / rozpočty",
+        pageHref: "/cenik"
+    },
     {
         link: "Kontakt",
         href: "kontaktni-informace"
