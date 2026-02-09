@@ -76,7 +76,7 @@ const Services = () => {
                     {
                         servicesSet.map((service, serviceIndex) => (
                             <Fragment key={serviceIndex}>
-                                <Wrapper className="flex flex-col h-full md:min-h-[700px] md:max-h-[1000px]">
+                                <Wrapper className="mx-auto flex flex-col h-full md:min-h-[700px] md:max-h-[1000px]">
                                     <Image
                                     width={500}
                                     height={500}

@@ -149,16 +149,42 @@ const Header = () => {
                                             link: "Malování ložnice"
                                         },
                                         {
-                                            href: "/vice/nater-oken",
-                                            link: "Nátěr oken"
+                                            href: "/sluzby/malovani-na-klic",
+                                            link: "Malování na klíč"
+                                        },
+                                        {
+                                            href: "/sluzby//vice/uklid-po-malovani",
+                                            link: "Úklid po malování"
+                                        },
+                                        {
+                                            href: "/sluzby/natery-fasad",
+                                            link: "Nátěry Fasád"
+                                        },
+                                        {
+                                            href: "/sluzby/natery-strech",
+                                            link: "Nátěry střech"
+                                        },
+                                        {
+                                            href: "/sluzby/natery-strech",
+                                            link: "Nátěry střech"
                                         },
                                         {
                                             href: "/vice/nater-dveri",
-                                            link: "Nátěr dveří"
+                                            link: "Nátěr dvěří"
+                                        },
+
+                                        {
+                                            href: "/vice/nater-oken",
+                                            link: "Nátěr oken"
+                                        },
+
+                                        {
+                                            href: "/sluzby/nastrik-radiatoru",
+                                            link: "Nástřik radiátorů"
                                         },
                                         {
-                                            href: "/vice/uklid-po-malovani",
-                                            link: "Úklid po malování"
+                                            href: "/sluzby/nastrik-radiatoru",
+                                            link: "Nástřik radiátorů"
                                         },
                                         {
                                             href: "/kariera",
@@ -167,7 +193,7 @@ const Header = () => {
                                     ].map((link, linkIndex) => {
                                         return (
                                             <Fragment key={linkIndex}>
-                                                <li className="mt-1 md:mt-1.5 lg:mt-2 border-b border-gray-200 last:border-none drop-down-menu-item">
+                                                <li className="mt-1 md:mt-1.5 lg:mt-2 border-b border-gray-200 last:border-none last:uppercase last:text-[#a11106] drop-down-menu-item">
                                                     <Link
                                                     href={link.href}
                                                     className="transition-colors duration-300 ease-in-out hover:text-[#a11106] drop-down-menu-link">
