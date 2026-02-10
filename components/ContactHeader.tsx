@@ -27,17 +27,34 @@ const ContactHeader = () => {
                     </Link>
                     <Link
                     href="tel:+420547211709"
-                    className="flex flex-row items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
+                    className="hidden md:flex flex-row items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
                         <PhoneIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                         +420 547 211 709
                     </Link>
-                    <Link
-                        href="mailto:info@profimalby.cz"
-                        className="flex flex-row items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
-                        <EnvelopeIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
-                        info@profimalby.cz
-                    </Link>
-                    <Wrapper className="w-full md:w-max flex justify-between items-center gap-2 md:gap-4 lg:gap-6">
+                    <Wrapper className="w-full md:w-max flex justify-between items-center">
+                        <Link
+                            href="mailto:info@profimalby.cz"
+                            className="flex flex-row items-center gap-2 md:gap-2.5 lg:gap-3 transition-colors duration-300 ease-in-out hover:text-[#a11106]">
+                            <EnvelopeIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
+                            info@profimalby.cz
+                        </Link>
+                        <Link
+                            href="https://www.facebook.com/profimalby"
+                            rel="nofollow"
+                            target="_blank">
+                            <Image
+                            height={20}
+                            width={20}
+                            src="/Fotky/Ikonky/Facebook.svg"
+                            alt="Facebook ikonka"
+                            loading="lazy"
+                            decoding="async"
+                            draggable={false}
+                            className="md:hidden w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
+                            />
+                        </Link>
+                    </Wrapper>
+                    <Wrapper className="w-full md:w-max hidden md:flex justify-between items-center gap-2 md:gap-4 lg:gap-6">
                         <Wrapper className="flex flex-row items-center gap-2 md:gap-2.5 lg:gap-3">
                             <ClockIcon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
                             <p className="text-sm md:text-[15px] lg:text-base">

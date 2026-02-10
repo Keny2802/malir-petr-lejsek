@@ -3,3 +3,14 @@
 input[type="number"]::-webkit-inner-spin-button {
     appearance: none;
 }
+
+@media (max-width: 639px) {
+    .mobile-scrollbar::-webkit-scrollbar-thumb {
+        background: #a11106;
+        border-radius: 999px;
+    };
+
+    .mobile-scrollbar {
+        scrollbar-color: #a11106 transparent;
+    }
+}

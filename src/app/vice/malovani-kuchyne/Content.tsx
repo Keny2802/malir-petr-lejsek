@@ -127,7 +127,7 @@ const Content = () => {
                                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 cursor-pointer" />           
                             </button>
                         </Wrapper>
-                        <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex items-center gap-2 md:gap-4 lg:gap-6 overflow-x-auto whitespace-nowrap">
+                        <Wrapper className="mt-4 md:mt-6 lg:mt-8 flex items-center gap-2 md:gap-4 lg:gap-6 overflow-x-auto whitespace-nowrap mobile-scrollbar">
                             {
                                 carouselSet.map((image, imageIndex) => (
                                     <Fragment key={imageIndex}>
@@ -161,7 +161,7 @@ const Content = () => {
                             ].map((textBlock, textBlockIndex) => {
                                 return (
                                     <Fragment key={textBlockIndex}>
-                                        <p className="text-[15px] md:text-base lg:text-lg font-medium md:max-w-3xl">
+                                        <p className="text-[15px] md:text-base lg:text-lg md:max-w-3xl">
                                             {textBlock}
                                         </p>
                                     </Fragment>
@@ -219,6 +219,9 @@ const Content = () => {
                 </FlexRow>
                 <Flex className="mt-2 md:mt-4 lg:mt-6 justify-center">
                     <FlexCol>
+                        <h3 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold">
+                            Kuchyně v nových barvách
+                        </h3>
                         {
                             [
                                 "Kuchyně je opravdovým srdcem našeho domova, důležitá místnost kde obvykle začíná náš den. Patří k pokojům v bytě, kde strávíme hodně času. Ať už při vaření pokrmů nebo při vychutnávání si ranní kávy. Pro všechny členy rodiny je vkusně zařízená a útulná kuchyně velice důležitá.Na rozdíl od malování ložnice můžeme být v kuchyni s odstíny mnohem smělejší. Nemusíme se bát barev, jako je oranžová či červená, protože právě v kuchyni je energie žádaná. Je důležité, aby kuchyň dokázala nabudit a pozitivně naladit.",
@@ -229,7 +232,7 @@ const Content = () => {
                             ].map((textBlock, textBlockIndex) => {
                                 return (
                                     <Fragment key={textBlockIndex}>
-                                        <p className="text-[15px] md:text-base lg:text-lg font-medium">
+                                        <p className="text-[15px] md:text-base lg:text-lg">
                                             {textBlock}
                                         </p>
                                     </Fragment>

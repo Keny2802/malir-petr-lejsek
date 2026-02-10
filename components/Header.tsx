@@ -10,7 +10,7 @@ import {
 } from "next/navigation";
 import {
     DevicePhoneMobileIcon,
-    Bars2Icon,
+    Bars3Icon,
     MinusIcon
 } from "@heroicons/react/24/solid";
 import {
@@ -221,7 +221,7 @@ const Header = () => {
                             </Fragment>
                         ) : (
                             <Fragment>
-                                <Bars2Icon
+                                <Bars3Icon
                                 className="lg:hidden w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 cursor-pointer"
                                 onClick={(e) => {
                                     setMobileMenuClicked(true);
