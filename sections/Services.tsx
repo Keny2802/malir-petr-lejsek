@@ -48,7 +48,7 @@ const Services = () => {
         <Fragment>
             {/* bg-[#e7e6e6] */}
             <Wrapper
-            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#ffd24d]/92 shadow-md section"
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#ffd24d]/80 shadow-md section"
             id="sluzby"
             // ref={animationRef}
             >
