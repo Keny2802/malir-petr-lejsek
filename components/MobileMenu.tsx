@@ -176,12 +176,12 @@ const MobileMenu = ({ ...props }: componentProps) => {
                         +420 547 211 709
                     </Link>
                 </Wrapper>
-                <p className="text-black text-center">
+                <p className="mt-2 text-black text-center">
                     &copy;
                     {" "}
                     {dynamicYear}
                     {" "}
-                    Malby Petr Lejsek.
+                    PROFI MALBY Petr Lejska.
                     Všechna práva vyhrazena.
                 </p>
             </Wrapper>
