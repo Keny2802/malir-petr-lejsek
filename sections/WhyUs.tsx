@@ -54,7 +54,7 @@ const WhyUs = () => {
                                                         <CheckCircleIcon className="text-[#a11106]" />
                                                     </Icon>
                                                 </Wrapper>
-                                                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-center">
+                                                <h3 className="text-lg md:text-xl lg:text-[22px] font-bold text-center">
                                                     {cardItem.heading}
                                                 </h3>
                                             </Flex>
