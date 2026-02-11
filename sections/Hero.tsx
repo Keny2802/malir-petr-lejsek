@@ -50,7 +50,7 @@ const Hero = () => {
                 loading="lazy"
                 decoding="async"
                 draggable={false}
-                className="w-full min-h-[800px] object-cover"
+                className="w-full min-h-[800px] md:h-[100vh] object-cover"
                 // min-h-[800px]
                 />
                 <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-start items-center flex-col gap-4 md:gap-6 lg:gap-8 text-white text-center rounded-md">
