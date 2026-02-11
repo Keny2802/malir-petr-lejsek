@@ -106,7 +106,7 @@ const Hero = () => {
                     <Wrapper className="p-4 md:p-5 lg:p-6 flex justify-center items-center flex-col md:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
                         <NoProofLink
                         href="proc-si-vybrat-nas"
-                        className="p-4 md:p-5 lg:p-6 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-white text-black text-base md:text-[17px] lg:text-lg font-medium text-center w-full md:w-75 rounded-md"
+                        className="p-4 md:p-5 lg:p-6 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-[#a11106] text-white text-base md:text-[17px] lg:text-lg font-medium text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
                             setLinkWithoutHash(e, "proc-si-vybrat-nas");
                         }}>
@@ -122,7 +122,7 @@ const Hero = () => {
                         </NoProofLink>
                         <NoProofLink
                         href="kontakt"
-                        className="p-4 md:p-5 lg:p-6 bg-[#1e1e1e] text-white text-base md:text-[17px] lg:text-lg font-medium text-center w-full md:w-75 rounded-md"
+                        className="p-4 md:p-5 lg:p-6 bg-[#a11106] text-white text-base md:text-[17px] lg:text-lg font-medium text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
                             setLinkWithoutHash(e, "kontakt");
                         }}>
