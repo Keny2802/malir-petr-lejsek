@@ -43,16 +43,17 @@ const Hero = () => {
             className="relative section"
             id="domu">
                 <Image
-                width={1000}
-                height={1000}
+                width={800}
+                height={800}
                 src="/Fotky/hero/hero-1.avif"
                 alt="Malby Petr Lejska Fotka Hero Sekce"
                 loading="lazy"
                 decoding="async"
                 draggable={false}
                 className="w-full min-h-[800px] object-cover"
+                // min-h-[800px]
                 />
-                <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-center items-center flex-col gap-4 md:gap-6 lg:gap-8 text-white text-center rounded-md">
+                <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-start items-center flex-col gap-4 md:gap-6 lg:gap-8 text-white text-center rounded-md">
                     <Wrapper className="p-2 md:p-3 lg:p-4 bg-black/50 flex justify-center items-center flex-col gap-4 md:gap-6 lg:gap-8 rounded-md">
                         <h1 className="text-3xl md:text-[60px] lg:text-7xl font-extrabold md:max-w-7xl">
                             Profesionální malování interiérů, které změní váš domov k nepoznání
