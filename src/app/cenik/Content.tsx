@@ -18,7 +18,7 @@ const Content = () => {
             <ContactHeader />
             <Header />
             <Wrapper
-            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#ffd24d]/92 shadow-md"
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#ffd24d]/80 shadow-md"
             id="cenik">
                 <PathLink
                 rootHref="/"

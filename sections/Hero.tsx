@@ -53,7 +53,7 @@ const Hero = () => {
                 loading="lazy"
                 decoding="async"
                 draggable={false}
-                className="w-full min-h-[820px] md:h-[100vh] object-cover"
+                className="w-full min-h-[900px] md:h-[100vh] object-cover"
                 // min-h-[800px]
                 />
                 <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-start items-center flex-col gap-4 md:gap-6 lg:gap-8 text-white text-center rounded-md">
@@ -93,7 +93,7 @@ const Hero = () => {
                                                     <CircleCheck className="text-white" />
                                                 </Icon>
                                             </Wrapper>
-                                            <Wrapper className="flex items-start gap-2 flex-col text-start">
+                                            <Wrapper className="ml-2 md:ml-2.5 flex items-start gap-2 flex-col text-start">
                                                 <h3 className="text-lg md:text-xl font-bold">
                                                     {cardItem.heading}
                                                 </h3>
