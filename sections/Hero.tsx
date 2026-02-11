@@ -10,6 +10,9 @@ import {
     DevicePhoneMobileIcon,
     CheckCircleIcon
 } from "@heroicons/react/24/solid";
+import {
+    CircleCheck
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -87,7 +90,7 @@ const Hero = () => {
                                         <Wrapper className="flex items-center gap-2 md:gap-2.5 p-1 md:p-3 lg:p-4 bg-black/50 w-full md:w-max rounded-md">
                                             <Wrapper>
                                                 <Icon>
-                                                    <CheckCircleIcon className="text-[#a11106]" />
+                                                    <CircleCheck className="text-white" />
                                                 </Icon>
                                             </Wrapper>
                                             <Wrapper className="flex items-start gap-2 flex-col text-start">
