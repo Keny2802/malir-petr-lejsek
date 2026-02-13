@@ -117,10 +117,10 @@ const Hero = () => {
                             Proč si vybrat nás
                         </NoProofLink>
                          <NoProofLink
-                        href="zakazky"
+                        href="reference"
                         className="p-4 md:p-5 lg:p-6 flex justify-center items-center gap-2 md:gap-3 lg:gap-4 bg-[#a11106] text-white text-base md:text-[17px] lg:text-lg font-medium text-center w-full md:w-75 rounded-md"
                         onClick={(e) => {
-                            setLinkWithoutHash(e, "zakazky");
+                            setLinkWithoutHash(e, "reference");
                         }}>
                             Prohlédnout reference
                         </NoProofLink>
