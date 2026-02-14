@@ -30,32 +30,32 @@ const Header = () => {
     const [isActiveLink, setActiveLink] = useState<string>("");
     const pathName = usePathname();
 
-    useEffect(() => {
-        const sections = document.querySelectorAll(".section");
+    // useEffect(() => {
+    //     const sections = document.querySelectorAll(".section");
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                const target = entry.target;
-                const targetID = target.id;
+    //     const observer = new IntersectionObserver((entries) => {
+    //         entries.forEach((entry) => {
+    //             const target = entry.target;
+    //             const targetID = target.id;
 
-                if (entry.isIntersecting) {
-                    setActiveLink(`#${targetID}`);
-                };
-            });
-        }, {
-            threshold: 0.5
-        });
+    //             if (entry.isIntersecting) {
+    //                 // setActiveLink(`#${targetID}`);
+    //             };
+    //         });
+    //     }, {
+    //         threshold: 0.5
+    //     });
 
-        sections.forEach((section) => {
-            observer.observe(section);
-        });
+    //     sections.forEach((section) => {
+    //         observer.observe(section);
+    //     });
 
-        return () => {
-            sections.forEach((section) => {
-                observer.unobserve(section);
-            });
-        };
-    }, []);
+    //     return () => {
+    //         sections.forEach((section) => {
+    //             observer.unobserve(section);
+    //         });
+    //     };
+    // }, []);
 
     useEffect(() => {
         const setHeaderToScrolled = () => {

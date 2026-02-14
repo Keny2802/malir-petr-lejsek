@@ -29,7 +29,7 @@ const Footer = () => {
     return (
         <Fragment>
             <Wrapper
-            className="bg-[#ffd24d]/80 shadow-m"
+            className="bg-[#ffd24d]/80 shadow-m section"
             id="footer">
                 <Wrapper className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14">
                     {/* <Logo /> */}

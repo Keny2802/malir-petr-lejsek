@@ -8,6 +8,7 @@ import Wrapper from "./Wrapper";
 
 type pageLabelProps = {
     className?: string;
+    id?: string;
     pageLabelAdditContent?: ReactNode | null;
     pageLabelText: string;
     pageLabelTextClassName?: string;
@@ -17,6 +18,7 @@ type pageLabelProps = {
 const PageLabel = ({ ...props }: pageLabelProps) => {
     const {
         className,
+        id,
         pageLabelAdditContent,
         pageLabelText,
         pageLabelTextClassName,
@@ -32,7 +34,8 @@ const PageLabel = ({ ...props }: pageLabelProps) => {
             ${String(className).includes("font-") ? className : "font-bold"}
             ${String(className).includes("mb-") ? className : "mb-6"}
             ${String(className).includes("p-") || String(className).includes("px-") || String(className).includes("py-") ? className : "px-4 py-3"}
-                rounded-full`)}>
+                rounded-full`)}
+            id={id}>
                 <p className={clsx(`${pageLabelTextClassName || ""} ${pageLabelAdditContent ? "flex items-center gap-2" : null} uppercase page-label-text`)}>
                     {pageLabelAdditContent}
                     {pageLabelText}

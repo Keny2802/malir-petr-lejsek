@@ -12,6 +12,7 @@ import References from "../../../sections/References";
 import WhyUs from "../../../sections/WhyUs";
 import Contact from "../../../sections/Contact";
 import Footer from "../../../components/Footer";
+import FixedCta from "../../../components/FixedCta";
 
 export const metadata: Metadata = {
   title: "Služby - Malování bytů Brno | Profi Malby Petr Lejska",
@@ -72,6 +73,7 @@ const App = () => {
             <WhyUs />
             <Contact />
             <Footer />
+            <FixedCta />
         </Fragment>
     );
 };

@@ -47,7 +47,7 @@ const About = () => {
             id="o-nas"
             // ref={animationRef}
             >
-                <PageLabel pageLabelText="O nás" />
+                <PageLabel pageLabelText="O nás"/>
                 <Wrapper className="flex justify-between items-center flex-col md:flex-col lg:flex-row gap-4 md:gap-6 lg:gap-8 w-full">
                     <Wrapper className="flex justify-center md:items-center flex-col gap-4 md:gap-6 lg:gap-8 w-full">
                         <Image

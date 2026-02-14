@@ -7,8 +7,7 @@ import {
 } from "react";
 import {
     ChevronDoubleUpIcon,
-    DevicePhoneMobileIcon,
-    CheckCircleIcon
+    DevicePhoneMobileIcon
 } from "@heroicons/react/24/solid";
 import {
     CircleCheck

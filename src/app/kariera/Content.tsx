@@ -11,6 +11,7 @@ import References from "../../../sections/References";
 import WhyUs from "../../../sections/WhyUs";
 import Contact from "../../../sections/Contact";
 import Footer from "../../../components/Footer";
+import FixedCta from "../../../components/FixedCta";
 
 const Content = () => {
     return (
@@ -38,6 +39,7 @@ const Content = () => {
             <WhyUs />
             <Contact />
             <Footer />
+            <FixedCta />
         </Fragment>
     );
 };
