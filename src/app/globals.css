@@ -5,7 +5,11 @@ html {
 }
 
 .section {
-    scroll-margin-top: 180px;
+    scroll-margin-top: 144.04px;
+}
+
+.current-section {
+    scroll-margin-top: 275px;
 }
 
 input[type="number"]::-webkit-inner-spin-button {

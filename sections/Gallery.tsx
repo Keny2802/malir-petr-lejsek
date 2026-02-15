@@ -31,7 +31,7 @@ const Gallery = () => {
     return (
         <Fragment>
             <Wrapper
-            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#ffd24d]/80 shadow-md section"
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#ffd24d]/80 shadow-md current-section"
             id="galerie">
                 <PageLabel pageLabelText="Galerie" />
                 <Wrapper className="flex justify-center items-center flex-col gap-2 md:gap-3 lg:gap-4">

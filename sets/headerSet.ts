@@ -33,7 +33,8 @@ export const headerSet:headerSetProps[] = [
     },
     {
         link: "Kontakt",
-        href: "kontaktni-informace"
+        // href: "kontaktni-informace",
+        href: "footer",
     },
     {
         pageLink: "Kariéra",
