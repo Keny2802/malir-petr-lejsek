@@ -43,7 +43,7 @@ const About = () => {
     return (
         <Fragment>
             <Wrapper
-            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#ffd24d]/80 shadow-md current-section"
+            className="px-5 py-8 md:px-8 md:py-12 lg:px-10 lg:py-14 bg-[#ffd24d]/80 shadow-md about-section"
             id="o-nas"
             // ref={animationRef}
             >

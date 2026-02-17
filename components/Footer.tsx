@@ -19,6 +19,7 @@ import setLinkWithoutHash from "../functions/setLinkWithoutHash";
 import PageLabel from "./pageLabel";
 import ContactInfo from "./ContactInfo";
 import Facebook from "./Facebook";
+import TopList from "./TopList";
 
 const DYNAMIC_YEAR = new Date().getFullYear();
 
@@ -116,6 +117,7 @@ const Footer = () => {
                         </Link>
                     </Wrapper>
                 </Wrapper>
+                <TopList />
             </Wrapper>
         </Fragment>
     );
