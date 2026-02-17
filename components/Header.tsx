@@ -48,6 +48,15 @@ const Header = () => {
         opacity: isHidden ? 0 : 1
     };
 
+    // useMotionValueEvent(scrollY, "change", (current) => {
+    //     const previous = scrollY.getPrevious() ?? 0;
+
+    //     if (current > previous && current > 150) {
+    //         setToHidden(true);
+    //     } else {
+    //         setToHidden(false);
+    //     };
+    // });
     useMotionValueEvent(scrollY, "change", (current) => {
         const previous = scrollY.getPrevious() ?? 0;
 

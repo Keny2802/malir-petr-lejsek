@@ -94,7 +94,7 @@ const Carousel = ({ ...props }: CarouselType) => {
                     </Icon>
                 </button>
 
-                <Wrapper className="relative overflow-hidden w-full md:max-w-5xl h-full mx-auto ">
+                <Wrapper className="relative overflow-hidden w-full md:max-w-[800px] h-full mx-auto ">
                     <button
                     onClick={prevSlide}
                     className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 md:p-3 lg:p-4 bg-black/50 text-white rounded-full">
@@ -121,15 +121,15 @@ const Carousel = ({ ...props }: CarouselType) => {
                                     key={index}>
                                         <Wrapper className="w-full shrink-0 p-2 md:p-3 lg:p-4">
                                             <Image
-                                            width={1000}
-                                            height={1000}
+                                            width={800}
+                                            height={800}
                                             src={cardItem.image}
                                             alt={cardItem.heading || `Ukázka malířské a natěračské práce ${index + 1}. fotka ukázky zakázky | Profi Malby Brno Petr Lejska`}
                                             loading="lazy"
                                             decoding="async"
                                             draggable={false}
                                             quality={90}
-                                            className="object-cover cursor-pointer"
+                                            className="cursor-pointer"
                                             />
                                         </Wrapper>
                                     </Fragment>
