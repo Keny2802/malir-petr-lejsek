@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
 html {
-    /* scroll-behavior: smooth; */
-    scroll-behavior: auto !important;
-    scroll-padding-top: var(--header-height);
+    scroll-behavior: smooth;
+    /* scroll-padding-top: var(--header-height); */
 }
 
 /*

@@ -6,6 +6,11 @@ import {
     Fragment
 } from "react";
 import {
+    motion,
+    useScroll,
+    useMotionValueEvent
+} from "motion/react";
+import {
     usePathname
 } from "next/navigation";
 import {
@@ -25,10 +30,33 @@ import setLinkWithoutHash from "../functions/setLinkWithoutHash";
 import MobileMenu from "./MobileMenu";
 
 const Header = () => {
+    const {
+        scrollY
+    } = useScroll();
+    const [
+        isHidden,
+        setToHidden
+    ] = useState<boolean>(false);
+
     const [isHeaderScrolled, setHeaderScrolled] = useState<boolean>(false);
     const [isMobileMenuClicked, setMobileMenuClicked] = useState<boolean>(false);
     const [isActiveLink, setActiveLink] = useState<string>("");
     const pathName = usePathname();
+
+    const animate = {
+        y: isHidden ? -140 : 0,
+        opacity: isHidden ? 0 : 1
+    };
+
+    useMotionValueEvent(scrollY, "change", (current) => {
+        const previous = scrollY.getPrevious() ?? 0;
+
+        if (current > previous && current > 150) {
+            setToHidden(true);
+        } else {
+            setToHidden(false);
+        };
+    });
 
     // useEffect(() => {
     //     const sections = document.querySelectorAll(".section");
@@ -90,8 +118,14 @@ const Header = () => {
 
     return (
         <Fragment>
-            <header
-            className={clsx(`p-4 md:p-5 lg:p-6 ${isHeaderScrolled && "fixed top-0 left-0"} bg-[#f8c73c] shadow-md w-full z-40 border-b-3 border-black transition-all duration-500 ease-in-out header`)}
+            {/*  ${isHeaderScrolled && "fixed top-0 left-0"} */}
+            <motion.header
+            className={clsx(`p-4 md:p-5 lg:p-6 fixed top-0 left-0 bg-[#f8c73c] shadow-md w-full z-[100] border-b-3 border-black transition-all duration-500 ease-in-out header`)}
+            animate={animate}
+            transition={{
+                duration: 0.3,
+                ease: "easeInOut"
+            }}   
             id="header">
                 <Wrapper className="flex justify-between items-center gap-2 md:gap-4 lg:gap-6">
                     <Logo />
@@ -246,7 +280,7 @@ const Header = () => {
                         )
                     }
                 </Wrapper>
-            </header>
+            </motion.header>
             <MobileMenu
             isMobileMenuClicked={isMobileMenuClicked}
             setMobileMenuClicked={setMobileMenuClicked}
