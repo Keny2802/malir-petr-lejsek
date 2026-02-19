@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 html {
-    scroll-behavior: inherit !important;
+    scroll-behavior: auto !important;
     /* scroll-padding-top: var(--header-height); */
 }
 

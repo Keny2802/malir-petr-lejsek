@@ -5,7 +5,7 @@ const setLinkWithoutHash = (evt: React.MouseEvent<HTMLAnchorElement>, id: string
 
     if (targetLink) {
         targetLink.scrollIntoView({
-            behavior: "smooth",
+            behavior: "instant"
             // block: "start"
         });
     };
