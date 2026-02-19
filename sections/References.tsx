@@ -42,7 +42,7 @@ const References = () => {
     };
 
     useEffect(() => {
-        let interval = 10000;
+        let interval = 15000;
 
         const referencesIntverval = setInterval(() => {
             setCurrentIndex(
