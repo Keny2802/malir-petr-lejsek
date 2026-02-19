@@ -129,7 +129,7 @@ const Header = () => {
         <Fragment>
             {/* ${isHeaderScrolled && "fixed top-0 left-0"} */}
             <header
-            className={clsx(`p-4 md:p-5 lg:p-6 bg-[#f8c73c] shadow-md w-full z-[100] border-b-3 border-black transition-all duration-500 ease-in-out header`)}
+            className={clsx(`p-4 md:p-5 lg:p-6 ${isHeaderScrolled && "fixed top-0 left-0"} bg-[#f8c73c] shadow-md w-full z-[100] border-b-3 border-black transition-all duration-500 ease-in-out header`)}
             // animate={animate}
             // transition={{
             //     duration: 0.3,
