@@ -127,13 +127,14 @@ const Header = () => {
 
     return (
         <Fragment>
-            <motion.header
-            className={clsx(`p-4 md:p-5 lg:p-6 ${isHeaderScrolled && "fixed top-0 left-0"} bg-[#f8c73c] shadow-md w-full z-[100] border-b-3 border-black transition-all duration-500 ease-in-out header`)}
-            animate={animate}
-            transition={{
-                duration: 0.3,
-                ease: "easeInOut"
-            }}   
+            {/* ${isHeaderScrolled && "fixed top-0 left-0"} */}
+            <header
+            className={clsx(`p-4 md:p-5 lg:p-6 bg-[#f8c73c] shadow-md w-full z-[100] border-b-3 border-black transition-all duration-500 ease-in-out header`)}
+            // animate={animate}
+            // transition={{
+            //     duration: 0.3,
+            //     ease: "easeInOut"
+            // }}   
             id="header">
                 <Wrapper className="flex justify-between items-center gap-2 md:gap-4 lg:gap-6">
                     <Logo />
@@ -288,7 +289,7 @@ const Header = () => {
                         )
                     }
                 </Wrapper>
-            </motion.header>
+            </header>
             <MobileMenu
             isMobileMenuClicked={isMobileMenuClicked}
             setMobileMenuClicked={setMobileMenuClicked}
