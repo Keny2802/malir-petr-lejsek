@@ -52,11 +52,11 @@ const Hero = () => {
                 loading="lazy"
                 decoding="async"
                 draggable={false}
-                className="w-full min-h-[950px] md:h-[100vh] object-cover"
+                className="w-full min-h-[950px] md:min-h-[750px] md:h-[100vh] object-cover"
                 // min-h-[800px]
                 />
                 <Wrapper className="p-2 md:p-3 lg:p-4 absolute inset-0 flex justify-start items-center flex-col gap-4 md:gap-6 lg:gap-8 text-white text-center rounded-md">
-                    <Wrapper className="mt-[100px] p-2 md:p-3 lg:p-4 bg-black/50 flex justify-center items-center flex-col gap-4 md:gap-6 lg:gap-8 rounded-md">
+                    <Wrapper className="mt-[70px] md:mt-[100px] p-2 md:p-3 lg:p-4 bg-black/50 flex justify-center items-center flex-col gap-4 md:gap-6 lg:gap-8 rounded-md">
                         <h1 className="text-3xl md:text-[60px] lg:text-7xl font-extrabold md:max-w-7xl">
                             Profesionální malování interiérů, které změní váš domov k nepoznání
                         </h1>
